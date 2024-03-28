@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 header > .container-fluid{
     background-color: #E9E9E9;
     display: flex;
@@ -6,13 +7,31 @@ header > .container-fluid{
     justify-content: end;
     align-items: center;
 }
+
 header > .container-fluid > nav > a{
     margin-right: 50px;
     color: #383838;
     text-decoration: none;
     font-family: "Noto Sans", sans-serif;
     font-size: 20px;
-    border: red 1px solid;
-    padding-left: 30px;
+    padding-left: 20px;
+}
+
+#ayuda{
+    background-image: url('./imgs/icons8_help_20px_1.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#contacto{
+    background-image: url('./imgs/icons8_user_20px.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+#local{
+    background-image: url('./imgs/icons8_Location_20px.png');
+    background-repeat: no-repeat;
+    background-position: center left;
 }
 

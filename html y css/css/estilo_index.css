@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-header > .container-fluid{
+#menu{
     background-color: #E9E9E9;
     display: flex;
     height: 45px;
@@ -35,13 +35,42 @@ header > .container-fluid > nav > a{
     background-position: center left;
 }
 
-#titulo{
-    display: flex;
-    justify-content: space-between;
-    border: red 1px solid;
-}
-
 #titulo > a > img{
     margin-top: 10px;
     margin-left: 15px;
 }
+
+#titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#login_carrito{
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+#login_carrito > a{
+    margin-right: 50px;
+    color: #383838;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#login{
+    background-image: url('./imgs/icons8_user_20px_1.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#carro{
+    background-image: url('./imgs/icons8_shopping_cart_25px.png');
+    background-repeat: no-repeat;
+}
+
+

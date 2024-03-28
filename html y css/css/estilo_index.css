@@ -35,3 +35,13 @@ header > .container-fluid > nav > a{
     background-position: center left;
 }
 
+#titulo{
+    display: flex;
+    justify-content: space-between;
+    border: red 1px solid;
+}
+
+#titulo > a > img{
+    margin-top: 10px;
+    margin-left: 15px;
+}

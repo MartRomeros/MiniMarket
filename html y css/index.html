@@ -29,71 +29,76 @@
         </div>
 
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="First slide"
-                ></li>
-                <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="1"
-                    aria-label="Second slide"
-                ></li>
-                <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="2"
-                    aria-label="Third slide"
-                ></li>
-            </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img
-                        src="https://www.royalseguros.com.py/storage/productos/imagen_banner-1650411582.png"
-                        class="w-100 d-block"
-                        alt="First slide"
-                    />
+                    <img src="./css/imgs/index_banner_1.svg" class="w-100 d-block" alt="First slide" />
                 </div>
                 <div class="carousel-item">
-                    <img
-                        src="holder.js/900x500/auto/#666:#444/text:Second slide"
-                        class="w-100 d-block"
-                        alt="Second slide"
-                    />
+                    <img src="./css/imgs/banner2_index.svg" class="w-100 d-block" alt="Second slide" />
                 </div>
                 <div class="carousel-item">
-                    <img
-                        src="holder.js/900x500/auto/#666:#444/text:Third slide"
-                        class="w-100 d-block"
-                        alt="Third slide"
-                    />
+                    <img src="./css/imgs/banner3_index.svg" class="w-100 d-block" alt="Third slide" />
                 </div>
             </div>
-           
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="next"
-            >
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        
-
-
-
     </header>
 
+    <section class="container-fluid">
+        <div class="container-fluid" id="submenus">
+            <a href="#"><img src="./css/imgs/promos_imperdibles.png" alt="" id="promos"></a>
+            <a href="#"><img src="./css/imgs/cervezas_artesanales.png" alt="" id="promos"></a>
+            <a href="#"><img src="./css/imgs/pan.png" alt="" id="promos"></a>
+        </div>
+
+        <div class="container-fluid" id="ubicacion">
+            <h2>Nuestro local</h2>
+            <div id="localidad">
+                <a href="#" id="fono">+569-6404-1720</a>
+                <a href="#" id="comuna">El monte 887</a>
+            </div>
+        </div>
 
 
 
 
 
+    </section>
 
+    <footer class="container-fluid">
+        <div class="container-fluid" id="abajo">
+            <img src="./css/imgs/9xZuSJoGK8J5HcPJP-200-x.webp" alt="">
+            <div id="terminos">
+                <h3>Conócenos</h3>
+                <a href="#">Delivery</a>
+                <a href="#">Información Legal</a>
+                <a href="#">Términos y Condiciones de uso</a>
+                <a href="#">Política y Privacidad</a>
+            </div>
+            <div id="terminos">
+                <h3>Mi cuenta</h3>
+                <a href="#">Pedir</a>
+                <a href="#">Iniciar Sesión</a>
+                <br>
+                <br>
+            </div>
+            <div id="terminos">
+                <h3>Redes Sociales</h3>
+                <a href="#">Instagram</a>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </footer>
 
     <!-- Aca dejamos el archivo de bootstrap5 de JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

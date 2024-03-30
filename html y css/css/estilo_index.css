@@ -5,8 +5,6 @@ header{
 }
 
 nav{
-    display: flex;
-    justify-content: end;
     background-color: #E9E9E9;
     height: 40px;
 }
@@ -74,10 +72,7 @@ section{
 footer{
     background-color: #383838;
     margin-top: 20px;
-}
-
-footer > img{
-    margin-top: 10px;
+    height: 300px;
 }
 
 footer > .row > div> a{

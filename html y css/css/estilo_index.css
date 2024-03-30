@@ -75,6 +75,10 @@ footer{
     height: 300px;
 }
 
+footer > div{
+    height: 300px;
+}
+
 footer > .row > div> a{
     color: white;
     text-decoration: none;

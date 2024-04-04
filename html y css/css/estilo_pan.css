@@ -48,3 +48,18 @@ nav{
     font-size: 20px;
 
 }
+
+.product-pan{
+    border: 1px solid #000;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-pan h2 {
+    color: black;
+}
+
+.product-pan p{
+    color: black;
+}

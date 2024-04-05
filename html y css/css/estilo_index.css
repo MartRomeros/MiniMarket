@@ -66,7 +66,7 @@ section{
 }
 
 #promos:hover {
-    transform: scale(1.05);
+    border-radius: 9px;
 }
 
 footer{

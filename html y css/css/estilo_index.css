@@ -62,6 +62,18 @@ nav{
 
 }
 
+.categorias{
+    height: 10rem;
+    background-color:#E9E9E9;
+}
+
+.categorias > a{
+    text-align: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #383838;
+}
+
 section{
     background-color: #F8F8F8;
 }

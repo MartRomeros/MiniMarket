@@ -55,6 +55,12 @@ footer > .row > div> a{
     text-align: center;
 }
 
+footer > .row > div> a :hover{
+    text-decoration: underline white solid 1px;
+}
+
+
+
 footer > div >div> h3{
     color: white;
     text-align: center;

@@ -4,63 +4,33 @@ header{
     background-color: #F8F8F8;
 }
 
-nav{
-    background-color: #E9E9E9;
-    height: 40px;
-}
-
-
-#menu_arriba {
-    background-color: #E9E9E9;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
-    width: 500px;
-}
-
-#menu_arriba>a {
-    text-decoration: none;
-    color: black;
+nav > div > .opciones{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-family: "Poppins", sans-serif;
-    width: 120px;
-    padding-left: 20px;
-} 
-
-#titulo_login_carrito{
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#login_carrito{
-    display: flex;
-    width: 290px;
-    justify-content: space-around;
-}
-
-#login_carrito > a{
-    text-decoration: none;
     text-align: center;
-    color: black;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-
+    text-decoration: none;
+    color: #383838;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    background-color: #E9E9E9;
+    border-radius: 3rem;
 }
+
+
 
 section{
     background-color: #F8F8F8;
 }
 
 #productos{
-    margin-top: 40px;
     background-color: #F8F8F8;
 }
 
 #promos {
     margin-left: 15px;
     margin-top: 10px;
+    margin-bottom: 10px;
     transition: transform 0.3s ease;
     border-radius: 9px;
 }
@@ -82,8 +52,10 @@ footer > div{
 footer > .row > div> a{
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 footer > div >div> h3{
     color: white;
+    text-align: center;
 }

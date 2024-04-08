@@ -15,29 +15,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
 
     <header class="container">
         <!--nav que contiene el menu del index-->
-        <nav class="row d-flex justify-content-end">
-            <div id="menu_arriba">
-                <a href="#" id="ayuda"><i class="bi bi-question-circle-fill"></i>Ayuda</a>
-                <a href="#" id="contacto"><i class="bi bi-person-circle"></i>Contacto</a>
-                <a href="#" id="local"><i class="bi bi-geo-alt-fill"></i>Local</a>
+        <nav class="row d-flex align-items-center">
+            <div class="row">
+                <a href="./index.html"><img src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="#" width="150"></a>
+            </div>
+            <div class="col row d-flex align-items-center">
+                <a href="#" class="col opciones"><i class="bi bi-question-circle-fill"></i>Ayuda</a>
+                <a href="#" class="col opciones"><i class="bi bi-person-rolodex"></i>Contacto</a>
+                <a href="#" class="col opciones"><i class="bi bi-geo-alt-fill"></i>Nuestro Local</a>
+                <a href="#" id="login" class="col opciones"><i class="bi bi-door-open"></i>Iniciar sesión</a>
+                <a href="#" id="carro" class="col opciones"><i class="bi bi-cart4"></i>0</a>
             </div>
         </nav>
-
-        <!-- div que contiene el logo de la app inicio de sesion, opcion de delivery y barra de busqueda -->
-        <div class="container" id="titulo_login_carrito">
-            <a href="./index.html"><img src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="#" width="150"></a>
-            <div id="login_carrito">
-                <a href="#" id="login"><i class="bi bi-door-open"></i>Iniciar sesión</a>
-                <a href="#" id="carro"><i class="bi bi-cart4"></i>0</a>
-            </div>
-        </div>
 
         <!--Carrusel que contiene las imagenes-->
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
@@ -64,23 +60,37 @@
         </div>
     </header>
 
-    <section class="container">
+    <section class="container d-flex flex-column align-items-center">
         <!--Div que contiene promociones-->
         <div class="row " id="productos">
             <div class="col" id="promos"><a href="#"><img src="./css/imgs/promos_imperdibles.png" alt="" width="300"
                         id="promos"></a></div>
-            <div class="col" id="promos"><a href="./Cervezas.html"><img src="./css/imgs/cervezas_artesanales.png" alt="" width="300"
-                        id="promos"></a></div>
-            <div class="col" id="promos"><a href="./pan.html"><img src="./css/imgs/pan.png" alt="" width="300" id="promos"></a>
+            <div class="col" id="promos"><a href="./Cervezas.html"><img src="./css/imgs/cervezas_artesanales.png" alt=""
+                        width="300" id="promos"></a></div>
+            <div class="col" id="promos"><a href="./pan.html"><img src="./css/imgs/pan.png" alt="" width="300"
+                        id="promos"></a>
             </div>
         </div>
+
+        <div class="row">
+            <div class="card col" style="width: 18rem;">
+                <img src="./css/imgs/wmtcl.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Disfruta comprar desde casa</h5>
+                    <p class="card-text">Tu compra con despacho o retiro en menos de 24 horas</p>
+                    <a href="#" class="btn btn-primary">Compra aqui</a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer class="container">
         <div class="row d-flex justify-content-center">
             <div class="col d-flex flex-column justify-content-center align-items-center">
                 <h3>Conócenos</h3>
-                <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu" target="_blank">Ubicación</a>
+                <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu"
+                    target="_blank">Ubicación</a>
                 <a href="#">Información Legal</a>
                 <a href="./terminos y condiciones de uso.html">Términos y Condiciones de Uso</a>
                 <a href="#">Política y Privacidad</a>
@@ -91,12 +101,15 @@
                 <h3>Mi cuenta</h3>
                 <a href="#">Pedir</a>
                 <a href="#">Iniciar Sesión</a>
-                <br> 
+                <br>
+                <br>
+                <br>
                 <br>
             </div>
             <div class="col d-flex flex-column justify-content-center align-items-center">
                 <h3>Redes Sociales</h3>
-                <a href="https://www.instagram.com/elmvuri.pl?igsh=MWQ0cDBkdWFucmk5Zg%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+                <a href="https://www.instagram.com/elmvuri.pl?igsh=MWQ0cDBkdWFucmk5Zg%3D%3D&utm_source=qr"
+                    target="_blank">Instagram</a>
                 <a href="https://www.facebook.com/huertos.jym" target="_blank">Facebook</a>
                 <a href="https://twitter.com/MarketMiniBoss" target="_blank">Twitter</a>
                 <br>

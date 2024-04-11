@@ -18,21 +18,51 @@
 </head>
 
 <body>
-    <header>
-        <!--nav que contiene el menu del index-->
-        <nav class="row d-flex align-items-center">
-            <div class="row">
-                <a href="./index.html"><img src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="#" width="150"></a>
-            </div>
-            <div class="col row d-flex align-items-center">
-                <a href="#" class="col opciones"><i class="bi bi-question-circle-fill"></i>Ayuda</a>
-                <a href="#" class="col opciones"><i class="bi bi-person-rolodex"></i>Contacto</a>
-                <a href="#" class="col opciones"><i class="bi bi-geo-alt-fill"></i>Nuestro Local</a>
-                <a href="#" id="login" class="col opciones"><i class="bi bi-door-open"></i>Iniciar sesión</a>
-                <a href="#" id="carro" class="col opciones"><i class="bi bi-cart4"></i>0</a>
+    <header class="container">
+        <!--nav(bootstrap5) que contiene el menu del index-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand opcion" href="#"> <a href="./index.html" class="col"><img
+                            src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="#" width="150"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item opcion">
+                                <a class="nav-link active" aria-current="page" href="./login.html"><i
+                                        class="bi bi-door-open"></i>Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link" href="#"><i class="bi bi-person-rolodex"></i>Contacto</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i>Ayuda</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link"><i class="bi bi-cart4"></i>0</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
+
+        <nav class="container categorias">
+            <h3>Categorias:</h3>
+            <a href="./lacteos.html" class="opcion"><img src="./css/imgs/icons8_milk_carton_20px.png" alt="">Lácteos</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_Pantry_20px.png" alt="">Despensa</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_watermelon_20px.png" alt="">Frutas y Verduras</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_broom_20px_1.png" alt="">Limpieza</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_pork_20px.png" alt="">Carnicería</a>
+            <a href="./Cervezas.html" class="opcion"><img src="./css/imgs/icons8_Message_in_Bottle_20px.png"
+                    alt="">Botillería</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_pet_commands_summon_20px.png" alt="">Mascotas</a>
+        </nav>
     </header>
+
+
     <section class="container">
         <div class="row dd-flex justify-content-evenly flex-wrap-wrap" id="ventalact1">
             <div class="product-lact" id="lactventa">
@@ -96,39 +126,39 @@
                 </div>
             </div>
 
-            <footer class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <h3>Conócenos</h3>
-                        <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu"
-                            target="_blank">Ubicación</a>
-                        <a href="#">Información Legal</a>
-                        <a href="./terminos y condiciones de uso.html">Términos y Condiciones de Uso</a>
-                        <a href="#">Política y Privacidad</a>
-                        <a href="#">+569 7675 9418</a>
-                        <a href="#">mimarket@gmail.com</a>
-                    </div>
-                    <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <h3>Mi cuenta</h3>
-                        <a href="#">Pedir</a>
-                        <a href="#">Iniciar Sesión</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </div>
-                    <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <h3>Redes Sociales</h3>
-                        <a href="https://www.instagram.com/elmvuri.pl?igsh=MWQ0cDBkdWFucmk5Zg%3D%3D&utm_source=qr"
-                            target="_blank">Instagram</a>
-                        <a href="https://www.facebook.com/huertos.jym" target="_blank">Facebook</a>
-                        <a href="https://twitter.com/MarketMiniBoss" target="_blank">Twitter</a>
-                        <br>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </footer>
+    <footer class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <h3>Conócenos</h3>
+                <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu"
+                    target="_blank" class="terminos">Ubicación</a>
+                <a href="#" class="terminos">Información Legal</a>
+                <a href="./terminos y condiciones de uso.html" class="terminos">Términos y Condiciones de Uso</a>
+                <a href="#" class="terminos">Política y Privacidad</a>
+                <a href="#" class="terminos">+569 7675 9418</a>
+                <a href="#" class="terminos">mimarket@gmail.com</a>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <h3>Mi cuenta</h3>
+                <a href="#" class="terminos">Pedir</a>
+                <a href="./login.html" class="terminos">Iniciar Sesión</a>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <h3>Redes Sociales</h3>
+                <a href="https://www.instagram.com/elmvuri.pl?igsh=MWQ0cDBkdWFucmk5Zg%3D%3D&utm_source=qr"
+                    target="_blank" class="terminos">Instagram</a>
+                <a href="https://www.facebook.com/huertos.jym" target="_blank" class="terminos">Facebook</a>
+                <a href="https://twitter.com/MarketMiniBoss" target="_blank" class="terminos">Twitter</a>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

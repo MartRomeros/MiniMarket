@@ -25,6 +25,11 @@ header{
 
 }
 
+.ingreso-super{
+    display: flex;
+    justify-content: center;
+}
+
 
 section{
     background-color: #F8F8F8;
@@ -62,8 +67,8 @@ footer > .row > div> a{
     text-align: center;
 }
 
-footer > .row > div> a :hover{
-    text-decoration: underline white solid 1px;
+.terminos:hover{
+    text-decoration: underline white;
 }
 
 

@@ -18,22 +18,66 @@
 
 <body>
     <header class="container">
-        <!--nav que contiene el menu del index-->
-        <nav class="row">
-            <a href="./index.html" class="col"><img src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="#" width="150"></a>
+        <!--nav(bootstrap5) que contiene el menu del index-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand opcion" href="#"> <a href="./index.html" class="col"><img
+                            src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="#" width="150"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item opcion">
+                                <a class="nav-link active" aria-current="page" href="./login.html"><i
+                                        class="bi bi-door-open"></i>Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link" href="#"><i class="bi bi-person-rolodex"></i>Contacto</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i>Ayuda</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link"><i class="bi bi-cart4"></i>0</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
         </nav>
 
+        <nav class="container categorias">
+            <h3>Categorias:</h3>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_milk_carton_20px.png" alt="">Lácteos</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_Pantry_20px.png" alt="">Despensa</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_watermelon_20px.png" alt="">Frutas y Verduras</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_broom_20px_1.png" alt="">Limpieza</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_pork_20px.png" alt="">Carnicería</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_Message_in_Bottle_20px.png" alt="">Botillería</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_pet_commands_summon_20px.png" alt="">Mascotas</a>
+        </nav>
     </header>
 
     <section class="container">
-        <div class="row">
-            <main class="col">
-                <label for="login">Correo electronico</label>
-                <form action="index.html" method="get" name="login">
-                    <input type="text" name="Correo" placeholder="Ingrese su correo electronico">
-                </form>
-            </main>
-        </div>
+        <img src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="" width="400">
+
+        <form action="./index.html" method="get">
+            <h1>Inicio de sesión</h1>
+            <div>
+                <label for="email-user">Correo electronico:</label>
+                <input type="email" placeholder="ingrese el correo electronico" name="email-user" class="campos">
+            </div>
+            <div>
+                <label for="pass-user">Contraseña:</label>
+                <input type="password" class="campos">
+                <a href="#" class="opcion">problemas con tu contraseña?</a>
+                <button type="submit">Ingresar</button>
+            </div>
+
+        </form>
+
     </section>
 
 

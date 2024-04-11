@@ -18,20 +18,71 @@
 </head>
 
 <body>
-    <header>
-        <!--nav que contiene el menu del index-->
-        <nav class="row d-flex align-items-center">
-            <div class="row">
-                <a href="./index.html"><img src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="#" width="150"></a>
-            </div>
-            <div class="col row d-flex align-items-center">
-                <a href="#" class="col opciones"><i class="bi bi-question-circle-fill"></i>Ayuda</a>
-                <a href="#" class="col opciones"><i class="bi bi-person-rolodex"></i>Contacto</a>
-                <a href="#" class="col opciones"><i class="bi bi-geo-alt-fill"></i>Nuestro Local</a>
-                <a href="#" id="login" class="col opciones"><i class="bi bi-door-open"></i>Iniciar sesión</a>
-                <a href="#" id="carro" class="col opciones"><i class="bi bi-cart4"></i>0</a>
+    <header class="container">
+        <!--nav(bootstrap5) que contiene el menu del index-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand opcion" href="#"> <a href="./index.html" class="col"><img
+                            src="./css/imgs/JPu2JLLxaL85RvRkt-200-x.webp" alt="#" width="150"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item opcion">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="bi bi-door-open"></i>Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link" href="#"><i class="bi bi-person-rolodex"></i>Contacto</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i>Ayuda</a>
+                            </li>
+                            <li class="nav-item opcion">
+                                <a class="nav-link"><i class="bi bi-cart4"></i>0</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
+
+        <nav class="container categorias">
+            <h3>Categorias:</h3>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_milk_carton_20px.png" alt="">Lácteos</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_Pantry_20px.png" alt="">Despensa</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_watermelon_20px.png" alt="">Frutas y Verduras</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_broom_20px_1.png" alt="">Limpieza</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_pork_20px.png" alt="">Carnicería</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_Message_in_Bottle_20px.png" alt="">Botillería</a>
+            <a href="" class="opcion"><img src="./css/imgs/icons8_pet_commands_summon_20px.png" alt="">Mascotas</a>
+        </nav>
+
+        <!--Carrusel que contiene las imagenes-->
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="./css/imgs/index_banner_1.svg" class="w-100 d-block" alt="First slide" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./css/imgs/banner2_index.svg" class="w-100 d-block" alt="Second slide" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./css/imgs/banner3_index.svg" class="w-100 d-block" alt="Third slide" />
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
     <section class="container">
         <div class="row dd-flex justify-content-evenly flex-wrap-wrap" id="ventalact1">

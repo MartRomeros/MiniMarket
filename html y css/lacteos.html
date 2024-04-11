@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Market</title>
     <!--Linkamos los archivos css y bootstrap5 -->
-    <link rel="stylesheet" href="css/estilo_index.css">
+    <link rel="stylesheet" href="./css/estilo_lacteos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--link de los iconos de bootstrap5-->
@@ -15,11 +14,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    <title>Lacteos</title>
 </head>
 
 <body>
-
     <header class="container">
         <!--nav(bootstrap5) que contiene el menu del index-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -58,72 +56,80 @@
             <a href="" class="opcion"><img src="./css/imgs/icons8_watermelon_20px.png" alt="">Frutas y Verduras</a>
             <a href="" class="opcion"><img src="./css/imgs/icons8_broom_20px_1.png" alt="">Limpieza</a>
             <a href="" class="opcion"><img src="./css/imgs/icons8_pork_20px.png" alt="">Carnicería</a>
-            <a href="./Cervezas.html" class="opcion"><img src="./css/imgs/icons8_Message_in_Bottle_20px.png" alt="">Botillería</a>
+            <a href="./Cervezas.html" class="opcion"><img src="./css/imgs/icons8_Message_in_Bottle_20px.png"
+                    alt="">Botillería</a>
             <a href="" class="opcion"><img src="./css/imgs/icons8_pet_commands_summon_20px.png" alt="">Mascotas</a>
         </nav>
-
-        <!--Carrusel que contiene las imagenes-->
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="./css/imgs/index_banner_1.svg" class="w-100 d-block" alt="First slide" />
-                </div>
-                <div class="carousel-item">
-                    <img src="./css/imgs/banner2_index.svg" class="w-100 d-block" alt="Second slide" />
-                </div>
-                <div class="carousel-item">
-                    <img src="./css/imgs/banner3_index.svg" class="w-100 d-block" alt="Third slide" />
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </header>
 
+
     <section class="container">
-        <!--Div que contiene promociones-->
-        <div class="row " id="productos">
-            <div class="col" id="promos"><a href="#"><img src="./css/imgs/promos_imperdibles.png" alt="" width="300"
-                        id="promos"></a></div>
-            <div class="col" id="promos"><a href="./Cervezas.html"><img src="./css/imgs/cervezas_artesanales.png" alt=""
-                        width="300" id="promos"></a></div>
-            <div class="col" id="promos"><a href="./pan.html"><img src="./css/imgs/pan.png" alt="" width="300"
-                        id="promos"></a>
+        <div class="row dd-flex justify-content-evenly flex-wrap-wrap" id="ventalact1">
+            <div class="product-lact" id="lactventa">
+                <h2>Leche entera</h2>
+                <img src="css/imgs/leche entera natural.webp" alt="" width="100">
+                <p>Precio especial: $1149</p>
+                <p>Descuento al comprar dos: $900</p>
+                <button class="estilo-boton">Agregar</button>
+            </div>
+            <div class="product-lact" id="lactventa">
+                <h2>Leche Semidescremada</h2>
+                <img src="css/imgs/Leche Semidescremada Natura.webp" alt="" width="100">
+                <p>Precio especial: $1149</p>
+                <p>Descuento al comprar dos: $900</p>
+                <button class="estilo-boton">Agregar</button>
+            </div>
+            <div class="product-lact" id="lactventa">
+                <h2>Leche Descremada</h2>
+                <img src="css/imgs/Leche Descremada Natural.webp" alt="" width="100">
+                <p>Precio especial: $1149</p>
+                <p>Descuento al comprar dos: $900</p>
+                <button class="estilo-boton">Agregar</button>
+            </div>
+            <div class="product-lact" id="lactventa">
+                <h2>Mantequilla colun</h2>
+                <img src="css/imgs/Mantequilla.jpeg" alt="" width="100">
+                <p>Precio especial: 3119</p>
+                <p>Descuento al comprar dos: $2500</p>
+                <button class="estilo-boton">Agregar</button>
             </div>
         </div>
-
-        <div class="ingreso-super">
-            <div class="card" style="width: 18rem;">
-                <img src="./css/imgs/wmtcl.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Disfruta comprar desde casa</h5>
-                    <p class="card-text">Tu compra con despacho o retiro en menos de 24 horas</p>
-                    <a href="#" class="btn btn-primary">Compra aqui</a>
+        <section class="container">
+            <div class="row dd-flex justify-content-evenly flex-wrap-wrap" id="ventalact1">
+                <div class="product-lact" id="lactventa">
+                    <h2>Yoghurt Proteína</h2>
+                    <img src="css/imgs/Yoghurt Proteína.webp" alt="" width="100">
+                    <p>Precio especial: $619</p>
+                    <p>Descuento al comprar dos: $450</p>
+                    <button class="estilo-boton">Agregar</button>
+                </div>
+                <div class="product-lact" id="lactventa">
+                    <h2>Huevos Grandes Color</h2>
+                    <img src="css/imgs/Huevos Grandes Color.webp" alt="" width="100">
+                    <p>Precio especial: $4699</p>
+                    <p>Descuento al comprar dos: $3599</p>
+                    <button class="estilo-boton">Agregar</button>
+                </div>
+                <div class="product-lact" id="lactventa">
+                    <h2>Huevos Grandes Blancos</h2>
+                    <img src="css/imgs/Huevos Grandes Blancos.webp" alt="" width="100">
+                    <p>Precio especial: $3629</p>
+                    <p>Descuento al comprar dos: $2729</p>
+                    <button class="estilo-boton">Agregar</button>
+                </div>
+                <div class="product-lact" id="lactventa">
+                    <h2>Postre Manjarate Original</h2>
+                    <img src="css/imgs/Postre Manjarate Original.webp" alt="" width="100">
+                    <p>Precio especial: 709</p>
+                    <p>Descuento al comprar dos: $589</p>
+                    <button class="estilo-boton">Agregar</button>
                 </div>
             </div>
-        </div>
-
-    </section>
 
     <footer class="container">
         <div class="row d-flex justify-content-center">
             <div class="col d-flex flex-column justify-content-center align-items-center">
                 <h3>Conócenos</h3>
-<<<<<<< HEAD
-                <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu" target="_blank">Ubicación</a>
-                <a href="./informacion legal.html">Información Legal</a>
-                <a href="./terminos y condiciones de uso.html">Términos y Condiciones de Uso</a>
-                <a href="./politica y privacidad.html">Política y Privacidad</a>
-                <a href="https://wa.me/56981654943">+569 8165 4943</a>
-                <a href="#">mimarket@gmail.com</a>
-=======
                 <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu"
                     target="_blank" class="terminos">Ubicación</a>
                 <a href="#" class="terminos">Información Legal</a>
@@ -131,7 +137,6 @@
                 <a href="#" class="terminos">Política y Privacidad</a>
                 <a href="#" class="terminos">+569 7675 9418</a>
                 <a href="#" class="terminos">mimarket@gmail.com</a>
->>>>>>> 0f137411d5d2a7c14e2becee909093c01a77588d
             </div>
             <div class="col d-flex flex-column justify-content-center align-items-center">
                 <h3>Mi cuenta</h3>
@@ -154,7 +159,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

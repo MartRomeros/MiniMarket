@@ -25,21 +25,46 @@ header{
 
 }
 
-section > div > aside{
-    padding-top: 30px;
-    margin: auto;
-    background-color: #E9E9E9 ;
-    height: 1500px;
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #F8F8F8  ;
 }
 
-section > div > main{
-    background-color: #F8F8F8;
+form{
+
+    border: 1px blue solid;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    width: 25rem;
 }
 
-section > div > aside > a{
-    text-decoration: none;
-    color: #383838;
+form > div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 17rem;
+    text-align: center;
 }
+
+input{
+    border: none;
+    text-align: center;
+}
+
+.campos{
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
 
 footer{
     background-color: #383838;
@@ -57,8 +82,8 @@ footer > .row > div> a{
     text-align: center;
 }
 
-.terminos:hover{
-    text-decoration: underline white;
+footer > .row > div> a :hover{
+    text-decoration: underline white solid 1px;
 }
 
 
@@ -67,3 +92,4 @@ footer > div >div> h3{
     color: white;
     text-align: center;
 }
+

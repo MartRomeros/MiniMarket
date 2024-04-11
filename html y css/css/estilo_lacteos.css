@@ -24,21 +24,16 @@ header{
     align-items: center;
 
 }
-
-section > div > aside{
-    padding-top: 30px;
-    margin: auto;
-    background-color: #E9E9E9 ;
-    height: 1500px;
-}
-
-section > div > main{
-    background-color: #F8F8F8;
-}
-
-section > div > aside > a{
-    text-decoration: none;
-    color: #383838;
+#lactventa {
+    border: 1px solid #000000;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 9px;
+    background-color: #f5f5f5;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 footer{
@@ -66,4 +61,9 @@ footer > .row > div> a{
 footer > div >div> h3{
     color: white;
     text-align: center;
+}
+
+.estilo-boton {
+    border-radius: 8px;
+    background-color: rgb(155, 243, 243);
 }

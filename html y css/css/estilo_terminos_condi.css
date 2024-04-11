@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-header{
-    background-color: #F8F8F8;
+.bg-body-custom{
+    background-color: #241B2F;
 }
 
+i{
+    color: white;
+}
+
+
 .opcion{
-    margin: 1rem;
-    color: #383838;
+    padding: 1rem;
+    color: white;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
 
 }
 
+nav > h3{
+    color: white;
+}
+
 .opcion:hover{
-    color: black;
-    border-radius: 1.1rem;
+    background: #E5278B;
 
 }
 
 .categorias{
+    background-color: #241B2F;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -42,28 +51,33 @@ section > div > aside > a{
 }
 
 footer{
-    background-color: #383838;
-    margin-top: 20px;
-    height: 300px;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(to bottom, #241B2F ,#DC8B39);
+    
+    display: flex;
+    justify-content: space-evenly;
 }
 
-footer > div{
-    height: 300px;
+.condiciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px;
+    border: 2px #E5278B solid;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 0px white;
+    padding: 2rem;
+
 }
 
-footer > .row > div> a{
+.condiciones > a , .condiciones > h3{
     color: white;
     text-decoration: none;
-    text-align: center;
 }
+
+
 
 .terminos:hover{
     text-decoration: underline white;
-}
-
-
-
-footer > div >div> h3{
-    color: white;
-    text-align: center;
 }

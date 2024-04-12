@@ -54,10 +54,12 @@ section{
     border-radius: 2rem;
     margin-top: 2rem;
     padding: 2rem;
+    width: 20rem;
+    height: 25rem;
 }
 
 .product-pan:hover{
-    box-shadow: white 0px 0px 10px;
+    box-shadow: #d12581 0px 0px 10px;
 }
 
 
@@ -101,7 +103,6 @@ footer{
     align-items: center;
     border-right: white 2px solid;
     border-left: white 2px solid;
-
     padding: 2rem;
     width: 20rem;
 

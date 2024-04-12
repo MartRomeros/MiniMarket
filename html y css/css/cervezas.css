@@ -85,10 +85,11 @@ section{
 
 
 footer{
-    padding-top: 10rem;
+    border-top: #64F1B8 2px solid;
+    box-shadow: #64F1B8 0px 0px 10px;
+    padding-top: 2rem;
     padding-bottom: 3rem;
-    background: linear-gradient(to bottom, #241B2F ,#DC8B39);
-    
+    background: linear-gradient(to bottom, #241B2F ,black);
     display: flex;
     justify-content: space-evenly;
 }
@@ -97,11 +98,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 10px;
-    border: 2px #E5278B solid;
-    border-radius: 2rem;
-    box-shadow: 0px 0px 10px 0px white;
+    border-right: white 2px solid;
+    border-left: white 2px solid;
+
     padding: 2rem;
+    width: 20rem;
 
 }
 
@@ -115,3 +116,4 @@ footer{
 .terminos:hover{
     text-decoration: underline white;
 }
+

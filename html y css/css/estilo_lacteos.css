@@ -19,6 +19,7 @@ i{
 
 nav > h3{
     color: white;
+    font-family: "Poppins", sans-serif;
 }
 
 .opcion:hover{
@@ -34,17 +35,63 @@ nav > h3{
 
 }
 
-#lactventa {
-    border: 1px solid #000000;
-    width: 200px;
-    padding: 10px;
-    text-align: center;
-    margin-top: 40px;
-    border-radius: 9px;
-    background-color: #f5f5f5;
-    margin-left: 15px;
-    margin-right: 15px;
+section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #241B2F;
+    padding: 2rem;
 }
+
+.producto-leche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem 2rem 2rem;
+    border: 2px #E5278B solid;
+    border-radius: 2rem;
+    margin: 2rem;
+    width: 20rem;
+    height: 25rem;
+}
+
+.producto-leche:hover{
+    box-shadow: white 0px 0px 10px;
+}
+
+
+.texto{
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.estilo-boton{
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: #DC8B39;
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+.estilo-boton:hover{
+    background-color: #E5278B;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     padding-top: 10rem;
@@ -76,9 +123,4 @@ footer{
 
 .terminos:hover{
     text-decoration: underline white;
-}
-
-.estilo-boton {
-    border-radius: 8px;
-    background-color: rgb(155, 243, 243);
 }

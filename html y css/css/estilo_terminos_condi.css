@@ -19,6 +19,7 @@ i{
 
 nav > h3{
     color: white;
+    font-family: "Poppins", sans-serif;
 }
 
 .opcion:hover{
@@ -34,20 +35,52 @@ nav > h3{
 
 }
 
-section > div > aside{
-    padding-top: 30px;
-    margin: auto;
-    background-color: #E9E9E9 ;
-    height: 1500px;
+.texto{
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
 
-section > div > main{
-    background-color: #F8F8F8;
+aside{
+    display: flex;
+    flex-direction: column;
+    border: #E5278B solid 2px;
+    width: 30rem;
+    padding: 2rem;
 }
 
-section > div > aside > a{
+aside > a, aside > h3{
+    margin-top: 2rem;
+}
+
+.indice{
     text-decoration: none;
-    color: #383838;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.indice:hover{
+    text-shadow: white 0px 0px 10px;
+}
+
+section{
+    background-color: #241B2F;
+    display: flex;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    border: #E5278B 2px solid;
+
+}
+
+.terminos-condiciones{
+    border: #DC8B39 2px solid;
+    margin-top: 2rem;
+    padding: 2rem;
 }
 
 footer{

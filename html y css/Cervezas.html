@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src= "js/prueba.js"></script>
     <title>Cervezas Artesanales</title>
 </head>
 
@@ -36,7 +37,7 @@
                                         class="bi bi-door-open opcion">Iniciar sesión</i></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link opcion" href="#"><i class="bi bi-cart4">0</i></a>
+                                <a class="nav-link opcion" href="#" id="carrito"><i class="bi bi-cart4">0</i></a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link opcion" href="#"><i class="bi bi-question-circle-fill">Ayuda</i></a>
@@ -71,7 +72,7 @@
                 <img src="css/imgs/Tübinger.png" alt="" width="100">
                 <p>Precio especial: $2000</p>
                 <p>Descuento al comprar dos: $1500</p>
-                <button class="estilo-boton">Agregar</button>
+                <button class="estilo-boton" onclick="agregar();">Agregar</button>
             </div>
     
             <div class="producto-cerveza">

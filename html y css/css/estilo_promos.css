@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 .bg-body-custom{
     background-color: #241B2F;
 }
@@ -118,6 +119,12 @@ footer{
     text-decoration: underline white;
 }
 
+.titulo-productomarco{
+    color: white;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
 .oferta{
     color: #c5c4c7;
     font-size: 13px;
@@ -127,5 +134,12 @@ footer{
 .precio_pro{
     color: white;
     font-size: 19px;
+    font-family: "Poppins", sans-serif;
+}
+
+.texto_linea{
+    text-decoration: line-through;
+    color: #c5c4c7;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
 }

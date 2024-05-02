@@ -1,13 +1,15 @@
-function validarUser(){
-    let input=document.querySelector("#user");
-    if(input.value.length >= 6){
-        input.classList.add("correct");
-        input.classList.remove("incorrect");
-        document.querySelector("#error-user").innerHTML = "&nbsp;";
-    }else{
-        input.classList.add("incorrect");
-        input.classList.remove("correct");
-        document.querySelector("#error-user").innerHTML
-         = "Error, ingrese minimo 6 caracteres!.";
+function validarCampos(idCampo) {
+    let campos = document.querySelectorAll("#" + idCampo);
+
+    for (let i = 0; i < campos.length; i++) {
+        const campo = campos[i];
+        if (campo.value == "") {
+            document.querySelector(".campos").style.border = "#F3414D 2px solid";
+            document.querySelector(".error").innerHTML = "<p class='error'>Un campo debe de esta vacio!</p>";
+            return false;
+        }
     }
+    document.querySelector(".error").innerHTML = "";
+    return true;
+
 }

@@ -35,7 +35,7 @@
                                         class="bi bi-door-open opcion">Iniciar sesión</i></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link opcion" href="#"><i class="bi bi-cart4">0</i></a>
+                                <a class="nav-link opcion" href="./Carrito.html"><i class="bi bi-cart4">0</i></a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link opcion" href="#"><i class="bi bi-question-circle-fill">Ayuda</i></a>
@@ -66,15 +66,15 @@
     <section>
         <img src="./css/imgs/9xZuSJoGK8J5HcPJP-200-x.webp" alt="" width="400">
 
-        <form action="./index.html" method="get" onsubmit="return validarCampos('campo')">
+        <form action="./index.html" method="get" name="Login" onsubmit="return validarCampos('campo')">
             <h1 class="texto">Inicio de sesión</h1>
             <div>
                 <label for="email-user" class="texto">Correo electronico:</label>
-                <input type="email" placeholder="ingrese el correo electronico" name="email-user" class="campos" id="campo">
+                <input type="email" placeholder="ingrese el correo electronico" name="campo" class="campos" id="campo">
             </div>
             <div class="campo-clave">
                 <label for="pass-user" class="texto">Contraseña:</label>
-                <input type="password" class="campos" placeholder="ingresa tu contraseña" id="campo">
+                <input type="password" class="campos" placeholder="ingresa tu contraseña" id="campo" name="campo">
             </div>
             <div>
                 <a href="#" class="solucion-contraseña">¿problemas con tu contraseña?</a>

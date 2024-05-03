@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Linkamos los archivos css y bootstrap5 -->
-    <link rel="stylesheet" href="./css/cervezas.css">
+    <link rel="stylesheet" href="css/estilo_informacion.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--link de los iconos de bootstrap5-->
@@ -14,11 +12,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src= "js/prueba.js"></script>
-    <title>Cervezas Artesanales</title>
+    <title>Informacion legal</title>
 </head>
-
 <body>
+    
     <header>
         <!--nav(bootstrap5) que contiene el menu del index-->
         <nav class="navbar navbar-expand-lg bg-body-custom">
@@ -37,7 +34,7 @@
                                         class="bi bi-door-open opcion">Iniciar sesión</i></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link opcion" href="#" id="carrito"><i class="bi bi-cart4">0</i></a>
+                                <a class="nav-link opcion" href="#"><i class="bi bi-cart4">0</i></a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link opcion" href="./ayuda.html"><i class="bi bi-question-circle-fill">Ayuda</i></a>
@@ -65,106 +62,53 @@
 
     <section>
 
-        <div class="filas">
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Tübinger</h2>
-                <img src="css/imgs/Tübinger-transparente.png" alt="" width="40">
-                <p class="precio_pro">Precio: $2.000</p>
-<<<<<<< HEAD
-                <p class="oferta">Descuento al comprar dos: $1500</p>
-                <button class="estilo-boton" onclick="agregar();">Agregar</button>
-=======
-                <p class="oferta">Descuento al comprar dos: $1.500</p>
-                <button class="estilo-boton">Agregar</button>
-                <p>Precio especial: $2000</p>
-                <p>Descuento al comprar dos: $1500</p>
-                <button class="estilo-boton" onclick="agregar();">Agregar</button>
-                <p>Precio especial: $2000</p>
-                <p>Descuento al comprar dos: $1500</p>
-                <button class="estilo-boton" onclick="agregar();">Agregar</button>
-                <p class="precio_pro">Precio: $2.000</p>
-                <p class="oferta">Descuento al comprar dos: $1.500</p>
-                <button class="estilo-boton">Agregar</button>
->>>>>>> a441b296fb89ac56fdb22f5e47c0195d91d7c548
+        <aside>
+            <h3 class="texto">Indice</h3>
+            <a href="#aviso" class="indice">1.Aviso Legal / Términos de Uso</a>
+            <a href="#politica_priv" class="indice">2.Política de Privacidad</a>
+            <a href="#politica_coo" class="indice">3.Política de Cookies</a>
+            <a href="#derecho" class="indice">4.Avisos de Derechos de Autor</a>
+            <a href="#informacion" class="indice">5.Información de Contacto</a>
+            <a href="#politica" class="indice">6.Política de Devoluciones</a>
+            <a href="#ley" class="indice">7.Ley Aplicable y Jurisdicción</a>
+        </aside>
+        <main>
+            <div class="Informacion-legal">
+                <h2 class="texto" id="aviso">Aviso Legal / Términos de Uso</h2>
+                <p class="texto">Este documento establece las reglas y condiciones que rigen el uso del sitio web por parte de los usuarios. Puede incluir información sobre la propiedad intelectual, limitaciones de responsabilidad y resolución de disputas, entre otros.</p>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Kunstmann</h2>
-                <img src="css/imgs/Kunstmann-transparente.png" alt="" width="75">
-                <p class="precio_pro">Precio: $3.000</p>
-                <p class="oferta">Descuento al comprar dos: $2.000</p>
-                <button class="estilo-boton">Agregar</button>
+            <div class="Informacion-legal">
+                <h2 class="texto" id="politica_priv">Política de Privacidad</h2>
+                <p class="texto">Este documento describe cómo se recopilan, utilizan y protegen los datos personales de los usuarios. Debe incluir información sobre qué datos se recopilan, cómo se utilizan, si se comparten con terceros y cómo los usuarios pueden ejercer sus derechos de privacidad.</p>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Kross</h2>
-                <img src="css/imgs/Kross-transparente.jpg" alt="" width="90">
-                <br>
-                <p class="precio_pro">Precio: $4.000</p>
-                <p class="oferta">Descuento al comprar dos: $2.500</p>
-                <button class="estilo-boton">Agregar</button>
+            <div class="Informacion-legal">
+                <h2 class="texto" id="politica_coo">Política de Cookies</h2>
+                <p class="texto">Si el sitio utiliza cookies u otras tecnologías de seguimiento, esta política informa a los usuarios sobre cómo se utilizan estas tecnologías y cómo pueden gestionar sus preferencias de cookies.</p>
             </div>
-        </div>
-        <div class="filas">
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Szot</h2>
-                <img src="css/imgs/Szot-transparente.png" alt="" width="90">
-                <p class="precio_pro">Precio: $5.000</p>
-                <p class="oferta">Descuento al comprar dos: $3.000</p>
-                <button class="estilo-boton">Agregar</button>
+            <div class="Informacion-legal">
+                <h2 class="texto" id="derecho">Avisos de Derechos de Autor y Propiedad Intelectual</h2>
+                <p class="texto">Estos avisos informan a los usuarios sobre quién posee los derechos de autor del contenido del sitio web y cómo se pueden utilizar o reproducir los materiales protegidos por derechos de autor.</p>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Jester</h2>
-                <img src="css/imgs/Jester.webp" alt="" width="125">
-                <p class="precio_pro">Precio: 6.000</p>
-                <p class="oferta">Descuento al comprar dos: $3.500</p>
-                <button class="estilo-boton">Agregar</button>
+            <div class="Informacion-legal">
+                <h2 class="texto" id="informacion">Información de Contacto</h2>
+                <p class="texto">Debe incluirse información de contacto válida para que los usuarios puedan comunicarse con el propietario del sitio web para consultas o problemas relacionados con el sitio.</p>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Granizo</h2>
-                <img src="css/imgs/granizo-transparente.webp" alt="" width="90">
-                <br>
-                <p class="precio_pro">Precio: $8.000</p>
-                <p class="oferta">Descuento al comprar dos: $4.500</p>
-                <button class="estilo-boton">Agregar</button>
+            <div class="Informacion-legal">
+                <h2 class="texto" id="politica">Política de Devoluciones y Reembolsos</h2>
+                <p class="texto">Si el sitio vende productos o servicios, esta política establece las condiciones bajo las cuales los usuarios pueden devolver productos o solicitar reembolsos.</p>
             </div>
-
-        </div>
-        <div class="filas">
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Quimera</h2>
-                <img src="css/imgs/Quimera-transparente.png" alt="" width="145">
-                <p class="precio_pro">Precio: $9.000</p>
-                <p class="oferta">Descuento al comprar dos: $7.000</p>
-                <button class="estilo-boton">Agregar</button>
+            <div class="Informacion-legal">
+                <h2 class="texto" id="ley">Ley Aplicable y Jurisdicción</h2>
+                <p class="texto">Esta cláusula especifica la ley aplicable y la jurisdicción competente en caso de disputas legales relacionadas con el sitio web.</p>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Del Puerto</h2>
-                <img src="css/imgs/Del Puerto-transparente2.png" alt="" width="35">
-                <p class="precio_pro">Precio: $10.000</p>
-                <p class="oferta">Descuento al comprar dos: $8.000</p>
-                <button class="estilo-boton">Agregar</button>
-            </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Ööloom</h2>
-                <img src="css/imgs/oolom.jpg" alt="" width="130">
-                <p class="precio_pro">Precio: $7.850</p>
-                <p class="oferta">Descuento al comprar dos: $14.450</p>
-                <button class="estilo-boton">Agregar</button>
-            </div>
-        </div>
-
+        </main>
     </section>
     <footer>
         <div class="condiciones">
             <h3>Conócenos</h3>
             <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu"
                 target="_blank" class="terminos">Ubicación</a>
-            <a href="#" class="terminos">Información Legal</a>
+            <a href="informacion legal.html" class="terminos">Información Legal</a>
             <a href="./terminos y condiciones de uso.html" class="terminos">Términos y Condiciones de Uso</a>
             <a href="#" class="terminos">Política y Privacidad</a>
             <a href="#" class="terminos">+569 7675 9418</a>
@@ -190,6 +134,6 @@
             <br>
         </div>
     </footer>
-</body>
 
+</body>
 </html>

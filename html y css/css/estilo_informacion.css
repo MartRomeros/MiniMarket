@@ -4,18 +4,10 @@
     background-color: #241B2F;
 }
 
-body{
-    background-color: #241B2F;
-}
-
 i{
     color: white;
 }
 
-main{
-    background-color: #241B2F;
-    color: white;
-}
 
 .opcion{
     padding: 1rem;
@@ -26,6 +18,7 @@ main{
 }
 
 nav > h3{
+    padding-left: 1rem;
     color: white;
     font-family: "Poppins", sans-serif;
 }
@@ -41,6 +34,57 @@ nav > h3{
     justify-content: space-evenly;
     align-items: center;
 
+}
+
+.texto{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 2rem;
+}
+
+aside > a, aside > h3{
+    margin-top: 2rem;
+}
+
+.indice{
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.indice:hover{
+    text-shadow: white 0px 0px 10px;
+}
+
+section{
+    background-color: #241B2F;
+    display: flex;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding: 2rem;
+    margin-left: 2rem;
+
+}
+
+.Informacion-legal{
+    border: #DC8B39 2px solid;
+    margin-top: 2rem;
+    padding: 2rem;
 }
 
 footer{
@@ -59,6 +103,7 @@ footer{
     align-items: center;
     border-right: white 2px solid;
     border-left: white 2px solid;
+
     padding: 2rem;
     width: 20rem;
 
@@ -74,3 +119,4 @@ footer{
 .terminos:hover{
     text-decoration: underline white;
 }
+

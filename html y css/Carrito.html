@@ -85,26 +85,54 @@
                 <h5>$750</h5>
             </div>
         </main>
-        <h1>Resumen de la compra:</h1>
+
         <div class="resumen-compras">
+            <h1>Resumen de las compras:</h1>
             <div>
-                <p>Subtotal:</p>
-                <p>Envío:</p>
-                <p>Total:</p>
+                <div>
+                    <p>Subtotal</p>
+                    <p>Descuento</p>
+                    <p>Envío</p>
+                </div>
+                <div>
+                    <p>1000</p>
+                    <p>1000</p>
+                    <p>1000</p>
+                </div>
+            </div>
+            <button>Proceder al pago</button>
+        </div>
+
+        <div class="conversor">
+            <h1>¡Ahora puedes verificar cuanto debes pagar en otras monedas!</h1>
+            <div>
+                <div>
+                    <label for="origen">De:</label>
+                    <select name="origen" id="origen">
+                        <option value="CLP">CLP</option>
+                        <option value="dolar">Dolar(US)</option>
+                        <option value="Peso-argentino">Peso Argentino</option>
+                        <option value="soles">Soles</option>
+                        <option value="reales">Reales</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="origen">A:</label>
+                    <select name="origen" id="origen">
+                        <option value="CLP">CLP</option>
+                        <option value="dolar" selected>Dolar(US)</option>
+                        <option value="Peso-argentino">Peso Argentino</option>
+                        <option value="soles">Soles</option>
+                        <option value="reales">Reales</option>
+                    </select>
+                </div>
             </div>
             <div>
-                <p>$6750</p>
-                <p>$2000</p>
-                <p>$8750</p>
-            </div>
-            <div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <button>Procesar pago</button>
+                <h1>Total a pagar: $3000 CLP</h1>
+                <button>Realizar Conversión</button>
             </div>
         </div>
+
     </section>
 
     <footer>

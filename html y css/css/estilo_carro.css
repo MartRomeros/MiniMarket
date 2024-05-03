@@ -142,6 +142,7 @@ main{
 .resumen-compras{
     margin-top: 10vh;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2.5vh;
@@ -151,26 +152,57 @@ main{
 
 .resumen-compras > div{
     padding: 2vh;
-    width: 50vh;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vh;
 }
 
-.resumen-compras > div > button{
-    border: none;
-    margin-left: 22vh;
-    background: #FEDE5D;
-    padding: 1vh;
+.resumen-compras > div > div{
+    padding: 2vh;
+}
+
+.resumen-compras > button{
     border-radius: 2vh;
-    color: black;
-    font-family: "Poppins", sans-serif;
+    padding: 1vh;
+    border: none;
+    margin-left: 150vh;
 }
 
-
-.conversor-monedas{
+.conversor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2.5vh;
+    box-shadow: rgb(24, 23, 23) 3px 5px 5px;
+    border-radius: 2vh;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
+.conversor > * {
+    margin-top: 2vh;
+}
 
+.conversor > div{
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.conversor > div > div  >  select{
+    padding: 0.5vh;
+    border-radius: 2vh;
+    border: rgb(148, 146, 146) solid 1px;
+    width: 50vh;
+}
+
+.conversor > div > button{
+    width: 29vh;
+    border-radius: 2vh;
+    padding: 1vh;
+    border: none;
+}
 
 footer{
     padding-top: 2rem;

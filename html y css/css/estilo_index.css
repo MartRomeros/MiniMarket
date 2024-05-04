@@ -1,102 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-header{
-    background-color: #241B2F;
+header {
+    display: flex;
+    flex-direction: column;
 }
 
-.bg-body-custom{
-    background-color: #241B2F;
+.separador {
+    border-top: black 2px solid;
 }
 
-i{
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh;
+    height: 15vh;
+}
+
+i {
+    margin-right: 0.5rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 110vh;
+    height: 12vh;
+}
+
+.item {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 25vh;
+    padding: 0.5rem;
+    border-radius: 2vh;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+.item:hover {
+    background: black;
     color: white;
 }
 
-.texto{
-    color: white;
+h3,
+h1,
+h4 {
+    font-size: 1.5rem;
+    color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
 }
-.opcion{
-    padding: 1rem;
-    color: white;
+
+p,
+h5,
+label {
+    color: black;
     font-family: "Poppins", sans-serif;
-    text-decoration: none;
 
 }
 
-nav > h3{
-    color: white;
-    font-family: "Poppins", sans-serif;
-}
-
-.opcion:hover{
-    background: #E5278B;
-
-}
-
-.categorias{
-    background-color: #241B2F;
+.menu-categorias {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    width: 160vh;
+    height: 12vh;
 }
 
+.item-categoria {
+    font-size: 0.99rem;
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 20vh;
+    padding: 0.2rem;
+    border-radius: 2vh;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+.item-categoria:hover {
+    background: black;
+    color: white;
+}
 
 
 .carousel{
-    margin-top: 2rem;
+    margin-top: 2vh;
 }
-
-.promociones,.ingreso-super{
-    background: #241B2F;
-}
-
 
 .promociones{
+    padding: 5vh;
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 2vh;
+    justify-content: space-between;
 }
 
 .promos{
-    border: #E5278B 2px solid;
-    box-shadow: 0px 0px 10px #d12581;
-    border-radius: 2rem;
-    transition: transform 0.3s ease;
+    border-radius: 2vh;
+    transition: transform 0.5s ease;
+    box-shadow: rgb(24, 23, 23) 3px 5px 5px;
 }
 
-.promos:hover {
+.promos:hover{
     transform: scale(1.1);
 }
 
-
-footer{
-    border-top: #64F1B8 2px solid;
-    box-shadow: #64F1B8 0px 0px 10px;
+footer {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    background: linear-gradient(to bottom, #241B2F ,black);
+    background: black;
     display: flex;
     justify-content: space-evenly;
 }
 
-.condiciones{
+.condiciones {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-right: white 2px solid;
     border-left: white 2px solid;
-
     padding: 2rem;
     width: 20rem;
 
 }
 
-.condiciones > a , .condiciones > h3{
+.condiciones>a,
+.condiciones>h3 {
     color: white;
     text-decoration: none;
+}
+
+
+
+.terminos:hover {
+    text-decoration: underline;
 }
 
 

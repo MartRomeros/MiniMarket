@@ -173,14 +173,3 @@ footer {
 .terminos:hover {
     text-decoration: underline;
 }
-.oferta{
-    color: #c5c4c7;
-    font-size: 13px;
-    font-family: "Poppins", sans-serif;
-}
-
-.precio_pro{
-    color: white;
-    font-size: 19px;
-    font-family: "Poppins", sans-serif;
-}

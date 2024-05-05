@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Linkamos los archivos css y bootstrap5 -->
-    <link rel="stylesheet" href="./css/cervezas.css">
+    <link rel="stylesheet" href="./css/estilo-productos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--link de los iconos de bootstrap5-->
@@ -14,147 +14,126 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src= "js/prueba.js"></script>
+    <script src="js/prueba.js"></script>
     <title>Cervezas Artesanales</title>
 </head>
 
-<body>
+<body class="container">
     <header>
-        <!--nav(bootstrap5) que contiene el menu del index-->
-        <nav class="navbar navbar-expand-lg bg-body-custom">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <a href="./index.html" class="col"><img
-                            src="./css/imgs/9xZuSJoGK8J5HcPJP-200-x.webp" alt="#" width="150"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./login.html"><i
-                                        class="bi bi-door-open opcion">Iniciar sesión</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="#" id="carrito"><i class="bi bi-cart4">0</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="./ayuda.html"><i class="bi bi-question-circle-fill">Ayuda</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="./contacto.html"><i class="bi bi-person-rolodex">Contacto</i></a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
+        <nav class="menu-principal">
+            <a href="./index.html"><img src="./css/imgs/mimarketnegro.webp" alt="" width="150"></a>
+            <ul class="menu-items">
+                <a href="./login.html" class="item"><i class="bi bi-box-arrow-in-right"></i>Iniciar Sesión</a>
+                <a href="./Carrito.html" class="item"><i class="bi bi-cart4"></i>0</a>
+                <a href="./ayuda.html" class="item"><i class="bi bi-person-raised-hand"></i>Ayuda</a>
+                <a href="./contacto.html" class="item"><i class="bi bi-person-circle"></i>Contacto</a>
+            </ul>
         </nav>
-
-        <nav class="categorias">
-            <h3>Categorias:</h3>
-            <a href="./lacteos.html" class="opcion"><img src="./css/imgs/icons8_milk_carton_20px_1.png"
-                    alt="">Lácteos</a>
-            <a href="./despensa.html" class="opcion"><img src="./css/imgs/icons8_broom_20px_2.png" alt="">Despensa</a>
-            <a href="./Limpieza.html" class="opcion"><img src="./css/imgs/icons8_broom_20px_2.png" alt="">Limpieza</a>
-            <a href="./carniceria.html" class="opcion"><img src="./css/imgs/icons8_pork_20px_1.png" alt="">Carnicería</a>
-            <a href="./Cervezas.html" class="opcion"><img src="./css/imgs/icons8_Message_in_Bottle_20px_1.png"
-                    alt="">Botillería</a>
-            <a href="./Mascotas.html" class="opcion"><img src="./css/imgs/icons8_pet_commands_summon_20px_1.png" alt="">Mascotas</a>
+        <div class="separador"></div>
+        <!--Nav de categorias-->
+        <nav>
+            <h4>categorias:</h4>
+            <ul class="menu-categorias">
+                <a href="./despensa.html" class="item-categoria"><img src="./css/imgs/icons8_shopping_bag_full_15px.png"
+                        alt="Despensa">Despensa</a>
+                <a href="./lacteos.html" class="item-categoria"><img src="./css/imgs/icons8_milk_carton_15px.png"
+                        alt="Leche">Lácteos</a>
+                <a href="./Limpieza.html" class="item-categoria"><img src="./css/imgs/icons8_sanitizer_15px.png"
+                        alt="Limpieza">Limpieza</a>
+                <a href="./carniceria.html" class="item-categoria"><img src="./css/imgs/icons8_meat_15px.png"
+                        alt="Carnicería">Carnicería</a>
+                <a href="./Cervezas.html" class="item-categoria"><img src="./css/imgs/icons8_wine_15px.png"
+                        alt="Botillería">Botillería</a>
+                <a href="./Mascotas.html" class="item-categoria"><img
+                        src="./css/imgs/icons8_pet_commands_follow_15px.png" alt="Mascotas">Mascotas</a>
+            </ul>
         </nav>
     </header>
-
     <section>
 
         <div class="filas">
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Tübinger</h2>
-                <img src="css/imgs/Tübinger-transparente.png" alt="" width="40">
-                <p class="precio_pro">Precio: $2.000</p>
-<<<<<<< HEAD
-                <p class="oferta">Descuento al comprar dos: $1500</p>
-                <button class="estilo-boton" onclick="agregar();">Agregar</button>
-=======
-                <p class="oferta">Descuento al comprar dos: $1.500</p>
-                <button class="estilo-boton">Agregar</button>
-                <p>Precio especial: $2000</p>
-                <p>Descuento al comprar dos: $1500</p>
-                <button class="estilo-boton" onclick="agregar();">Agregar</button>
-                <p>Precio especial: $2000</p>
-                <p>Descuento al comprar dos: $1500</p>
-                <button class="estilo-boton" onclick="agregar();">Agregar</button>
-                <p class="precio_pro">Precio: $2.000</p>
-                <p class="oferta">Descuento al comprar dos: $1.500</p>
-                <button class="estilo-boton">Agregar</button>
->>>>>>> a441b296fb89ac56fdb22f5e47c0195d91d7c548
+            <div class="producto">
+                <h5>Tübinger</h5>
+                <div>
+                    <img src="css/imgs/Tübinger-transparente.png" alt="" width="40">
+                </div>
+                <p>Precio: $2.000 <br>rellenar con informacion como grados etc.</p>
+                <button>Agregar</button>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Kunstmann</h2>
-                <img src="css/imgs/Kunstmann-transparente.png" alt="" width="75">
-                <p class="precio_pro">Precio: $3.000</p>
-                <p class="oferta">Descuento al comprar dos: $2.000</p>
-                <button class="estilo-boton">Agregar</button>
+
+            <div class="producto">
+                <h5>Kunstmann</h5>
+                <div>
+                    <img src="css/imgs/Kunstmann-transparente.png" alt="" width="75">
+                </div>
+                <p>Precio: $3.000 <br>rellenar con informacion como grados etc.</p>
+                <button>Agregar</button>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Kross</h2>
-                <img src="css/imgs/Kross-transparente.jpg" alt="" width="90">
-                <br>
-                <p class="precio_pro">Precio: $4.000</p>
-                <p class="oferta">Descuento al comprar dos: $2.500</p>
+
+            <div class="producto">
+                <h5>Kross</h5>
+                <div>
+                    <img src="css/imgs/Kross-transparente.jpg" alt="" width="90">
+                </div>
+                <p>Precio: $4.000 <br>rellenar con informacion como grados etc.</p>
                 <button class="estilo-boton">Agregar</button>
             </div>
         </div>
         <div class="filas">
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Szot</h2>
-                <img src="css/imgs/Szot-transparente.png" alt="" width="90">
-                <p class="precio_pro">Precio: $5.000</p>
-                <p class="oferta">Descuento al comprar dos: $3.000</p>
-                <button class="estilo-boton">Agregar</button>
+            <div class="producto">
+                <h5>Szot</h5>
+                <div>
+                    <img src="css/imgs/Szot-transparente.png" alt="" width="90">
+                </div>
+                <p>Precio: $5.000 <br>rellenar con informacion como grados etc.</p>
+                <button>Agregar</button>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Jester</h2>
-                <img src="css/imgs/Jester.webp" alt="" width="125">
-                <p class="precio_pro">Precio: 6.000</p>
-                <p class="oferta">Descuento al comprar dos: $3.500</p>
-                <button class="estilo-boton">Agregar</button>
+
+            <div class="producto">
+                <h5 >Jester</h5>
+                <div>
+                    <img src="css/imgs/Jester.webp" alt="" width="125">
+                </div>
+                <p>Precio: 6.000 <br>rellenar con informacion como grados etc.</p>
+                <button>Agregar</button>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Granizo</h2>
-                <img src="css/imgs/granizo-transparente.webp" alt="" width="90">
-                <br>
-                <p class="precio_pro">Precio: $8.000</p>
-                <p class="oferta">Descuento al comprar dos: $4.500</p>
-                <button class="estilo-boton">Agregar</button>
+
+            <div class="producto">
+                <h5>Granizo</h5>
+                <div>
+                    <img src="css/imgs/granizo-transparente.webp" alt="" width="90">
+                </div>
+                <p>Precio: $8.000 <br>rellenar con informacion como grados etc.</p>
+                <button>Agregar</button>
             </div>
 
         </div>
         <div class="filas">
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Quimera</h2>
-                <img src="css/imgs/Quimera-transparente.png" alt="" width="145">
-                <p class="precio_pro">Precio: $9.000</p>
-                <p class="oferta">Descuento al comprar dos: $7.000</p>
-                <button class="estilo-boton">Agregar</button>
+            <div class="producto">
+                <h5>Quimera</h5>
+                <div>
+                    <img src="css/imgs/Quimera-transparente.png" alt="" width="145">
+                </div>
+                <p>Precio: $9.000 <br>rellenar con informacion como grados etc.</p>
+                <button>Agregar</button>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Del Puerto</h2>
-                <img src="css/imgs/Del Puerto-transparente2.png" alt="" width="35">
-                <p class="precio_pro">Precio: $10.000</p>
-                <p class="oferta">Descuento al comprar dos: $8.000</p>
-                <button class="estilo-boton">Agregar</button>
+
+            <div class="producto">
+                <h5>Del Puerto</h5>
+                <div>
+                    <img src="css/imgs/Del Puerto-transparente2.png" alt="" width="35">
+                </div>
+                <p>Precio: $10.000 <br>rellenar con informacion como grados etc.</p>
+                <button>Agregar</button>
             </div>
-    
-            <div class="producto-cerveza">
-                <h2 class="titulo-producto">Ööloom</h2>
-                <img src="css/imgs/oolom.jpg" alt="" width="130">
-                <p class="precio_pro">Precio: $7.850</p>
-                <p class="oferta">Descuento al comprar dos: $14.450</p>
-                <button class="estilo-boton">Agregar</button>
+
+            <div class="producto">
+                <h5>Ööloom</h5>
+                <div>
+                    <img src="css/imgs/oolom.jpg" alt="" width="130">
+                </div>
+                <p>Precio: $7.850 <br>rellenar con informacion como grados etc.</p>
+                <button>Agregar</button>
             </div>
         </div>
 
@@ -164,7 +143,7 @@
             <h3>Conócenos</h3>
             <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu"
                 target="_blank" class="terminos">Ubicación</a>
-            <a href="#" class="terminos">Información Legal</a>
+            <a href="./informacion legal.html" class="terminos">Información Legal</a>
             <a href="./terminos y condiciones de uso.html" class="terminos">Términos y Condiciones de Uso</a>
             <a href="#" class="terminos">Política y Privacidad</a>
             <a href="#" class="terminos">+569 7675 9418</a>

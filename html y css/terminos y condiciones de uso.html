@@ -17,164 +17,253 @@
 
 </head>
 
-<body>
+<body class="container">
 
     <header>
-        <!--nav(bootstrap5) que contiene el menu del index-->
-        <nav class="navbar navbar-expand-lg bg-body-custom">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <a href="./index.html" class="col"><img
-                            src="./css/imgs/9xZuSJoGK8J5HcPJP-200-x.webp" alt="#" width="150"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active opcion" aria-current="page" href="./login.html"><i
-                                        class="bi bi-door-open opcion">Iniciar sesión</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="#"><i class="bi bi-cart4">0</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="./ayuda.html"><i class="bi bi-question-circle-fill">Ayuda</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="./contacto.html"><i class="bi bi-person-rolodex">Contacto</i></a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
+        <nav class="menu-principal">
+            <a href="./index.html"><img src="./css/imgs/mimarketnegro.webp" alt="" width="150"></a>
+            <ul class="menu-items">
+                <a href="./login.html" class="item"><i class="bi bi-box-arrow-in-right"></i>Iniciar Sesión</a>
+                <a href="./Carrito.html" class="item"><i class="bi bi-cart4"></i>0</a>
+                <a href="./ayuda.html" class="item"><i class="bi bi-person-raised-hand"></i>Ayuda</a>
+                <a href="./contacto.html" class="item"><i class="bi bi-person-circle"></i>Contacto</a>
+            </ul>
         </nav>
-
-        <nav class="categorias">
-            <h3>Categorias:</h3>
-            <a href="./lacteos.html" class="opcion"><img src="./css/imgs/icons8_milk_carton_20px_1.png"
-                    alt="">Lácteos</a>
-            <a href="./despensa.html" class="opcion"><img src="./css/imgs/icons8_broom_20px_2.png" alt="">Despensa</a>
-            <a href="./Limpieza.html" class="opcion"><img src="./css/imgs/icons8_broom_20px_2.png" alt="">Limpieza</a>
-            <a href="./carniceria.html" class="opcion"><img src="./css/imgs/icons8_pork_20px_1.png" alt="">Carnicería</a>
-            <a href="./Cervezas.html" class="opcion"><img src="./css/imgs/icons8_Message_in_Bottle_20px_1.png"
-                    alt="">Botillería</a>
-            <a href="./Mascotas.html" class="opcion"><img src="./css/imgs/icons8_pet_commands_summon_20px_1.png" alt="">Mascotas</a>
+        <div class="separador"></div>
+        <!--Nav de categorias-->
+        <nav>
+            <h4>categorias:</h4>
+            <ul class="menu-categorias">
+                <a href="./despensa.html" class="item-categoria"><img src="./css/imgs/icons8_shopping_bag_full_15px.png"
+                        alt="Despensa">Despensa</a>
+                <a href="./lacteos.html" class="item-categoria"><img src="./css/imgs/icons8_milk_carton_15px.png"
+                        alt="Leche">Lácteos</a>
+                <a href="./Limpieza.html" class="item-categoria"><img src="./css/imgs/icons8_sanitizer_15px.png"
+                        alt="Limpieza">Limpieza</a>
+                <a href="./carniceria.html" class="item-categoria"><img src="./css/imgs/icons8_meat_15px.png"
+                        alt="Carnicería">Carnicería</a>
+                <a href="./Cervezas.html" class="item-categoria"><img src="./css/imgs/icons8_wine_15px.png"
+                        alt="Botillería">Botillería</a>
+                <a href="./Mascotas.html" class="item-categoria"><img
+                        src="./css/imgs/icons8_pet_commands_follow_15px.png" alt="Mascotas">Mascotas</a>
+            </ul>
         </nav>
     </header>
 
 
     <section>
-        <aside>
-            <h3 class="texto">Indice</h3>
-            <a href="#inicio" class="indice">1.Introducción</a>
-            <a href="#sitio_web" class="indice">2.Uso del Sitio Web</a>
-            <a href="#contenido" class="indice">3.Contenido del Sitio Web</a>
-            <a href="#enlaces" class="indice">4.Enlaces a Terceros</a>
-            <a href="#registro" class="indice">5.Registro y Cuentas de Usuario</a>
-            <a href="#responsabilidad" class="indice">6.Limitación de Responsabilidad</a>
-            <a href="#modificaciones" class="indice">7.Modificaciones</a>
-            <a href="#apicable" class="indice">8.Ley Aplicable</a>
-            <a href="#contactos" class="indice">9.Contacto</a>
-        </aside>
-        <main>
-            <div class="terminos-condiciones" id="inicio">
-                <h3 class="texto">1.Introducción</h3>
-                <p class="texto">Estos términos y condiciones de uso (en adelante, "Términos") regulan el acceso y uso del sitio
-                    web Mimarket
-                    (en adelante, el "Sitio Web"). Al acceder o utilizar el Sitio Web, aceptas estos Términos en su
-                    totalidad.
-                </p>
-            </div>
-            <div class="terminos-condiciones">
-                <h3 class="texto" id="sitio_web">2.Uso del Sitio Web</h3>
-                <p class="texto">El uso del Sitio Web está sujeto a estos Términos y a todas las leyes y regulaciones aplicables.
-                    No debes
-                    utilizar el Sitio Web de ninguna manera que pueda causar daño al mismo o a terceros, o que sea
-                    ilegal,
-                    fraudulento o perjudicial de cualquier manera.</p>
-                <p class="texto">Nos reservamos el derecho de restringir el acceso al Sitio Web o a ciertas áreas del mismo, a
-                    nuestra entera
-                    discreción, sin previo aviso.</p>
+        <div class="accordion" id="accordionExample">
+
+            <h1>Terminos y condiciones</h1>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Introducción
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Estos términos y condiciones de uso (en adelante, "Términos") regulan el acceso y uso
+                            del sitio
+                            web Mimarket
+                            (en adelante, el "Sitio Web"). Al acceder o utilizar el Sitio Web, aceptas estos Términos en
+                            su
+                            totalidad.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="terminos-condiciones">
-                <h3 class="texto" id="contenido">3.Contenido del Sitio Web</h3>
-                <p class="texto">Todo el contenido del Sitio Web es propiedad de Mimarket o de sus licenciantes y está protegido
-                    por las leyes
-                    de propiedad intelectual correspondientes. Este contenido incluye, pero no se limita a, textos,
-                    gráficos,
-                    logotipos, imágenes, videos, software y cualquier otro material presente en el Sitio Web.</p>
-                <p class="texto">No puedes utilizar, copiar, modificar, distribuir, transmitir, exhibir, realizar, reproducir,
-                    publicar,
-                    licenciar, crear trabajos derivados, transferir o vender ningún contenido obtenido del Sitio Web
-                    sin el
-                    consentimiento previo por escrito de Mimarket.</p>
-
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Uso del sitio web
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">El uso del Sitio Web está sujeto a estos Términos y a todas las leyes y
+                            regulaciones
+                            aplicables.
+                            No debes
+                            utilizar el Sitio Web de ninguna manera que pueda causar daño al mismo o a terceros, o que
+                            sea
+                            ilegal,
+                            fraudulento o perjudicial de cualquier manera.</p>
+                        <p class="texto">Nos reservamos el derecho de restringir el acceso al Sitio Web o a ciertas
+                            áreas del
+                            mismo, a
+                            nuestra entera
+                            discreción, sin previo aviso.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="terminos-condiciones" id="enlaces">
-                <h3 class="texto">4.Enlaces a Terceros</h3>
-                <p class="texto">El Sitio Web puede contener enlaces a sitios web de terceros. Estos enlaces se proporcionan
-                    únicamente para
-                    tu conveniencia. No tenemos control sobre el contenido de estos sitios web de terceros y no
-                    asumimos
-                    responsabilidad alguna por el contenido, políticas de privacidad o prácticas de cualquier sitio
-                    web de
-                    terceros.</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Contenido del sitio web
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Todo el contenido del Sitio Web es propiedad de Mimarket o de sus licenciantes
+                            y está
+                            protegido
+                            por las leyes
+                            de propiedad intelectual correspondientes. Este contenido incluye, pero no se limita a,
+                            textos,
+                            gráficos,
+                            logotipos, imágenes, videos, software y cualquier otro material presente en el Sitio Web.
+                        </p>
+                        <p class="texto">No puedes utilizar, copiar, modificar, distribuir, transmitir, exhibir,
+                            realizar,
+                            reproducir,
+                            publicar,
+                            licenciar, crear trabajos derivados, transferir o vender ningún contenido obtenido del Sitio
+                            Web
+                            sin el
+                            consentimiento previo por escrito de Mimarket.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="terminos-condiciones" id="registro">
-                <h3 class="texto">5.Registro y Cuentas de Usuario</h3>
-                <p class="texto">Para acceder a ciertas áreas del Sitio Web o utilizar ciertos servicios, es posible que necesites
-                    registrarte
-                    y crear una cuenta de usuario. Al registrarte, aceptas proporcionar información precisa,
-                    actualizada y
-                    completa sobre ti.</p>
-                <p class="texto">Eres responsable de mantener la confidencialidad de tu cuenta y contraseña, y de restringir el
-                    acceso a tu
-                    cuenta. Aceptas asumir la responsabilidad de todas las actividades que ocurran bajo tu cuenta o
-                    contraseña.
-                </p>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Enlace a terceros
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">El Sitio Web puede contener enlaces a sitios web de terceros. Estos enlaces se
+                            proporcionan
+                            únicamente para
+                            tu conveniencia. No tenemos control sobre el contenido de estos sitios web de terceros y no
+                            asumimos
+                            responsabilidad alguna por el contenido, políticas de privacidad o prácticas de cualquier
+                            sitio
+                            web de
+                            terceros.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="terminos-condiciones" id="responsabilidad">
-                <h3 class="texto">6.Limitación de Responsabilidad</h3>
-                <p class="texto">En la medida máxima permitida por la ley, no seremos responsables ante ti por ningún daño
-                    directo, indirecto,
-                    incidental, especial, consecuente o punitivo, incluidos, entre otros, daños por pérdida de
-                    beneficios,
-                    datos, uso o cualquier otra pérdida intangible, resultantes de tu acceso o uso del Sitio Web.
-                </p>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Registro y cuentas de usuarios
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Para acceder a ciertas áreas del Sitio Web o utilizar ciertos servicios, es
+                            posible que
+                            necesites
+                            registrarte
+                            y crear una cuenta de usuario. Al registrarte, aceptas proporcionar información precisa,
+                            actualizada y
+                            completa sobre ti.</p>
+                        <p class="texto">Eres responsable de mantener la confidencialidad de tu cuenta y contraseña, y
+                            de
+                            restringir el
+                            acceso a tu
+                            cuenta. Aceptas asumir la responsabilidad de todas las actividades que ocurran bajo tu
+                            cuenta o
+                            contraseña.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="terminos-condiciones" id="modificaciones">
-                <h3 class="texto">7.Modificaciones</h3>
-                <p class="texto">Nos reservamos el derecho de modificar estos Términos en cualquier momento, a nuestra entera
-                    discreción. Las
-                    modificaciones entrarán en vigencia inmediatamente después de su publicación en el Sitio Web.
-                </p>
-                <p class="texto">Es tu responsabilidad revisar periódicamente estos Términos para estar al tanto de las
-                    modificaciones. El uso
-                    continuado del Sitio Web después de la publicación de modificaciones constituirá tu aceptación
-                    de dichas
-                    modificaciones.</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Limitación de responsabilidad
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">En la medida máxima permitida por la ley, no seremos responsables ante ti por
+                            ningún
+                            daño
+                            directo, indirecto,
+                            incidental, especial, consecuente o punitivo, incluidos, entre otros, daños por pérdida de
+                            beneficios,
+                            datos, uso o cualquier otra pérdida intangible, resultantes de tu acceso o uso del Sitio
+                            Web.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="terminos-condiciones" id="apicable">
-                <h3 class="texto">8.Ley Aplicable</h3>
-                <p class="texto">Estos Términos se regirán e interpretarán de acuerdo con las leyes de chile, sin tener en cuenta
-                    sus
-                    disposiciones sobre conflicto de leyes.</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Modificaciones
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Nos reservamos el derecho de modificar estos Términos en cualquier momento, a
+                            nuestra
+                            entera
+                            discreción. Las
+                            modificaciones entrarán en vigencia inmediatamente después de su publicación en el Sitio
+                            Web.
+                        </p>
+                        <p class="texto">Es tu responsabilidad revisar periódicamente estos Términos para estar al tanto
+                            de las
+                            modificaciones. El uso
+                            continuado del Sitio Web después de la publicación de modificaciones constituirá tu
+                            aceptación
+                            de dichas
+                            modificaciones.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="terminos-condiciones" id="contactos">
-                <h3 class="texto">9.Contacto</h3>
-                <p class="texto">Si tienes alguna pregunta sobre estos Términos, puedes ponerte en contacto con nosotros a través
-                    de [correo
-                    electrónico / número de teléfono / dirección postal].</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Ley aplicable
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Estos Términos se regirán e interpretarán de acuerdo con las leyes de chile,
+                            sin tener
+                            en cuenta
+                            sus
+                            disposiciones sobre conflicto de leyes.</p>
+                    </div>
+                </div>
             </div>
-        </main>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Contacto
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <p class="texto">Si tienes alguna pregunta sobre estos Términos, puedes ponerte en contacto con
+                        nosotros
+                        a través
+                        de [correo
+                        electrónico / número de teléfono / dirección postal].</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 
     <footer>
@@ -182,7 +271,7 @@
             <h3>Conócenos</h3>
             <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu"
                 target="_blank" class="terminos">Ubicación</a>
-            <a href="#" class="terminos">Información Legal</a>
+            <a href="./informacion legal.html" class="terminos">Información Legal</a>
             <a href="./terminos y condiciones de uso.html" class="terminos">Términos y Condiciones de Uso</a>
             <a href="#" class="terminos">Política y Privacidad</a>
             <a href="#" class="terminos">+569 7675 9418</a>
@@ -208,9 +297,6 @@
             <br>
         </div>
     </footer>
-
-
-
 
 </body>
 

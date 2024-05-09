@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo_informacion.css">
+    <link rel="stylesheet" href="css/estilo_terminos_condi.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--link de los iconos de bootstrap5-->
@@ -14,94 +15,166 @@
         crossorigin="anonymous"></script>
     <title>Informacion legal</title>
 </head>
-<body>
-    
-    <header>
-        <!--nav(bootstrap5) que contiene el menu del index-->
-        <nav class="navbar navbar-expand-lg bg-body-custom">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <a href="./index.html" class="col"><img
-                            src="./css/imgs/9xZuSJoGK8J5HcPJP-200-x.webp" alt="#" width="150"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./login.html"><i
-                                        class="bi bi-door-open opcion">Iniciar sesión</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="#"><i class="bi bi-cart4">0</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="./ayuda.html"><i class="bi bi-question-circle-fill">Ayuda</i></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link opcion" href="./contacto.html"><i class="bi bi-person-rolodex">Contacto</i></a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-        </nav>
 
-        <nav class="categorias">
-            <h3>Categorias:</h3>
-            <a href="./lacteos.html" class="opcion"><img src="./css/imgs/icons8_milk_carton_20px_1.png"
-                    alt="">Lácteos</a>
-            <a href="./despensa.html" class="opcion"><img src="./css/imgs/icons8_broom_20px_2.png" alt="">Despensa</a>
-            <a href="./Limpieza.html" class="opcion"><img src="./css/imgs/icons8_broom_20px_2.png" alt="">Limpieza</a>
-            <a href="./carniceria.html" class="opcion"><img src="./css/imgs/icons8_pork_20px_1.png" alt="">Carnicería</a>
-            <a href="./Cervezas.html" class="opcion"><img src="./css/imgs/icons8_Message_in_Bottle_20px_1.png"
-                    alt="">Botillería</a>
-            <a href="./Mascotas.html" class="opcion"><img src="./css/imgs/icons8_pet_commands_summon_20px_1.png" alt="">Mascotas</a>
+<body class="container">
+
+    <header>
+        <nav class="menu-principal">
+            <a href="./index.html"><img src="./css/imgs/mimarketnegro.webp" alt="" width="150"></a>
+            <ul class="menu-items">
+                <a href="./login.html" class="item"><i class="bi bi-box-arrow-in-right"></i>Iniciar Sesión</a>
+                <a href="./Carrito.html" class="item"><i class="bi bi-cart4"></i>0</a>
+                <a href="./ayuda.html" class="item"><i class="bi bi-person-raised-hand"></i>Ayuda</a>
+                <a href="./contacto.html" class="item"><i class="bi bi-person-circle"></i>Contacto</a>
+            </ul>
+        </nav>
+        <div class="separador"></div>
+        <!--Nav de categorias-->
+        <nav>
+            <h4>categorias:</h4>
+            <ul class="menu-categorias">
+                <a href="./despensa.html" class="item-categoria"><img src="./css/imgs/icons8_shopping_bag_full_15px.png"
+                        alt="Despensa">Despensa</a>
+                <a href="./lacteos.html" class="item-categoria"><img src="./css/imgs/icons8_milk_carton_15px.png"
+                        alt="Leche">Lácteos</a>
+                <a href="./Limpieza.html" class="item-categoria"><img src="./css/imgs/icons8_sanitizer_15px.png"
+                        alt="Limpieza">Limpieza</a>
+                <a href="./carniceria.html" class="item-categoria"><img src="./css/imgs/icons8_meat_15px.png"
+                        alt="Carnicería">Carnicería</a>
+                <a href="./Cervezas.html" class="item-categoria"><img src="./css/imgs/icons8_wine_15px.png"
+                        alt="Botillería">Botillería</a>
+                <a href="./Mascotas.html" class="item-categoria"><img
+                        src="./css/imgs/icons8_pet_commands_follow_15px.png" alt="Mascotas">Mascotas</a>
+            </ul>
         </nav>
     </header>
 
     <section>
 
-        <aside>
-            <h3 class="texto">Indice</h3>
-            <a href="#aviso" class="indice">1.Aviso Legal / Términos de Uso</a>
-            <a href="#politica_priv" class="indice">2.Política de Privacidad</a>
-            <a href="#politica_coo" class="indice">3.Política de Cookies</a>
-            <a href="#derecho" class="indice">4.Avisos de Derechos de Autor</a>
-            <a href="#informacion" class="indice">5.Información de Contacto</a>
-            <a href="#politica" class="indice">6.Política de Devoluciones</a>
-            <a href="#ley" class="indice">7.Ley Aplicable y Jurisdicción</a>
-        </aside>
-        <main>
-            <div class="Informacion-legal">
-                <h2 class="texto" id="aviso">Aviso Legal / Términos de Uso</h2>
-                <p class="texto">Este documento establece las reglas y condiciones que rigen el uso del sitio web por parte de los usuarios. Puede incluir información sobre la propiedad intelectual, limitaciones de responsabilidad y resolución de disputas, entre otros.</p>
+        <div class="accordion" id="accordionExample">
+
+            <h1>Información legal</h1>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Aviso Legal / Términos de Uso
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Este documento establece las reglas y condiciones que rigen el uso del sitio
+                            web por
+                            parte de los usuarios. Puede incluir información sobre la propiedad intelectual,
+                            limitaciones de
+                            responsabilidad y resolución de disputas, entre otros.</p>
+                    </div>
+                </div>
             </div>
-            <div class="Informacion-legal">
-                <h2 class="texto" id="politica_priv">Política de Privacidad</h2>
-                <p class="texto">Este documento describe cómo se recopilan, utilizan y protegen los datos personales de los usuarios. Debe incluir información sobre qué datos se recopilan, cómo se utilizan, si se comparten con terceros y cómo los usuarios pueden ejercer sus derechos de privacidad.</p>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Política de Privacidad
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Este documento describe cómo se recopilan, utilizan y protegen los datos
+                            personales de
+                            los usuarios. Debe incluir información sobre qué datos se recopilan, cómo se utilizan, si se
+                            comparten con terceros y cómo los usuarios pueden ejercer sus derechos de privacidad.</p>
+                    </div>
+                </div>
             </div>
-            <div class="Informacion-legal">
-                <h2 class="texto" id="politica_coo">Política de Cookies</h2>
-                <p class="texto">Si el sitio utiliza cookies u otras tecnologías de seguimiento, esta política informa a los usuarios sobre cómo se utilizan estas tecnologías y cómo pueden gestionar sus preferencias de cookies.</p>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Política de Cookies
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Este documento describe cómo se recopilan, utilizan y protegen los datos
+                            personales de
+                            los usuarios. Debe incluir información sobre qué datos se recopilan, cómo se utilizan, si se
+                            comparten con terceros y cómo los usuarios pueden ejercer sus derechos de privacidad.</p>
+                    </div>
+                </div>
             </div>
-            <div class="Informacion-legal">
-                <h2 class="texto" id="derecho">Avisos de Derechos de Autor y Propiedad Intelectual</h2>
-                <p class="texto">Estos avisos informan a los usuarios sobre quién posee los derechos de autor del contenido del sitio web y cómo se pueden utilizar o reproducir los materiales protegidos por derechos de autor.</p>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Avisos de Derechos de Autor y Propiedad Intelectual
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Estos avisos informan a los usuarios sobre quién posee los derechos de autor
+                            del
+                            contenido del sitio web y cómo se pueden utilizar o reproducir los materiales protegidos por
+                            derechos de autor.</p>
+                    </div>
+                </div>
             </div>
-            <div class="Informacion-legal">
-                <h2 class="texto" id="informacion">Información de Contacto</h2>
-                <p class="texto">Debe incluirse información de contacto válida para que los usuarios puedan comunicarse con el propietario del sitio web para consultas o problemas relacionados con el sitio.</p>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Información de Contacto
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Debe incluirse información de contacto válida para que los usuarios puedan
+                            comunicarse
+                            con el propietario del sitio web para consultas o problemas relacionados con el sitio.</p>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="Informacion-legal">
-                <h2 class="texto" id="politica">Política de Devoluciones y Reembolsos</h2>
-                <p class="texto">Si el sitio vende productos o servicios, esta política establece las condiciones bajo las cuales los usuarios pueden devolver productos o solicitar reembolsos.</p>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Política de Devoluciones y Reembolsos
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Si el sitio vende productos o servicios, esta política establece las
+                            condiciones bajo
+                            las cuales los usuarios pueden devolver productos o solicitar reembolsos.</p>
+                    </div>
+                </div>
             </div>
-            <div class="Informacion-legal">
-                <h2 class="texto" id="ley">Ley Aplicable y Jurisdicción</h2>
-                <p class="texto">Esta cláusula especifica la ley aplicable y la jurisdicción competente en caso de disputas legales relacionadas con el sitio web.</p>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Ley Aplicable y Jurisdicción
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="texto">Si tienes alguna pregunta sobre estos Términos, puedes ponerte en contacto con
+                            nosotros
+                            a través
+                            de [correo
+                            electrónico / número de teléfono / dirección postal].</p>
+                    </div>
+                </div>
             </div>
-        </main>
+        </div>
+        </div>
     </section>
     <footer>
         <div class="condiciones">
@@ -136,4 +209,5 @@
     </footer>
 
 </body>
+
 </html>

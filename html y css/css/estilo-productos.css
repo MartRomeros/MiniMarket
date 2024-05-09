@@ -5,7 +5,7 @@ header {
     flex-direction: column;
 }
 
-header>div {
+.separador {
     border-top: black 2px solid;
 }
 
@@ -95,58 +95,50 @@ label {
 }
 
 section{
-    padding: 2vh;
     display: flex;
-    align-items: center;
-    gap: 4vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
 }
 
-form{
+.filas{
+    padding: 2vh;
+}
+
+.producto{
+    box-shadow: rgb(24, 23, 23) 3px 2px 4px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    box-shadow: rgb(24, 23, 23) 3px 3px 5px;
-    border-radius: 2vh;
     padding: 2vh;
-    width: 90vh;
-}
-
-form > * {
-    margin-top: 2vh;
-}
-
-form > div{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 2vh;
-    width: 80vh;
-
-}
-
-form > div > input,
-form > div > textarea{
-    padding: 1vh;
-    border-radius: 2vh;
-    border: rgb(163, 163, 163) 1px solid;
-    border-radius: 2vh;
-    padding: 1vh;
-    color: black;
-    font-family: "Poppins", sans-serif;
-}
-
-form > button{
-    border: none;
-    padding: 1vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     border-radius: 2vh;
     width: 50vh;
-    margin-left: 26vh;
-
+    height: 60vh;
 }
 
-form > button:hover{
+.producto > div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 20vh;
+    height: 25vh;
+}
+
+.producto> *{
+    text-align: center;
+}
+
+.producto > button{
+    border-radius: 2vh;
+    padding: 1vh;
+    border: none;
+    width: 25vh;
+    transition: background 0.5s;
+}
+
+.producto > button:hover{
     background-color: black;
     color: white;
 }

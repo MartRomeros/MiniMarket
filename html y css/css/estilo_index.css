@@ -154,12 +154,18 @@ footer {
     text-decoration: underline white;
 }
 
-@media(max-width: 800px){
+@media(max-width: 500px){
     .opcion{
         padding: 0px;
     }
 
-    .categorias > h3{
+    .h4{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .h4{
         display: none;
     }
 }

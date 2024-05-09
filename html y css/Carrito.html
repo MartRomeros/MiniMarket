@@ -54,10 +54,10 @@
                 <p>473 cc 7,5° alc. <br> $3500 por unidad</p>
                 <div class="opcion-compra">
                     <button class="decremento" onclick="">-</button>
-                    <p class="cerveza">1</p>
+                    <p class="cantidad">1</p>
                     <button class="aumento" onclick="agregarProducto()">+</button>
                 </div>
-                <h5 id="granizo-transparente-valor">$3500</h5>
+                <h5 id="valor">$3500</h5>
             </div>
 
             <div class="productos">
@@ -67,7 +67,7 @@
                 <div class="opcion-compra">
                     <button>-</button>
                     <p>1</p>
-                    <button>+</button>
+                    <button class="aumento" onclick="agregarProducto()">+</button>
                 </div>
                 <h5>$2500</h5>
             </div>
@@ -79,7 +79,7 @@
                 <div class="opcion-compra">
                     <button>-</button>
                     <p>1</p>
-                    <button>+</button>
+                    <button class="aumento" onclick="agregarProducto()">+</button>
                 </div>
                 <h5>$750</h5>
             </div>
@@ -94,9 +94,9 @@
                     <p>Envío</p>
                 </div>
                 <div>
-                    <p>1000</p>
-                    <p>1000</p>
-                    <p>1000</p>
+                    <p id="subtotal">$6750</p>
+                    <p id="descuento">$0</p>
+                    <p id="total">$6750</p>
                 </div>
             </div>
             <button>Proceder al pago</button>

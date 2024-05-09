@@ -19,13 +19,8 @@ function validarCampos(nombreCampo) {
 }
 
 function agregarProducto() {
-    let valor = document.querySelector("#granizo-transparente-valor").innerText;
-    valor = parseInt(valor.substr(1));
-    let cantidad = parseInt(document.querySelector(".cerveza").innerText);
-    cantidad++;
-    valor = valor * cantidad;
-    document.querySelector(".cerveza").innerText = cantidad;
-    document.querySelector("#granizo-transparente-valor").innerText = "$"+valor;
+    let cantidad = parseInt(document.querySelector(".cantidad").innerText);
+    cantidad ++;
+    document.querySelector(".cantidad").innerText = cantidad ;
 }
-
 

@@ -40,8 +40,8 @@
                         alt="Carnicería">Carnicería</a>
                 <a href="./Cervezas.html" class="item-categoria"><img src="./css/imgs/icons8_wine_15px.png"
                         alt="Botillería">Botillería</a>
-                <a href="./Mascotas.html" class="item-categoria"><img src="./css/imgs/icons8_pet_commands_follow_15px.png"
-                        alt="Mascotas">Mascotas</a>
+                <a href="./Mascotas.html" class="item-categoria"><img
+                        src="./css/imgs/icons8_pet_commands_follow_15px.png" alt="Mascotas">Mascotas</a>
             </ul>
         </nav>
     </header>
@@ -53,11 +53,11 @@
                 <h5>Cerveza granizo gran IPA</h5>
                 <p>473 cc 7,5° alc. <br> $3500 por unidad</p>
                 <div class="opcion-compra">
-                    <button class="decremento">-</button>
-                    <p class="cantidad">1</p>
-                    <button class="aumento">+</button>
+                    <button class="decremento" onclick="">-</button>
+                    <p class="cerveza">1</p>
+                    <button class="aumento" onclick="agregarProducto()">+</button>
                 </div>
-                <h5 class="valor">$3500</h5>
+                <h5 id="granizo-transparente-valor">$3500</h5>
             </div>
 
             <div class="productos">
@@ -116,8 +116,8 @@
                     </select>
                 </div>
                 <div>
-                    <label for="origen">A:</label>
-                    <select name="origen" id="origen">
+                    <label for="destino">A:</label>
+                    <select name="origen" id="destino">
                         <option value="CLP">CLP</option>
                         <option value="dolar" selected>Dolar(US)</option>
                         <option value="Peso-argentino">Peso Argentino</option>
@@ -172,6 +172,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./JS/validaciones.js"></script>
 </body>
 
 </html>

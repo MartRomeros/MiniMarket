@@ -1,15 +1,26 @@
-function validarCampos(idCampo) {
-    let campos = document.querySelectorAll("#" + idCampo);
-
+function validarCampos(nombreCampo) {
+    let campos = document.querySelectorAll("." + nombreCampo);
     for (let i = 0; i < campos.length; i++) {
-        const campo = campos[i];
-        if (campo.value == "") {
-            document.querySelector(".campos").style.border = "#F3414D 2px solid";
-            document.querySelector(".error").innerHTML = "<p class='error'>Un campo debe de esta vacio!</p>";
+        if (campos[i].value == "") {
+            alert("Verifica los campos");
+            document.querySelector("#alerta").style.color = "red";
+            campos[i].style.border = "1px red solid";
+            document.querySelector("#alerta").innerHTML = "Verifica los campos!";
             return false;
-        }
-    }
-    document.querySelector(".error").innerHTML = "";
-    return true;
 
+        } else {
+            document.querySelector("#alerta").style.color = "red";
+            document.querySelector("#alerta").innerHTML = "";
+            campos[i].style.border = "rgb(163, 163, 163) 1px solid";
+        }
+
+    }
+    return true;
 }
+
+function agregarProducto() {
+    let cantidad = parseInt(document.querySelector(".cantidad").innerText);
+    cantidad ++;
+    document.querySelector(".cantidad").innerText = cantidad ;
+}
+

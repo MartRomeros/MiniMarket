@@ -24,8 +24,8 @@ i {
 
 .menu-items {
     display: flex;
-    /*flex-wrap: wrap;*/
-    align-items: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     width: 110vh;
     height: 12vh;
@@ -37,7 +37,7 @@ i {
     color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    /*width: 25vh;*/
+    width: 25vh;
     padding: 0.5rem;
     border-radius: 2vh;
     transition: background-color 0.5s;
@@ -60,11 +60,9 @@ h4 {
 
 p,
 h5,
-label,
-button {
+label {
     color: black;
     font-family: "Poppins", sans-serif;
-    text-align: center;
 
 }
 
@@ -96,57 +94,62 @@ button {
     color: white;
 }
 
-form {
+section{
     padding: 2vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-form>* {
-    margin-top: 3vh;
-}
-
-.campos {
-    display: flex;
-    flex-wrap: wrap;
-    /*flex-direction: column;*/
-    justify-content: center;
     align-items: center;
-    padding: 2vh;
-    box-shadow: rgb(24, 23, 23) 3px 2px 5px;
-    border-radius: 2vh;
-    width: 120vh;
+    gap: 4vh;
+
 }
 
-.campos>* {
-    margin-top: 2vh;
-    width: 80vh;
-}
-
-.campos>div {
-    padding: 2vh;
+form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+    box-shadow: rgb(24, 23, 23) 3px 3px 5px;
+    border-radius: 2vh;
+    padding: 2vh;
+    width: 90vh;
 }
 
-.campos > div > input,
-.campos > div > textarea,
-.campos > button{
+form > * {
+    margin-top: 2vh;
+}
+
+form > div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2vh;
+    width: 80vh;
+
+}
+
+form > div > input,
+form > div > textarea{
+    padding: 1vh;
+    border-radius: 2vh;
     border: rgb(163, 163, 163) 1px solid;
     border-radius: 2vh;
     padding: 1vh;
     color: black;
     font-family: "Poppins", sans-serif;
-    transition: 0.5s;
 }
 
-.campos > button:hover{
+form > button{
+    border: none;
+    padding: 1vh;
+    border-radius: 2vh;
+    width: 50vh;
+    margin-left: 26vh;
+
+}
+
+form > button:hover{
     background-color: black;
     color: white;
 }
-
 
 footer {
     padding-top: 2rem;
@@ -173,109 +176,8 @@ footer {
     text-decoration: none;
 }
 
+
+
 .terminos:hover {
     text-decoration: underline;
-}
-
-
-@media(max-width: 995px){
-    nav > h4{
-        display: none;    
-    }
-}
-
-@media(max-width: 992px){
-    .menu-items{
-        height: 8vh;
-        padding: 0px;
-    }
-}
-
-@media(max-width: 790px){
-    .menu-items{
-        row-gap: 10px;
-        flex-wrap: nowrap;
-        height: 5vh;
-    }
-}
-
-@media(max-width: 790px){
-    .item{
-        padding: 0px;
-        display: flex;
-    }
-}
-
-@media(max-width: 500px){
-
-    .categorias{
-        row-gap: 10px;
-        margin-top: 30px;
-    }
-}
-
-@media(max-width:1199.20px){
-    .menu-items{
-        height: 8vh;
-    }
-}
-
-@media(max-width:787.20px){
-    .menu-items{
-        height: 7vh;
-    }
-}
-
-@media(max-width: 1199.20px){
-    .condiciones{
-        padding: 0px;
-    }
-}
-
-@media(max-width: 991.20px){
-    .condiciones{
-        font-size: 12px;
-    }
-}
-
-@media(max-width: 768px){
-    .condiciones{
-        font-size: 10px;
-    }
-}
-
-@media(max-width: 540px){
-    .condiciones{
-        font-size: 9px;
-    }
-}
-
-@media(max-width: 633px){
-    .campos{
-        width: 75vh;
-    }
-}
-
-@media(max-width: 568px){
-    .campos{
-        width: 65vh;
-    }
-}
-
-@media(max-width: 568px){
-    .campos > h1, p{
-        flex-direction: column;
-    }
-}
-
-@media(max-width: 633px){
-    .campo{
-        width: 65vh;
-    }
-}
-
-@media(max-width: 568px){
-    .campo{
-        width: 55vh;
-    }
 }

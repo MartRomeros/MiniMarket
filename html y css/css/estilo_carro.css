@@ -23,8 +23,8 @@ i{
 
 .menu-items{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    /*flex-wrap: wrap;*/
+    align-items: flex-end;
     justify-content: space-between;
     width: 110vh;
     height: 12vh;
@@ -36,7 +36,7 @@ i{
     color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    width: 25vh;
+    /*width: 25vh;*/
     padding: 0.5rem;
     border-radius: 2vh;
     transition: background-color 0.5s;
@@ -50,6 +50,16 @@ i{
 
 h3,h1{
     font-size: 1.5rem;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.letra_chica{
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.letra_nomal2{
     color: black;
     font-family: "Poppins", sans-serif;
 }
@@ -106,7 +116,7 @@ main{
     padding: 2vh;
     border-radius: 3vh;
     box-shadow: rgb(24, 23, 23) 3px 5px 5px;
-    width: 50vh;
+    /*width: 50vh;*/
 }
 
 
@@ -166,7 +176,8 @@ main{
     border-radius: 2vh;
     padding: 1vh;
     border: none;
-    margin-left: 150vh;
+    /*margin-left: 150vh;*/
+    
 }
 
 .conversor{
@@ -190,6 +201,14 @@ main{
     justify-content: space-between;
 
 }
+
+.conversor > .letra_pequeña{
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .conversor > div > div  >  select{
     padding: 0.5vh;
     border-radius: 2vh;
@@ -202,6 +221,14 @@ main{
     border-radius: 2vh;
     padding: 1vh;
     border: none;
+}
+
+.seccion-conversion{
+    display: flex;
+}
+
+.seccion-conversion > *{
+    margin-left: 2vh;
 }
 
 footer{
@@ -233,4 +260,194 @@ footer{
 
 .terminos:hover{
     text-decoration: underline  ;
+}
+
+@media(max-width: 995px){
+    nav > h4{
+        display: none;    
+    }
+}
+
+@media(max-width: 992px){
+    .menu-items{
+        height: 8vh;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 790px){
+    .menu-items{
+        row-gap: 10px;
+        flex-wrap: nowrap;
+        height: 5vh;
+    }
+}
+
+@media(max-width: 790px){
+    .item{
+        padding: 0px;
+        display: flex;
+    }
+}
+
+@media(max-width: 500px){
+
+    .categorias{
+        row-gap: 10px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 991px){
+    .condiciones{
+        padding: 0px;
+        
+    }
+}
+
+@media(max-width: 767px){
+    .condiciones{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 547px){
+    .condiciones{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > *{
+        width: 50px;
+        font-size: 15px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > .letra_normal{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > .letra_normal2{
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > h5{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > .mx-auto{
+        width: 70px;
+    }
+}
+
+@media(max-width: 676px){
+    .resumen-compras > button{
+        margin-left: 20vh;
+        width: 30vh;
+    }
+}
+
+@media(max-width: 767px){
+    .resumen-compras{
+        flex-wrap: nowrap;
+    }
+}
+
+@media(max-width: 767px){
+    .precios{
+        margin-left: 30vh;
+        width: 200px;
+    }
+}
+
+@media(max-width: 767px){
+    .letra_chica{
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 767px){
+    .letra_nomal2{
+        font-size: 7px;
+    }
+}
+
+@media(max-width: 440px){
+    .precios{
+        margin-left: 30vh;
+        width: 190px;
+    }
+}
+
+@media(max-width: 991px){
+    .conversor{
+        width: 110vh;
+    }
+}
+
+@media(max-width: 860px){
+    .conversor{
+        width: 100vh;
+    }
+}
+
+@media(max-width: 767px){
+    .conversor{
+        width: 75vh;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 560px){
+    .conversor{
+        width: 65vh;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 767px){
+    .conversor > h1{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 767px){
+    select > #origen, #destino{
+        width: 10vh;
+    }
+}
+
+@media(max-width: 860px){
+    .conversoro{
+        width: 25vh;
+        display: inline-flex;
+    }
+}
+
+@media(max-width: 767px){
+    .conversoro{
+        width: 20vh;
+        display: inline-flex;
+    }
+}
+
+@media(max-width: 767px){
+    .letra_pequeña > h1{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 560px){
+    .letra_pequeña > h1{
+        font-size: 17px;
+    }
 }

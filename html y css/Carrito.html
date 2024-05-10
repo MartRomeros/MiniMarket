@@ -105,6 +105,7 @@
         <div class="conversor">
             <h1>¡Ahora puedes verificar cuanto debes pagar en otras monedas!</h1>
             <div>
+<<<<<<< HEAD
                 <div class="conversoro">
                     <label for="origen">De:</label>
                     <select name="origen" id="origen">
@@ -114,20 +115,32 @@
                         <option value="soles">Soles</option>
                         <option value="reales">Reales</option>
                     </select>
+=======
+                <div>
+                    <p>De: CLP</p>
+>>>>>>> 898f3e8fd246b7608eb60b5b6bebf3058ee07314
                 </div>
                 <div>
                     <label for="destino">A:</label>
-                    <select name="origen" id="destino">
+                    <select name="origen" id="destino" onchange="convertirMonedas()">
                         <option value="CLP">CLP</option>
-                        <option value="dolar" selected>Dolar(US)</option>
-                        <option value="Peso-argentino">Peso Argentino</option>
-                        <option value="soles">Soles</option>
-                        <option value="reales">Reales</option>
+                        <option value="dolar">Dolar(US)</option>
+                        <option value="UF">UF</option>
+                        <option value="UTM">UTM</option>
+                        <option value="Euro">Euro</option>
                     </select>
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="letra_pequeña">
                 <h1>Total a pagar: $3000 CLP</h1>
+=======
+            <div>
+                <div class="seccion-conversion">
+                    <h1 id="precio-conversion">6750</h1>
+                    <h1 id="moneda-conversion">CLP</h1>
+                </div>
+>>>>>>> 898f3e8fd246b7608eb60b5b6bebf3058ee07314
                 <button>Realizar Conversión</button>
             </div>
         </div>

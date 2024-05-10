@@ -223,6 +223,14 @@ main{
     border: none;
 }
 
+.seccion-conversion{
+    display: flex;
+}
+
+.seccion-conversion > *{
+    margin-left: 2vh;
+}
+
 footer{
     padding-top: 2rem;
     padding-bottom: 3rem;

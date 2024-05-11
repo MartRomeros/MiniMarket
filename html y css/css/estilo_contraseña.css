@@ -5,7 +5,7 @@ header {
     flex-direction: column;
 }
 
-.separador {
+header>div {
     border-top: black 2px solid;
 }
 
@@ -24,10 +24,10 @@ i {
 
 .menu-items {
     display: flex;
-    /* flex-wrap: wrap; */
-    align-items: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    width: 100vh;
+    width: 110vh;
     height: 12vh;
 }
 
@@ -37,7 +37,7 @@ i {
     color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    /* width: 25vh; */
+    width: 25vh;
     padding: 0.5rem;
     border-radius: 2vh;
     transition: background-color 0.5s;
@@ -94,27 +94,61 @@ label {
     color: white;
 }
 
+section{
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    gap: 4vh;
 
-.carousel{
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgb(24, 23, 23) 3px 3px 5px;
+    border-radius: 2vh;
+    padding: 2vh;
+    width: 90vh;
+}
+
+form > * {
     margin-top: 2vh;
 }
 
-.promociones{
-    padding: 5vh;
+form > div{
     display: flex;
     flex-wrap: wrap;
-    gap: 2vh;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 2vh;
+    width: 80vh;
+
 }
 
-.promos{
+form > div > input,
+form > div > textarea{
+    padding: 1vh;
     border-radius: 2vh;
-    transition: transform 0.5s ease;
-    box-shadow: rgb(24, 23, 23) 3px 5px 5px;
+    border: rgb(163, 163, 163) 1px solid;
+    border-radius: 2vh;
+    padding: 1vh;
+    color: black;
+    font-family: "Poppins", sans-serif;
 }
 
-.promos:hover{
-    transform: scale(1.1);
+form > button{
+    border: none;
+    padding: 1vh;
+    border-radius: 2vh;
+    width: 50vh;
+    margin-left: 26vh;
+
+}
+
+form > button:hover{
+    background-color: black;
+    color: white;
 }
 
 footer {
@@ -146,90 +180,4 @@ footer {
 
 .terminos:hover {
     text-decoration: underline;
-}
-
-
-
-.terminos:hover{
-    text-decoration: underline white;
-}
-@media(max-width: 995px){
-    nav > h4{
-        display: none;    
-    }
-}
-
-@media(max-width: 992px){
-    .menu-items{
-        height: 8vh;
-        padding: 0px;
-    }
-}
-
-@media(max-width: 790px){
-    .menu-items{
-        row-gap: 10px;
-        flex-wrap: nowrap;
-        height: 5vh;
-    }
-}
-
-@media(max-width: 790px){
-    .item{
-        padding: 0px;
-        display: flex;
-    }
-}
-
-@media(max-width: 500px){
-
-    .categorias{
-        row-gap: 10px;
-        margin-top: 30px;
-    }
-}
-
-
-
-@media(max-width: 500px){
-
-    .col > img{
-        display: none;
-    }
-}
-
-@media(max-width: 955px){
-    .promos{
-        width: 200px;
-    }
-}
-
-@media(max-width: 955px){
-    .promos{
-        width: 150px;
-    }
-}
-
-@media(max-width: 280px){
-    .promos{
-        width: 80px;
-    }
-}
-
-@media(max-width: 880px){
-    .condiciones{
-        padding: 0px;
-    }
-}
-
-@media(max-width: 690px){
-    .condiciones{
-        font-size: 12px;
-    }
-}
-
-@media(max-width: 547px){
-    .condiciones{
-        font-size: 10px;
-    }
 }

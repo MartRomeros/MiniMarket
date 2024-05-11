@@ -24,8 +24,8 @@ i {
 
 .menu-items {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    /*flex-wrap: wrap;*/
+    align-items: flex-end;
     justify-content: space-between;
     width: 110vh;
     height: 12vh;
@@ -37,7 +37,7 @@ i {
     color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    width: 25vh;
+    /*width: 25vh;*/
     padding: 0.5rem;
     border-radius: 2vh;
     transition: background-color 0.5s;
@@ -110,7 +110,8 @@ form>* {
 .campos {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    justify-content: center;
     align-items: center;
     padding: 2vh;
     box-shadow: rgb(24, 23, 23) 3px 2px 5px;
@@ -172,8 +173,109 @@ footer {
     text-decoration: none;
 }
 
-
-
 .terminos:hover {
     text-decoration: underline;
+}
+
+
+@media(max-width: 995px){
+    nav > h4{
+        display: none;    
+    }
+}
+
+@media(max-width: 992px){
+    .menu-items{
+        height: 8vh;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 790px){
+    .menu-items{
+        row-gap: 10px;
+        flex-wrap: nowrap;
+        height: 5vh;
+    }
+}
+
+@media(max-width: 790px){
+    .item{
+        padding: 0px;
+        display: flex;
+    }
+}
+
+@media(max-width: 500px){
+
+    .categorias{
+        row-gap: 10px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:1199.20px){
+    .menu-items{
+        height: 8vh;
+    }
+}
+
+@media(max-width:787.20px){
+    .menu-items{
+        height: 7vh;
+    }
+}
+
+@media(max-width: 1199.20px){
+    .condiciones{
+        padding: 0px;
+    }
+}
+
+@media(max-width: 991.20px){
+    .condiciones{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 768px){
+    .condiciones{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 540px){
+    .condiciones{
+        font-size: 9px;
+    }
+}
+
+@media(max-width: 633px){
+    .campos{
+        width: 75vh;
+    }
+}
+
+@media(max-width: 568px){
+    .campos{
+        width: 65vh;
+    }
+}
+
+@media(max-width: 568px){
+    .campos > h1, p{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 633px){
+    .campo{
+        width: 65vh;
+    }
+}
+
+@media(max-width: 568px){
+    .campo{
+        width: 55vh;
+    }
 }

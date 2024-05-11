@@ -24,8 +24,8 @@ i {
 
 .menu-items {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    /* flex-wrap: wrap; */
+    align-items: flex-end;
     justify-content: space-between;
     width: 110vh;
     height: 12vh;
@@ -37,7 +37,7 @@ i {
     color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    width: 25vh;
+    /* width: 25vh; */
     padding: 0.5rem;
     border-radius: 2vh;
     transition: background-color 0.5s;
@@ -70,7 +70,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 160vh;
     height: 12vh;
 }
@@ -134,4 +134,58 @@ footer {
 
 .terminos:hover {
     text-decoration: underline;
+}
+
+@media(max-width: 995px){
+    nav > h4{
+        display: none;    
+    }
+}
+
+@media(max-width: 992px){
+    .menu-items{
+        height: 8vh;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 790px){
+    .menu-items{
+        row-gap: 10px;
+        flex-wrap: nowrap;
+        height: 5vh;
+    }
+}
+
+@media(max-width: 790px){
+    .item{
+        padding: 0px;
+        display: flex;
+    }
+}
+
+@media(max-width: 500px){
+
+    .categorias{
+        row-gap: 10px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 880px){
+    .condiciones{
+        padding: 0px;
+    }
+}
+
+@media(max-width: 767px){
+    .condiciones{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 547px){
+    .condiciones{
+        font-size: 10px;
+    }
 }

@@ -91,7 +91,7 @@
                 <div>
                     <p>Subtotal</p>
                     <p>Descuento</p>
-                    <p>Envío</p>
+                    <p>Total</p>
                 </div>
                 <div>
                     <p id="subtotal">$6750</p>
@@ -110,11 +110,9 @@
                 </div>
                 <div>
                     <label for="destino">A:</label>
-                    <select name="origen" id="destino" onchange="convertirMonedas()">
+                    <select name="origen" id="destino">
                         <option value="CLP">CLP</option>
                         <option value="dolar">Dolar(US)</option>
-                        <option value="UF">UF</option>
-                        <option value="UTM">UTM</option>
                         <option value="Euro">Euro</option>
                     </select>
                 </div>
@@ -124,7 +122,7 @@
                     <h1 id="precio-conversion">6750</h1>
                     <h1 id="moneda-conversion">CLP</h1>
                 </div>
-                <button>Realizar Conversión</button>
+                <button onclick="convertirMonedas()">Realizar Conversión</button>
             </div>
         </div>
 

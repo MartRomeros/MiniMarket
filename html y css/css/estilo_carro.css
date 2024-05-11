@@ -204,6 +204,13 @@ main{
     border: none;
 }
 
+.conversor > div > button:hover{
+    background: black;
+    color: white;
+
+}
+
+
 .seccion-conversion{
     display: flex;
 }

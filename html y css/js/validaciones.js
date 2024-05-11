@@ -1,3 +1,5 @@
+import  Resend  from 'resend';
+
 function validarCampos(nombreCampo) {
     let campos = document.querySelectorAll("." + nombreCampo);
     for (let i = 0; i < campos.length; i++) {
@@ -20,6 +22,7 @@ function validarCampos(nombreCampo) {
 
 
 function convertirMonedas() {
+    let precioChileno = document.querySelector("#total").innerText;
     let precioConvertido = document.querySelector("#precio-conversion").innerText;
     let opcion = document.querySelector("#destino");
     let opcionEscogida = opcion.value;
@@ -29,25 +32,18 @@ function convertirMonedas() {
         //document.getElementById("UF").innerHTML = 'El valor actual de la UF es $' + dailyIndicators.uf.valor;
         switch (opcionEscogida) {
             case "CLP":
-                document.querySelector("#precio-conversion").innerText = precioConvertido;
+                document.querySelector("#precio-conversion").innerText = precioChileno.substr(1);
                 document.querySelector("#moneda-conversion").innerText = "CLP";
                 break;
             case "dolar":
-                precioConvertido = parseInt(precioConvertido / valor.dolar.valor);
+                precioConvertido = parseInt(precioChileno.substr(1)) / valor.dolar.valor;
                 document.querySelector("#precio-conversion").innerText = precioConvertido.toFixed(2);
                 document.querySelector("#moneda-conversion").innerText = "US";
                 break;
-            case "UF":
-                document.querySelector("#precio-conversion").innerText = precioConvertido;
-                document.querySelector("#moneda-conversion").innerText = "UF";
-                break;
-            case "UTM":
-                document.querySelector("#precio-conversion").innerText = precioConvertido;
-                document.querySelector("#moneda-conversion").innerText = "UTM";
-                break;
             case "Euro":
-                document.querySelector("#precio-conversion").innerText = precioConvertido;
-                document.querySelector("#moneda-conversion").innerText = "Euro";
+                precioConvertido = parseInt(precioChileno.substr(1)) / valor.euro.valor;
+                document.querySelector("#precio-conversion").innerText = precioConvertido.toFixed(2);
+                document.querySelector("#moneda-conversion").innerText = "€";
                 break;
 
             default:
@@ -56,4 +52,18 @@ function convertirMonedas() {
     }).catch(function (error) {
         console.log('Requestfailed', error);
     });
+}
+
+
+function enviarCorreos() {
+
+    const resend = new Resend('re_7xrxeRdy_3PG9Npdi2yZM3FunFxvkedQy');
+
+    resend.emails.send({
+        from: 'onboarding@resend.dev',
+        to: 'martinsantiago.se@gmail.com',
+        subject: 'Hello World',
+        html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
+    });
+
 }

@@ -1,93 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-header>div{
-    border-top: black 2px solid;
-}
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2vh;
-    height: 15vh;
-}
-
-i{
-    margin-right: 0.5rem;
-}
-
-.menu-items{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 110vh;
-    height: 12vh;
-}
-
-.item{
-    display: inline;
-    text-decoration: none;
-    color: black;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    width: 25vh;
-    padding: 0.5rem;
-    border-radius: 2vh;
-    transition: background-color 0.5s;
-    transition: color 0.5s;
-}
-
-.item:hover{
-    background: black;
-    color: white;
-}
-
-h3,h1{
-    font-size: 1.5rem;
-    color: black;
-    font-family: "Poppins", sans-serif;
-}
-
-p,h5{
-    color: black;
-    font-family: "Poppins", sans-serif;
-
-}
-
-.menu-categorias{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 160vh;
-    height: 12vh;
-}
-
-.item-categoria{
-    font-size: 0.99rem;
-    display: inline;
-    text-decoration: none;
-    color: black;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    width: 20vh;
-    padding: 0.2rem;
-    border-radius: 2vh;
-    transition: background-color 0.5s;
-    transition: color 0.5s;
-}
-
-.item-categoria:hover{
-    background: black;
-    color: white;
-}
-
 section{
     padding: 2vh;
 }
@@ -166,7 +78,7 @@ main{
     border-radius: 2vh;
     padding: 1vh;
     border: none;
-    margin-left: 150vh;
+    
 }
 
 .conversor{
@@ -190,6 +102,14 @@ main{
     justify-content: space-between;
 
 }
+
+.conversor > .letra_pequeña{
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .conversor > div > div  >  select{
     padding: 0.5vh;
     border-radius: 2vh;
@@ -198,39 +118,213 @@ main{
 }
 
 .conversor > div > button{
-    width: 29vh;
+    width: 50vh;
     border-radius: 2vh;
     padding: 1vh;
     border: none;
 }
 
-footer{
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+.conversor > div > button:hover{
     background: black;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.condiciones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: white 2px solid;
-    border-left: white 2px solid;
-
-    padding: 2rem;
-    width: 20rem;
-
-}
-
-.condiciones > a , .condiciones > h3{
     color: white;
-    text-decoration: none;
+
 }
 
 
+.seccion-conversion{
+    display: flex;
+}
 
-.terminos:hover{
-    text-decoration: underline  ;
+.seccion-conversion > *{
+    margin-left: 2vh;
+}
+
+@media(max-width: 995px){
+    nav > h4{
+        display: none;    
+    }
+}
+
+@media(max-width: 992px){
+    .menu-items{
+        height: 8vh;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 790px){
+    .menu-items{
+        row-gap: 10px;
+        flex-wrap: nowrap;
+        height: 5vh;
+    }
+}
+
+@media(max-width: 790px){
+    .item{
+        padding: 0px;
+        display: flex;
+    }
+}
+
+@media(max-width: 500px){
+
+    .categorias{
+        row-gap: 10px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 991px){
+    .condiciones{
+        padding: 0px;
+        
+    }
+}
+
+@media(max-width: 767px){
+    .condiciones{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 547px){
+    .condiciones{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > *{
+        width: 50px;
+        font-size: 15px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > .letra_normal{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > .letra_normal2{
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > h5{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 767px){
+    .productos > .mx-auto{
+        width: 70px;
+    }
+}
+
+@media(max-width: 676px){
+    .resumen-compras > button{
+        margin-left: 20vh;
+        width: 30vh;
+    }
+}
+
+@media(max-width: 767px){
+    .resumen-compras{
+        flex-wrap: nowrap;
+    }
+}
+
+@media(max-width: 767px){
+    .precios{
+        margin-left: 30vh;
+        width: 200px;
+    }
+}
+
+@media(max-width: 767px){
+    .letra_chica{
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 767px){
+    .letra_nomal2{
+        font-size: 7px;
+    }
+}
+
+@media(max-width: 440px){
+    .precios{
+        margin-left: 30vh;
+        width: 190px;
+    }
+}
+
+@media(max-width: 991px){
+    .conversor{
+        width: 110vh;
+    }
+}
+
+@media(max-width: 860px){
+    .conversor{
+        width: 100vh;
+    }
+}
+
+@media(max-width: 767px){
+    .conversor{
+        width: 75vh;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 560px){
+    .conversor{
+        width: 65vh;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 767px){
+    .conversor > h1{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 767px){
+    select > #origen, #destino{
+        width: 10vh;
+    }
+}
+
+@media(max-width: 860px){
+    .conversoro{
+        width: 25vh;
+        display: inline-flex;
+    }
+}
+
+@media(max-width: 767px){
+    .conversoro{
+        width: 20vh;
+        display: inline-flex;
+    }
+}
+
+@media(max-width: 767px){
+    .letra_pequeña > h1{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 560px){
+    .letra_pequeña > h1{
+        font-size: 17px;
+    }
 }

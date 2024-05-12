@@ -22,12 +22,14 @@
 
     <header>
         <nav class="menu-principal">
-            <a href="./index.html"><img src="./css/imgs/mimarketnegro.webp" alt="" width="150"></a>
+            <a href="./index.html" onclick="return validarCampos('campo');"><img src="./css/imgs/mimarketnegro.webp"
+                    alt="" width="150"></a>
             <ul class="menu-items">
                 <a href="./login.html" class="item"><i class="bi bi-box-arrow-in-right"></i>Iniciar Sesión</a>
                 <a href="./Carrito.html" class="item"><i class="bi bi-cart4"></i>0</a>
                 <a href="./ayuda.html" class="item"><i class="bi bi-person-raised-hand"></i>Ayuda</a>
                 <a href="./contacto.html" class="item"><i class="bi bi-person-circle"></i>Contacto</a>
+                <a href="./perfil.html" class="item"><i class="bi bi-person-square"></i>Mi perfil</a>
             </ul>
         </nav>
         <div class="separador"></div>
@@ -45,33 +47,10 @@
                         alt="Carnicería">Carnicería</a>
                 <a href="./Cervezas.html" class="item-categoria"><img src="./css/imgs/icons8_wine_15px.png"
                         alt="Botillería">Botillería</a>
-                <a href="./Mascotas.html" class="item-categoria"><img src="./css/imgs/icons8_pet_commands_follow_15px.png"
-                        alt="Mascotas">Mascotas</a>
+                <a href="./Mascotas.html" class="item-categoria"><img
+                        src="./css/imgs/icons8_pet_commands_follow_15px.png" alt="Mascotas">Mascotas</a>
             </ul>
         </nav>
-        <!--Carrusel que contiene las imagenes-->
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="./css/imgs/index_banner_1.svg" class="w-100 d-block" alt="First slide" />
-                </div>
-                <div class="carousel-item">
-                    <img src="./css/imgs/banner2_index.svg" class="w-100 d-block" alt="Second slide" />
-                </div>
-                <div class="carousel-item">
-                    <img src="./css/imgs/banner3_index.svg" class="w-100 d-block" alt="Third slide" />
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </header>
 
 
@@ -96,7 +75,7 @@
                 target="_blank" class="terminos">Ubicación</a>
             <a href="./informacion legal.html" class="terminos">Información Legal</a>
             <a href="./terminos y condiciones de uso.html" class="terminos">Términos y Condiciones de Uso</a>
-            <a href="#" class="terminos">Política y Privacidad</a>
+            <a href="politica_privacidad.html" class="terminos">Política y Privacidad</a>
             <a href="#" class="terminos">+569 7675 9418</a>
             <a href="#" class="terminos">mimarket@gmail.com</a>
         </div>

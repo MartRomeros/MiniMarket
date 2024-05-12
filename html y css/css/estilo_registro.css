@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -68,64 +69,12 @@ button:hover{
     font-family: "Poppins", sans-serif;
 }
 
-@media(max-width: 995px){
-    nav > h4{
-        display: none;    
-    }
-}
-
-@media(max-width: 992px){
-    .menu-items{
-        height: 8vh;
-        padding: 0px;
-    }
-}
-
-@media(max-width: 790px){
-    .menu-items{
-        row-gap: 10px;
-        flex-wrap: nowrap;
-        height: 5vh;
-    }
-}
-
-@media(max-width: 790px){
-    .item{
-        padding: 0px;
-        display: flex;
-    }
-}
-
-@media(max-width: 500px){
-
-    .categorias{
-        row-gap: 10px;
-        margin-top: 30px;
-    }
-}
-
-@media(max-width: 991px){
-    .condiciones{
-        padding: 0px;
-        font-size: 16px;
-    }
-}
-
-@media(max-width: 767px){
-    .condiciones{
-        padding: 0px;
-        font-size: 12px;
-    }
-}
-
-@media(max-width: 690px){
-    .condiciones{
-        font-size: 12px;
-    }
-}
-
-@media(max-width: 547px){
-    .condiciones{
-        font-size: 10px;
-    }
+button{
+    border: none;
+    border-radius: 2vh;
+    padding: 1vh;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
 }

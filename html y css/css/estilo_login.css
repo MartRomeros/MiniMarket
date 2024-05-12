@@ -25,10 +25,10 @@ i {
 
 .menu-items {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    width: 110vh;
+    width: 150vh;
     height: 12vh;
 }
 
@@ -38,7 +38,7 @@ i {
     color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    /*width: 25vh;*/
+    width: 25vh;
     padding: 0.5rem;
     border-radius: 2vh;
     transition: background-color 0.5s;

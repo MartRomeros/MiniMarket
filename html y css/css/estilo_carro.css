@@ -23,7 +23,6 @@ i{
 
 .menu-items{
     display: flex;
-    /*flex-wrap: wrap;*/
     align-items: flex-end;
     justify-content: space-between;
     width: 110vh;
@@ -36,7 +35,7 @@ i{
     color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    /*width: 25vh;*/
+    width: 25vh;
     padding: 0.5rem;
     border-radius: 2vh;
     transition: background-color 0.5s;
@@ -54,15 +53,6 @@ h3,h1{
     font-family: "Poppins", sans-serif;
 }
 
-.letra_chica{
-    color: black;
-    font-family: "Poppins", sans-serif;
-}
-
-.letra_nomal2{
-    color: black;
-    font-family: "Poppins", sans-serif;
-}
 
 p,h5{
     color: black;
@@ -116,7 +106,7 @@ main{
     padding: 2vh;
     border-radius: 3vh;
     box-shadow: rgb(24, 23, 23) 3px 5px 5px;
-    /*width: 50vh;*/
+    width: 50vh;
 }
 
 
@@ -176,7 +166,6 @@ main{
     border-radius: 2vh;
     padding: 1vh;
     border: none;
-    /*margin-left: 150vh;*/
     
 }
 
@@ -217,7 +206,7 @@ main{
 }
 
 .conversor > div > button{
-    width: 29vh;
+    width: 50vh;
     border-radius: 2vh;
     padding: 1vh;
     border: none;
@@ -251,8 +240,7 @@ footer{
     flex-direction: column;
     align-items: center;
     border-right: white 2px solid;
-    border-left: white 2px solid;
-
+    border-left: white 2px solid; 
     padding: 2rem;
     width: 20rem;
 

@@ -12,9 +12,6 @@
     <!-- Enlace de los iconos de Bootstrap 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Aquí dejamos el archivo de Bootstrap 5 de JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
     <title>Ayuda</title>
 </head>
 
@@ -34,8 +31,8 @@
         <div class="separador"></div>
         <!--Nav de categorias-->
         <nav>
-            <h4>categorias:</h4>
             <ul class="menu-categorias">
+                <h4>categorias:</h4>
                 <a href="./despensa.html" class="item-categoria"><img src="./css/imgs/icons8_shopping_bag_full_15px.png"
                         alt="Despensa">Despensa</a>
                 <a href="./lacteos.html" class="item-categoria"><img src="./css/imgs/icons8_milk_carton_15px.png"
@@ -52,79 +49,26 @@
         </nav>
     </header>
 
+
     <section>
-        <div class="seccion-ayuda">
-            <form action="./index.html" onsubmit="return validarCampos('campo')">
-                <div class="campos">
-                    <h1>Seccion de ayuda</h1>
-                    <p>Escribenos y te responderemos a la brevedad</p>
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" placeholder="Ingresa tu nombre" class="campo" id="nombre">
-                    </div>
-                    <div>
-                        <label for="correo">Correo electronico:</label>
-                        <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" class="campo">
-                    </div>
-                    <div>
-                        <label for="descripcion">Descripcion:</label>
-                        <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="campo"></textarea>
-                    </div>
-                    <p id="alerta"></p>
-                    <button>Enviar</button>
-                </div>
-                <div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    ¿Cuáles son las opciones de pago disponibles?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong> Las opciones de pago son: Dolar(Us), Euro, Peso Chileno.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    ¿Cuál es la política de devolución?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>
-                                        La política de devolución de una tienda puede variar según el tipo de producto y la tienda en sí. Por lo general, las tiendas tienen ciertas pautas y condiciones que los clientes deben seguir al devolver un artículo. Esto puede incluir cosas como el plazo dentro del cual se aceptan devoluciones, el estado en el que debe estar el artículo (sin usar, en su empaque original, etc.), si se requiere un recibo de compra, y si se ofrece un reembolso completo o solo crédito de tienda.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    ¿Cómo puedo rastrear mi pedido?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>Inicia sesión en tu cuenta: Si realizaste la compra con una cuenta registrada en la página web, inicia sesión en esa cuenta.
-                                        Ve a la sección de seguimiento de pedidos: Por lo general, hay una sección específica en la página web donde puedes hacer seguimiento de tus pedidos. Esta sección puede tener diferentes nombres como "Seguimiento de pedidos", "Mi cuenta", "Historial de pedidos" o algo similar. Busca en la página web esta sección.
-                                        Ingresa la información del pedido: Una vez que estés en la sección de seguimiento de pedidos, es posible que se te solicite ingresar cierta información para encontrar tu pedido. Esto podría incluir el número de seguimiento, el número de pedido, tu dirección de correo electrónico o cualquier otro dato relacionado con la compra.
-                                        Consulta el estado del pedido: Después de ingresar la información requerida, podrás ver el estado actual de tu pedido. Esto puede incluir detalles como la fecha de envío, la ubicación actual del paquete (si está disponible) y una estimación de cuándo se entregará.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+        <form action="./index.html" onsubmit="return validarCampos('campo')">
+            <h1>Seccion de ayuda</h1>
+            <p>Escribenos y te responderemos a la brevedad</p>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Ingresa tu nombre" class="campo" id="nombre">
+            </div>
+            <div>
+                <label for="correo">Correo electronico:</label>
+                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico" class="campo">
+            </div>
+            <div>
+                <label for="descripcion">Descripcion:</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="campo"></textarea>
+            </div>
+            <p id="alerta"></p>
+            <button>Enviar</button>
+        </form>
     </section>
 
     <footer>
@@ -159,11 +103,10 @@
         </div>
     </footer>
 
+    <script src="./JS/validaciones.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    
-    <script src="./JS/validaciones.js"></script>
 </body>
 
 </html>

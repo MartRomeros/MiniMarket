@@ -153,83 +153,112 @@ footer {
 .terminos:hover{
     text-decoration: underline white;
 }
-@media(max-width: 995px){
-    nav > h4{
-        display: none;    
-    }
-}
 
-@media(max-width: 992px){
-    .menu-items{
-        height: 8vh;
-        padding: 0px;
-    }
-}
 
-@media(max-width: 790px){
+@media(max-width: 1200px){
     .menu-items{
-        row-gap: 10px;
+        width: 75%;
         flex-wrap: nowrap;
-        height: 5vh;
-    }
-}
+        justify-content: space-between;
+        gap: 2vh;
 
-@media(max-width: 790px){
+    }
+
     .item{
-        padding: 0px;
+        font-size: 0.6rem;
+        width: 21vh;
+    }
+
+    .menu-principal > a{
+        width: 1vh;
+        
+    }
+
+}
+
+@media(max-width: 993px){
+
+    .menu-categorias > h4{
+        font-size: 0.8rem;
+        justify-content: space-between;
+
+    }
+
+    .item{
+        font-size: 0.5rem;
+    }
+
+    .item-categoria{
+        font-size: 0.7rem;
+        width: 14%;
+    }
+
+    .menu-principal{
+        align-items: center;
+        
+    }
+
+}
+
+@media(max-width: 791px){
+    .menu-items{
+        width: 90vh;
+    }
+
+    .item{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3vh;
     }
+
+
+    .menu-principal>a>img{
+        width: 20vh;
+    }
+
 }
 
-@media(max-width: 500px){
+@media(max-width: 767px){
 
-    .categorias{
-        row-gap: 10px;
-        margin-top: 30px;
+    .menu-items{
+        margin: 2vh 0px 0px 0px;
+        gap: 0px;
     }
-}
-
-
-
-@media(max-width: 500px){
-
-    .col > img{
-        display: none;
+    header > div{
+        margin-top: 2vh;
     }
-}
 
-@media(max-width: 955px){
-    .promos{
-        width: 200px;
-    }
-}
-
-@media(max-width: 955px){
-    .promos{
-        width: 150px;
-    }
-}
-
-@media(max-width: 280px){
-    .promos{
-        width: 80px;
-    }
-}
-
-@media(max-width: 880px){
-    .condiciones{
+    .menu-categorias{
         padding: 0px;
+        gap: 2vh;
+        flex-wrap: nowrap;
+        width: 120vh;
     }
+
+    .item-categoria{
+        font-size: 0.5rem;
+    }
+
+    .item-categoria > img{
+        width: 7px;
+    }
+
+    .item{
+        width: 12vh;
+    }
+
 }
 
-@media(max-width: 690px){
-    .condiciones{
-        font-size: 12px;
+@media(max-width: 552px){
+    .item-categoria > img{
+        width: 0%;
     }
+
 }
 
-@media(max-width: 547px){
-    .condiciones{
-        font-size: 10px;
+@media(max-width: 465px){
+    .terminos{
+        font-size: 0.6rem;
     }
 }

@@ -57,19 +57,23 @@ function crearUser() {
     fetch('https://randomuser.me/api/').then(function (response) {
         return response.json();
     }).then(function (valor) {
-        let nombreCompleto = document.querySelector("#info-portada").innerText.substr(0, 15);
-        let correo = document.querySelector("#info-portada").innerText.substr(15);
-        nombreCompleto = valor.results[0].name.first + " " + valor.results[0].name.last
-        correo = valor.results[0].email;
+        try {
+            let nombreCompleto = document.querySelector("#info-portada").innerText.substr(0, 15);
+            let correo = document.querySelector("#info-portada").innerText.substr(15);
+            nombreCompleto = valor.results[0].name.first + " " + valor.results[0].name.last
+            correo = valor.results[0].email;
 
-        document.querySelector("#info-portada").innerText = nombreCompleto + "\n" + correo;
-        document.querySelector("#nombre").value = valor.results[0].name.first;
-        document.querySelector("#apellido").value = valor.results[0].name.last;
-        document.querySelector("#correo").value = valor.results[0].email;
-        document.querySelector("#pass").value = valor.results[0].login.password;
-        document.querySelector("#confirm-pass").value = valor.results[0].login.password;
-        document.querySelector("#direccion").value = valor.results[0].location.street.name + " " + valor.results[0].location.street.number;
-        document.querySelector("#fono").value = valor.results[0].cell;
+            document.querySelector("#info-portada").innerText = nombreCompleto + "\n" + correo;
+            document.querySelector("#nombre").value = valor.results[0].name.first;
+            document.querySelector("#apellido").value = valor.results[0].name.last;
+            document.querySelector("#correo").value = valor.results[0].email;
+            document.querySelector("#pass").value = valor.results[0].login.password;
+            document.querySelector("#confirm-pass").value = valor.results[0].login.password;
+            document.querySelector("#direccion").value = valor.results[0].location.street.name + " " + valor.results[0].location.street.number;
+            document.querySelector("#fono").value = valor.results[0].cell;
+        } catch (error) {
+
+        }
 
     }).catch(function (error) {
         console.log(error);

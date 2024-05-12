@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo_index.css">
-    <link rel="stylesheet" href="css/estilo_registro.css">
+    <link rel="stylesheet" href="./css/estilo_perfil.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--link de los iconos de bootstrap5-->
@@ -50,24 +50,49 @@
         </header>
 
         <section>
-            <div>
-                <img src="css/imgs/mimarketnegro.webp" alt="logo-empresa" width="350" class="mx-auto">
-                <form action="index.html" onsubmit="return validarCampos('campo')">
-                    <h1>Registro</h1>
+            <form action="index.html" onsubmit="return validarCampos('campo')">
+                <div>
+                    <h2>Información de usuario</h2>
                     <div>
-                        <label for="Nombre">Nombre Completo:</label>
-                        <input type="Email" name="correo" id="pass" placeholder="Ingrese su Nombre completo"
-                            class="campo">
+                        <div>
+                            <div>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" placeholder="Ingresa tu nombre" id="nombre" class="campo">
+                            </div>
+                            <div>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" placeholder="Ingresa tu Apellido" id="apellido" class="campo">
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <label for="correo">Correo electronico:</label>
-                        <input type="email" name="correo" id="pass" placeholder="Ingrese su correo electronico">
+                        <input type="email" placeholder="Ingresa tu correo electronico" id="correo" class="campo">
                     </div>
                     <div>
-                        <button>Ingresar</button>
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" placeholder="Ingresa tu contraseña" id="pass" class="campo">
                     </div>
-                </form>
-            </div>
+                    <div>
+                        <label for="confirm-pass">Confirmar Contraseña:</label>
+                        <input type="password" placeholder="Confirma tu contraseña" id="confirm-pass" class="campo">
+                    </div>
+                </div>
+    
+                <div>
+                    <h2>Información adicional</h2>
+                    <div>
+                        <label for="direccion">Direccion:</label>
+                        <input type="text" placeholder="Ingresa tu dirección" id="direccion" class="campo">
+                    </div>
+                    <div>
+                        <label for="fono">Telefono</label>
+                        <input type="text" placeholder="Ingresa tu numero de telefono" id="fono" class="campo">
+                    </div>
+                    <p id="alerta"></p>
+                    <button>Registrarme</button>
+                </div>
+            </form>
         </section>
 
         <footer>

@@ -139,192 +139,28 @@ main{
     margin-left: 2vh;
 }
 
-@media(max-width: 995px){
-    nav > h4{
-        display: none;    
+@media(max-width: 1008px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
     }
-}
 
-@media(max-width: 992px){
-    .menu-items{
-        height: 8vh;
-        padding: 0px;
-    }
-}
-
-@media(max-width: 790px){
-    .menu-items{
-        row-gap: 10px;
-        flex-wrap: nowrap;
-        height: 5vh;
-    }
-}
-
-@media(max-width: 790px){
-    .item{
-        padding: 0px;
-        display: flex;
-    }
-}
-
-@media(max-width: 500px){
-
-    .categorias{
-        row-gap: 10px;
-        margin-top: 30px;
-    }
-}
-
-@media(max-width: 991px){
-    .condiciones{
-        padding: 0px;
-        
-    }
-}
-
-@media(max-width: 767px){
-    .condiciones{
-        font-size: 12px;
-    }
-}
-
-@media(max-width: 547px){
-    .condiciones{
-        font-size: 10px;
-    }
-}
-
-@media(max-width: 767px){
-    .productos > *{
-        width: 50px;
-        font-size: 15px;
-        justify-content: center;
-    }
-}
-
-@media(max-width: 767px){
-    .productos > .letra_normal{
-        font-size: 12px;
-    }
-}
-
-@media(max-width: 767px){
-    .productos > .letra_normal2{
-        font-size: 11px;
-    }
-}
-
-@media(max-width: 767px){
-    .productos > h5{
-        font-size: 10px;
-    }
-}
-
-@media(max-width: 767px){
-    .productos > .mx-auto{
-        width: 70px;
-    }
-}
-
-@media(max-width: 676px){
-    .resumen-compras > button{
-        margin-left: 20vh;
+    .conversor > div > div > select{
         width: 30vh;
     }
-}
 
-@media(max-width: 767px){
-    .resumen-compras{
-        flex-wrap: nowrap;
+    .conversor > div{
+        width: 60vh;
     }
 }
 
-@media(max-width: 767px){
-    .precios{
-        margin-left: 30vh;
-        width: 200px;
+@media(max-width: 538px){
+    #pago{
+        width: 60vh;
     }
-}
 
-@media(max-width: 767px){
-    .letra_chica{
-        font-size: 8px;
-    }
-}
-
-@media(max-width: 767px){
-    .letra_nomal2{
-        font-size: 7px;
-    }
-}
-
-@media(max-width: 440px){
-    .precios{
-        margin-left: 30vh;
-        width: 190px;
-    }
-}
-
-@media(max-width: 991px){
-    .conversor{
-        width: 110vh;
-    }
-}
-
-@media(max-width: 860px){
-    .conversor{
-        width: 100vh;
-    }
-}
-
-@media(max-width: 767px){
-    .conversor{
-        width: 75vh;
-        padding: 0px;
-    }
-}
-
-@media(max-width: 560px){
-    .conversor{
-        width: 65vh;
-        padding: 0px;
-    }
-}
-
-@media(max-width: 767px){
-    .conversor > h1{
-        font-size: 17px;
-    }
-}
-
-@media(max-width: 767px){
-    select > #origen, #destino{
-        width: 10vh;
-    }
-}
-
-@media(max-width: 860px){
-    .conversoro{
-        width: 25vh;
-        display: inline-flex;
-    }
-}
-
-@media(max-width: 767px){
-    .conversoro{
-        width: 20vh;
-        display: inline-flex;
-    }
-}
-
-@media(max-width: 767px){
-    .letra_pequeña > h1{
-        font-size: 15px;
-    }
-}
-
-@media(max-width: 560px){
-    .letra_pequeña > h1{
-        font-size: 17px;
+    .resumen-compras > div{
+        width: 60vh;
     }
 }

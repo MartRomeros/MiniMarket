@@ -13,37 +13,36 @@
     <title>Mi perfil</title>
 </head>
 
-<body class="container">
+<body>
     <header>
+        <a href="./index.html"><img src="./css/imgs/mimarketnegro.webp"
+            alt="" width="150" class="logo"></a>
         <nav class="menu-principal">
-            <a href="./index.html" onclick="return validarCampos('campo');"><img src="./css/imgs/mimarketnegro.webp"
-                    alt="" width="150"></a>
-            <ul class="menu-items">
-                <a href="./login.html" class="item"><i class="bi bi-box-arrow-in-right"></i>Iniciar Sesión</a>
-                <a href="./Carrito.html" class="item"><i class="bi bi-cart4"></i>0</a>
-                <a href="./ayuda.html" class="item"><i class="bi bi-person-raised-hand"></i>Ayuda</a>
-                <a href="./contacto.html" class="item"><i class="bi bi-person-circle"></i>Contacto</a>
-                <a href="./perfil.html" class="item"><i class="bi bi-person-square"></i>Mi perfil</a>
-            </ul>
-        </nav>
-        <div class="separador"></div>
-        <!--Nav de categorias-->
-        <nav>
-            <h4>categorias:</h4>
-            <ul class="menu-categorias">
-                <a href="./despensa.html" class="item-categoria"><img src="./css/imgs/icons8_shopping_bag_full_15px.png"
-                        alt="Despensa">Despensa</a>
-                <a href="./lacteos.html" class="item-categoria"><img src="./css/imgs/icons8_milk_carton_15px.png"
-                        alt="Leche">Lácteos</a>
-                <a href="./Limpieza.html" class="item-categoria"><img src="./css/imgs/icons8_sanitizer_15px.png"
-                        alt="Limpieza">Limpieza</a>
-                <a href="./carniceria.html" class="item-categoria"><img src="./css/imgs/icons8_meat_15px.png"
-                        alt="Carnicería">Carnicería</a>
-                <a href="./Cervezas.html" class="item-categoria"><img src="./css/imgs/icons8_wine_15px.png"
-                        alt="Botillería">Botillería</a>
-                <a href="./Mascotas.html" class="item-categoria"><img
-                        src="./css/imgs/icons8_pet_commands_follow_15px.png" alt="Mascotas">Mascotas</a>
-            </ul>
+            <a href="./login.html" class="item"><i class="bi bi-box-arrow-in-right"></i>Login</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Categorias
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./despensa.html"><img
+                                src="./css/imgs/icons8_basket_15px.png" alt="Despensa">Despensa</a></li>
+                    <li><a class="dropdown-item" href="./lacteos.html"><img src="./css/imgs/icons8_coconut_milk_15px.png"
+                                alt="Leche">Lácteos</a></li>
+                    <li><a class="dropdown-item" href="./Limpieza.html"><img src="./css/imgs/icons8_sparkle_15px.png"
+                                alt="Limpieza">Limpieza</a></li>
+                    <li><a class="dropdown-item" href="./carniceria.html"><img src="./css/imgs/icons8_thanksgiving_15px_1.png"
+                                alt="Carnicería">Carnicería</a></li>
+                    <li><a class="dropdown-item" href="./Cervezas.html"><img src="./css/imgs/icons8_beer_15px.png"
+                                alt="Botillería">Botillería</a></li>
+                    <li><a class="dropdown-item" href="./Mascotas.html"><img
+                                src="./css/imgs/icons8_pet_commands_summon_15px.png" alt="Mascotas">Mascotas</a></li>
+                </ul>
+            </div>
+            <a href="./Carrito.html" class="item"><i class="bi bi-cart4"></i>0</a>
+            <a href="./ayuda.html" class="item"><i class="bi bi-person-raised-hand"></i>Ayuda</a>
+            <a href="./contacto.html" class="item"><i class="bi bi-person-circle"></i>Contacto</a>
+            <a href="./perfil.html" class="item"><i class="bi bi-person-square"></i>Mi perfil</a>
         </nav>
     </header>
 

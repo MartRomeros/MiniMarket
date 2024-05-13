@@ -47,7 +47,7 @@ section{
 
 
 button{
-    border-radius: 5vh !important;
+    border-radius: 2vh !important;
     padding: 1vh;
     border: none;
     width: 25vh;
@@ -59,57 +59,17 @@ button{
     color: white;
 }
 
-
-@media(max-width: 995px){
-    nav > h4{
-        display: none;    
-    }
-}
-
-@media(max-width: 992px){
-    .menu-items{
-        height: 8vh;
-        padding: 0px;
-    }
-}
-
-@media(max-width: 790px){
-    .menu-items{
-        row-gap: 10px;
-        flex-wrap: nowrap;
-        height: 5vh;
-    }
-}
-
-@media(max-width: 790px){
-    .item{
-        padding: 0px;
-        display: flex;
-    }
-}
-
-@media(max-width: 991px){
-    .condiciones{
-        padding: 0px;
-        font-size: 13px;
-    }
-}
-
-@media(max-width: 767px){
-    .condiciones{
-        font-size: 12px;
-    }
-}
-
-@media(max-width: 547px){
-    .condiciones{
-        font-size: 10px;
-    }
-}
-
 @media(max-width: 992px){
     .producto{
         width: 290px;
+    }
+
+    button{
+        width: 30vh;
+    }
+
+    .producto{
+        height: 80vh;
     }
 }
 
@@ -127,6 +87,6 @@ button{
 
 @media(max-width: 514px){
     .producto > button{
-        width: 10vh;
+        width: 20vh;
     }
 }

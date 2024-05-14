@@ -1,56 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 header{
-    padding: 2vh;
-    box-shadow: rgb(78, 77, 77) 1px 3px 3px;
+    box-shadow: rgb(78, 77, 77) 1px 1px 10px;
 }
 
-
-.menu-principal{
-    padding: 2vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-.menu-items {
-    padding: 2vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 150vh;
-    height: 12vh;
-}
-
-.item {
-    text-decoration: none;
-    color: black;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    width: 25vh;
-    padding: 1vh;
+.nav-link,
+.dropdown-menu{
     border-radius: 2vh;
-    transition: background-color 0.5s;
-    transition: color 0.5s;
+    color: black !important;
+    font-family: "Poppins", sans-serif !important;
+
 }
 
-.item:hover {
-    background: black;
-    color: white;
-}
-
-.dropdown > button{
-    color: black;
-    background-color: white;
-    font-family: "Poppins", sans-serif;
-    border: none;
-    
-}
-
-.dropdown > button:hover{
-    background: black;
-    color: white;
+.nav-link:hover{
+    background-color: black;
+    color: white !important;
 }
 
 h3,

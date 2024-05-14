@@ -65,3 +65,10 @@ form> div  >button:hover{
     color: white;
 }
 
+
+@media(max-width: 933px){
+    form{
+        flex-direction: column;
+    }
+}
+

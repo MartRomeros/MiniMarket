@@ -2,6 +2,14 @@
 
 section{
     padding: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    width: 90vh;
+    text-align: start;
+    font-family: "Poppins", sans-serif
 }
 
 main{
@@ -78,6 +86,12 @@ main{
     border-radius: 2vh;
     padding: 1vh;
     border: none;
+    
+}
+
+.resumen-compras > button:hover{
+    background-color: black;
+    color: white;
     
 }
 

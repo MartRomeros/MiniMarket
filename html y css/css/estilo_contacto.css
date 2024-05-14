@@ -4,57 +4,38 @@ section{
     padding: 2vh;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 4vh;
-
 }
 
-form{
+
+form {
+    padding: 2vh;
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: column;*/
+    flex-direction: column;
+    gap: 2vh;
     justify-content: center;
-    align-items: center;
-    box-shadow: rgb(24, 23, 23) 3px 3px 5px;
-    border-radius: 2vh;
-    padding: 2vh;
+    box-shadow: rgb(24, 23, 23) 3px 5px 5px;
     width: 90vh;
-}
-
-form > * {
-    margin-top: 2vh;
 }
 
 form > div{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding: 2vh;
-    width: 80vh;
-
 }
 
+
 form > div > input,
-form > div > textarea{
-    padding: 1vh;
-    border-radius: 2vh;
+form > div > textarea,
+form > button{
     border: rgb(163, 163, 163) 1px solid;
     border-radius: 2vh;
     padding: 1vh;
     color: black;
     font-family: "Poppins", sans-serif;
-}
-
-form > button{
-    border: none;
-    padding: 1vh;
-    border-radius: 2vh;
-    width: 50vh;
-    margin-left: 26vh;
-
+    transition: 0.5s;
 }
 
 form > button:hover{
     background-color: black;
     color: white;
-}
+} 

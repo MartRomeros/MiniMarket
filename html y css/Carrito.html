@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--linkamos bootrap5-->
-    <link rel="stylesheet" href="./css/estilo_index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -77,114 +76,135 @@
         </nav>
     </header>
 
-    <section>
-        <h1>Carrito de compras:</h1>
-        <main>
-            <div class="productos">
-                <img src="./css/imgs/granizo-transparente.webp" alt="cerveza artesanal" class="mx-auto">
-                <h5 class="letra_chica">Cerveza granizo gran IPA</h5>
-                <p class="letra_chica">473 cc 7,5° alc. <br> $3500 por unidad</p>
-                <div class="opcion-compra">
-                    <button class="decremento" onclick="">-</button>
-                    <p class="cantidad">1</p>
-                    <button>+</button>
+    <section class="container-fluid">
+        <h1>Carrito de compras</h1>
+        <main class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="./css/imgs/granizo-transparente.webp" class="card-img-top" alt="cerveza-granizo">
+                <div class="card-body">
+                    <h5 class="card-title">Cerveza gran IPA</h5>
+                    <p class="card-text">473 cc 7,5° alc. <br> $3500 por unidad</p>
+                    <div>
+                        <div>
+                            <button class="aumento">+</button>
+                            <p class="cantidad">1</p>
+                            <button class="decremento">-</button>
+                        </div>
+                        <div>
+                            <p class="precio">3500 CLP</p>
+                        </div>
+                    </div>
                 </div>
-                <h5 id="valor">$3500</h5>
             </div>
 
-            <div class="productos">
-                <img src="./css/imgs/Mantequilla.jpeg" alt="Mantequilla colun" class="mx-auto">
-                <h5 class="letra_normal">Mantequilla colun</h5>
-                <p class="letra_normal">con sal 250g <br> $2500</p>
-                <div class="opcion-compra">
-                    <button>-</button>
-                    <p>1</p>
-                    <button>+</button>
+            <div class="card" style="width: 18rem;">
+                <img src="./css/imgs/Mantequilla.jpeg" class="card-img-top" alt="mantequilla-colun">
+                <div class="card-body">
+                    <h5 class="card-title">Mantequilla colun</h5>
+                    <p class="card-text">con sal 250g <br> $2500</p>
+                    <div>
+                        <div>
+                            <button class="aumento">+</button>
+                            <p class="cantidad">1</p>
+                            <button class="decremento">-</button>
+                        </div>
+                        <div>
+                            <p class="precio">2500 CLP</p>
+                        </div>
+                    </div>
                 </div>
-                <h5>$2500</h5>
             </div>
 
-            <div class="productos">
-                <img src="./css/imgs/croissant.png" alt="Pan croissant" class="mx-auto">
-                <h5 class="letra_normal2">Croussant artesano</h5>
-                <p class="letra_normal2">500g<br> $750 por unidad</p>
-                <div class="opcion-compra">
-                    <button>-</button>
-                    <p>1</p>
-                    <button>+</button>
+            <div class="card" style="width: 18rem;">
+                <img src="./css/imgs/croissant.png" class="card-img-top" alt="croissant">
+                <div class="card-body">
+                    <h5 class="card-title">Croussant artesano</h5>
+                    <p class="card-text">500g<br> $750 por unidad</p>
+                    <div>
+                        <div>
+                            <button class="aumento">+</button>
+                            <p class="cantidad">1</p>
+                            <button class="decremento">-</button>
+                        </div>
+                        <div>
+                            <p class="precio">750 CLP</p>
+                        </div>
+                    </div>
                 </div>
-                <h5>$750</h5>
             </div>
+
         </main>
 
-        <div class="resumen-compras">
-            <h3>Resumen de las compras:</h3>
-            <div>
+        <main class="row resumen-compras">
+            <h5>Resumen de compras:</h5>
+            <div class="col">
                 <div>
-                    <p>Subtotal</p>
-                    <p>Descuento</p>
-                    <p>Total</p>
-                </div>
-                <div class="precios">
-                    <p id="subtotal">$6750</p>
-                    <p id="descuento">$0</p>
-                    <p id="total">$6750</p>
+                    <h5>Subtotal</h5>
+                    <h5>Descuento</h5>
+                    <h5>Total</h5>
                 </div>
             </div>
-            <button id="pago">Proceder al pago</button>
-        </div>
-
-        <div class="conversor">
-            <h3>¡Ahora puedes verificar cuanto debes pagar en otras monedas!</h3>
-            <div>
+            <div class="col totales">
                 <div>
-                    <p>De: CLP</p>
-                </div>
-                <div>
-                    <label for="destino">A:</label>
-                    <select name="origen" id="destino">
-                        <option value="CLP">CLP</option>
-                        <option value="dolar">Dolar(US)</option>
-                        <option value="Euro">Euro</option>
-                    </select>
+                    <h5>6750</h5>
+                    <h5>0</h5>
+                    <h5 id="total">6750</h5>
                 </div>
             </div>
-            <div>
-                <div class="seccion-conversion">
-                    <h3 id="precio-conversion">6750</h3>
-                    <h3 id="moneda-conversion">CLP</h3>
-                </div>
-                <button onclick="convertirMonedas()">Realizar Conversión</button>
+            <div class="col pago">
+                <button id="procesar-pago">Procesar Pago</button>
+            </div>
+        </main>
+        <main class="row conversor">
+            <h5>Ahora puedes realizar pagos con monedas disponibles en nuestro mercado!</h5>
+            <div class="col-6">
+                <h5>De: CLP</h5>
+            </div>
+            <div class="col-6">
+                <label for="destino"><h5>A:</h5></label>
+                <select id="destino">
+                    <option value="clp">CLP</option>
+                    <option value="dolar">Dolar Norteamericano</option>
+                    <option value="euro">Euro</option>
+                </select>
             </div>
 
+            <div class="col-12">
+                <h5 id="convertido">Total a pagar: 6750 CLP</h5>
+            </div>
+
+            <div class="col-12">
+                <button id="conversion">Realizar conversion</button>
+            </div>
+        </main>
     </section>
 
-    <footer>
-        <div class="condiciones">
+    <footer class="container-fluid">
+        <div class="col">
             <h3>Conócenos</h3>
             <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Melipilla/@-33.6949556,-71.214659,16z/data=!4m6!3m5!1s0x966255eae610cb2f:0xc3fdb55ead51065b!8m2!3d-33.6942128!4d-71.2136897!16s%2Fg%2F11cnc3_cb5?entry=ttu"
-                target="_blank" class="terminos">Ubicación</a>
-            <a href="./informacion legal.html" class="terminos">Información Legal</a>
-            <a href="./terminos y condiciones de uso.html" class="terminos">Términos y Condiciones de Uso</a>
-            <a href="politica_privacidad.html" class="terminos">Política y Privacidad</a>
-            <a href="#" class="terminos">+569 7675 9418</a>
-            <a href="#" class="terminos">mimarket@gmail.com</a>
+                target="_blank">Ubicación</a>
+            <a href="./informacion legal.html">Información Legal</a>
+            <a href="./terminos y condiciones de uso.html">Términos y Condiciones de Uso</a>
+            <a href="politica_privacidad.html">Política y Privacidad</a>
+            <a href="#">+569 7675 9418</a>
+            <a href="#">mimarket@gmail.com</a>
         </div>
-        <div class="condiciones">
+        <div class="col">
             <h3>Mi cuenta</h3>
-            <a href="#" class="terminos">Pedir</a>
-            <a href="./login.html" class="terminos">Iniciar Sesión</a>
+            <a href="#">Pedir</a>
+            <a href="./login.html">Iniciar Sesión</a>
             <br>
             <br>
             <br>
             <br>
         </div>
-        <div class="condiciones">
+        <div class="col">
             <h3>Redes Sociales</h3>
-            <a href="https://www.instagram.com/elmvuri.pl?igsh=MWQ0cDBkdWFucmk5Zg%3D%3D&utm_source=qr" target="_blank"
-                class="terminos">Instagram</a>
-            <a href="https://www.facebook.com/huertos.jym" target="_blank" class="terminos">Facebook</a>
-            <a href="https://twitter.com/MarketMiniBoss" target="_blank" class="terminos">Twitter</a>
+            <a href="https://www.instagram.com/elmvuri.pl?igsh=MWQ0cDBkdWFucmk5Zg%3D%3D&utm_source=qr"
+                target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/huertos.jym" target="_blank">Facebook</a>
+            <a href="https://twitter.com/MarketMiniBoss" target="_blank">Twitter</a>
             <br>
             <br>
             <br>
@@ -194,7 +214,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="./JS/validaciones.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 
 </html>

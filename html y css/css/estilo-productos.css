@@ -1,92 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-p,
-h5,
-label {
-    color: black;
-    font-family: "Poppins", sans-serif;
+header {
+    box-shadow: rgb(121, 119, 119) 0px 11px 6px -10px;
+}
 
+.nav-link,
+.dropdown-menu {
+    border-radius: 2vh;
+    color: black !important;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.nav-link:hover {
+    background-color: black;
+    color: white !important;
 }
 
 section{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    padding: 2vh;
 
 }
 
-.filas{
+.row{
+    display: flex;
+    gap: 10vh;
     padding: 2vh;
 }
 
-.producto{
-    box-shadow: rgb(24, 23, 23) 3px 2px 4px;
+section > .row > .col{
+    border-radius: 2vh;
+    box-shadow: 10px 9px 5px -6px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 2vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    border-radius: 2vh;
-    width: 50vh;
-    height: 60vh;
 }
 
-.producto > div{
-    display: flex;
-    justify-content: center;
-    /*flex-wrap: wrap*/;
-    width: 20vh;
-    height: 25vh;
-}
-
-.producto> *{
-    text-align: center;
-}
-
-
-
-button{
-    border-radius: 2vh !important;
-    padding: 1vh;
-    border: none;
+.col > div > img{
     width: 25vh;
-    transition: background 0.5s;
+    height: 20vh;
 }
 
-.producto > button:hover{
+.col > button{
+    border: none;
+    border-radius: 2vh;
+    padding: 1vh;
+}
+
+.col > button:hover{
     background-color: black;
     color: white;
 }
 
-@media(max-width: 992px){
-    .producto{
-        width: 290px;
-    }
-
-    button{
-        width: 30vh;
-    }
-
-    .producto{
-        height: 80vh;
-    }
+footer {
+    padding: 2vh;
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-@media(max-width: 768px){
-    .producto{
-        width: 210px;
-    }
+footer>div {
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
 }
 
-@media(max-width: 514px){
-    .producto{
-        width: 200px;
-    }
+footer>div>a,
+footer>div>h3 {
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
 
-@media(max-width: 514px){
-    .producto > button{
-        width: 20vh;
-    }
+footer>div:first-child {
+    border-right: white 2px solid;
+}
+
+footer>div:last-child {
+    border-left: white 2px solid;
+}
+
+footer>div>a:hover {
+    text-decoration: underline white;
 }

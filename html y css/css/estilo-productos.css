@@ -4,6 +4,12 @@ header {
     box-shadow: rgb(121, 119, 119) 0px 11px 6px -10px;
 }
 
+p,h5,button{
+    color: black;
+    font-family: "Poppins", sans-serif !important;
+    text-align: center;
+}
+
 .nav-link,
 .dropdown-menu {
     border-radius: 2vh;
@@ -18,38 +24,32 @@ header {
 }
 
 section{
-    padding: 2vh;
-
+    display: flex;
+    flex-direction: column; 
+    gap: 4vh;
 }
 
 .row{
-    display: flex;
-    gap: 10vh;
     padding: 2vh;
+    display: flex;
+    gap: 6svh;
 }
 
-section > .row > .col{
+.row > .col{
     border-radius: 2vh;
-    box-shadow: 10px 9px 5px -6px;
+    border: 1px lightgray solid;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2vh;
-}
-
-.col > div > img{
-    width: 25vh;
-    height: 20vh;
 }
 
 .col > button{
     border: none;
     border-radius: 2vh;
-    padding: 1vh;
-}
-
-.col > button:hover{
     background-color: black;
     color: white;
+
 }
 
 footer {
@@ -82,4 +82,15 @@ footer>div:last-child {
 
 footer>div>a:hover {
     text-decoration: underline white;
+}
+
+@media(max-width: 1009px){
+    .row{
+        flex-direction: column;
+        width: 60vh;
+    }
+
+    section{
+        align-items: center;
+    }
 }

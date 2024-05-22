@@ -77,27 +77,57 @@
     </header>
 
     <section class="container-fluid">
-        <form action="./index.html" class="row">
-            <h1>Inicio de sesión</h1>
-            <div class="col">
-                <label for="correo">Correo electronico:</label>
-                <input type="email" placeholder="Ingrese el correo electronico" id="correo" class="campo">
-            </div>
-            <div class="col">
-                <label for="pass">Contraseña:</label>
-                <input type="password" placeholder="Ingrese su contraseña" id="pass" class="campo">
-            </div>
-            <div class="col">
-                <a href="">¿Olvidaste tu contraseña?</a>
-                <a href="">Registrarse</a>
-                <p id="alerta"></p>
-            </div>
-            <div class="col">
-                <button id="aceptar">Ingresar</button>
-            </div>
-        </form>
-    </section>
+        <div class="row">
+            <form action="./index.html" class="col">
+                <h1><i class="bi bi-door-closed-fill"></i>Inicio de sesión</h1>
+                <div class="col">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" placeholder="Ingresa tu correo electronico" id="correo">
+                </div>
+                <div class="col">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" placeholder="Ingresa tu contraseña" id="pass">
+                </div>
+                <div class="col">
+                    <a href="#">Olvidaste tu contraseña?</a>
+                    <p id="error">Verifica los campos!</p>
+                </div>
+                <div class="col">
+                    <button>Ingresar</button>
+                </div>
+            </form>
 
+            <form action="./index.html" class="col">
+                <h1> <i class="bi bi-person-plus-fill"></i>Registrarme</h1>
+                <h3>Completa el formulario para ingresar de manera exitosa.</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="col-6">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+                    </div>
+                    <div class="col-12">
+                        <label for="registro-correo">Correo electronico</label>
+                        <input type="email" id="registro-correo" placeholder="Ingresa tu correo electronico">
+                    </div>
+                    <div class="col-12">
+                        <label for="registro-pass">Contraseña</label>
+                        <input type="password" id="registro-pass" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <div class="col-12">
+                        <label for="confirm-pass">Confirma tu contraseña</label>
+                        <input type="password" id="confirm-pass" placeholder="Escribe tu contraseña">
+                    </div>
+                    <div class="col-12">
+                        <button>Registrarme</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <footer class="container-fluid">
         <div class="col">
@@ -136,7 +166,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!--Linkamos el script para las validaciones-->
-    <script src="./JS/login.js"></script>
+
 </body>
 
 </html>

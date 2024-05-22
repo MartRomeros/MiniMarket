@@ -52,6 +52,15 @@ section{
 
 }
 
+.col > div{
+    display: flex;
+    gap: 2vh;
+}
+
+.col > div > h6{
+    text-decoration: line-through;
+}
+
 footer {
     padding: 2vh;
     background: black;

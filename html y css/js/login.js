@@ -15,6 +15,7 @@ document.querySelector("#login").addEventListener("submit",(evento)=>{
 });
 //validar registro:
 document.querySelector("#registro").addEventListener("submit",(evento)=>{
+
     let camposLogin = document.querySelectorAll(".campo");
     for(let i=0;i<camposLogin.length;i++){
         if(camposLogin[i].value == ""){
@@ -24,11 +25,24 @@ document.querySelector("#registro").addEventListener("submit",(evento)=>{
             evento.preventDefault();
         }else{
             camposLogin[i].style.border = "1px lightgrey solid";
-            document.querySelector("#error").innerText = ""
+            document.querySelector("#error").innerText = "";
         }
     }
 
+    let pass = document.querySelector("#pass");
+    let confirmPass = document.querySelector("#confirm-pass");
+
+    if(confirmPass.value != pass.value){
+        document.querySelector("#confirm-pass").style.border = "red 1px solid";
+        document.querySelector("#iguales").style.color = "red";
+        document.querySelector("#iguales").innerText = "Las contraseñas no coinciden";
+        evento.preventDefault();
+    }else{
+        document.querySelector("#iguales").innerText = "";
+        document.querySelector("#confirm-pass").style.border = "1px lightgrey solid";
+    }
 });
+
 
 
 

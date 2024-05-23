@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="css/estilo_login.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--link de los iconos de bootstrap5-->
@@ -76,58 +77,63 @@
         </nav>
     </header>
 
-    <section class="container-fluid">
-        <div class="row">
-            <form action="./index.html" class="col">
-                <h1><i class="bi bi-door-closed-fill"></i>Inicio de sesión</h1>
-                <div class="col">
-                    <label for="correo">Correo electronico</label>
-                    <input type="email" placeholder="Ingresa tu correo electronico" id="correo">
-                </div>
-                <div class="col">
-                    <label for="pass">Contraseña</label>
-                    <input type="password" placeholder="Ingresa tu contraseña" id="pass">
-                </div>
-                <div class="col">
-                    <a href="#">Olvidaste tu contraseña?</a>
-                    <p id="error">Verifica los campos!</p>
-                </div>
-                <div class="col">
-                    <button>Ingresar</button>
-                </div>
-            </form>
-
-            <form action="./index.html" class="col">
-                <h1> <i class="bi bi-person-plus-fill"></i>Registrarme</h1>
-                <h3>Completa el formulario para ingresar de manera exitosa.</h3>
+    <main class="container-fluid">
+        <section class="row">
+            <form action="./index.html" class="col" id="login">
+                <h2><i class="bi bi-door-open-fill"></i>Inicio de sesión</h2>
+                <h6>Ingresa tus datos para ingresar</h6>
                 <div class="row">
-                    <div class="col-6">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
-                    </div>
-                    <div class="col-6">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Ingresa tu apellido">
-                    </div>
-                    <div class="col-12">
-                        <label for="registro-correo">Correo electronico</label>
-                        <input type="email" id="registro-correo" placeholder="Ingresa tu correo electronico">
-                    </div>
-                    <div class="col-12">
-                        <label for="registro-pass">Contraseña</label>
-                        <input type="password" id="registro-pass" placeholder="Ingresa tu contraseña">
-                    </div>
-                    <div class="col-12">
-                        <label for="confirm-pass">Confirma tu contraseña</label>
-                        <input type="password" id="confirm-pass" placeholder="Escribe tu contraseña">
-                    </div>
-                    <div class="col-12">
-                        <button>Registrarme</button>
-                    </div>
+                    <fieldset class="col-12">
+                        <label for="log-correo">Correo electronico</label>
+                        <input type="email" placeholder="Ingresa tu correo electronico" id="log-correo" class="campo-log">
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <label for="log-pass">Contraseña</label>
+                        <input type="password" placeholder="Ingresa tu contraseña" id="log-pass" class="campo-log">
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <a href="">¿Olvidaste tu contraseña?</a>
+                        <p id="error-log"></p>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <button>Ingresar</button>
+                    </fieldset>
                 </div>
             </form>
-        </div>
-    </section>
+            <form action="" class="col" id="registro">
+                <h2><i class="bi bi-person-plus-fill"></i>Registrarme</h2>
+                <h6>Completa este formulario para registrarte</h6>
+                <div class="row">
+                    <fieldset class="col-12">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Ingresa tu nombre" id="nombre" class="campo">
+                    </fieldset>
+                    <fieldset class="col-12s">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" placeholder="Ingresa tu apellido" id="apellido" class="campo">
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <label for="correo">Correo electronico</label>
+                        <input type="email" placeholder="Ingresa tu correo electronico" id="correo" class="campo">
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <label for="pass">Contraseña</label>
+                        <input type="password" placeholder="Ingresa tu contraseña" id="pass" class="campo">
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <label for="confirm-pass">Confirmar tu contraseña</label>
+                        <input type="password" placeholder="Confirma tu contraseña" id="confirm-pass" class="campo">
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <p id="error"></p>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <button>Registrarme</button>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+    </main>
 
     <footer class="container-fluid">
         <div class="col">
@@ -166,6 +172,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!--Linkamos el script para las validaciones-->
+    <script src="./js/login.js"></script>
 
 </body>
 

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--Link de la hoja de estilos propia-->
     <link rel="stylesheet" href="./css/estilo_carro.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
     <title>Carrito</title>
 </head>
 
@@ -73,57 +74,59 @@
         </nav>
     </header>
 
-    <section class="container-fluid">
-        <h1>Carrito de compras</h1>
-        <main class="row">
-
-        </main>
-
-        <main class="row resumen-compras">
-            <h5>Resumen de compras:</h5>
-            <div class="col">
-                <div>
-                    <h5>Subtotal</h5>
-                    <h5>Descuento</h5>
-                    <h5>Total</h5>
+    <main class="container-fluid">
+        <h2>Aun no has agregado nada al carrito!</h2>
+        <section class="row" id="productos">
+            
+        </section>
+        <section class="row"> <!--Seccion de totales-->
+            <article class="col">
+                <div class="col">
+                    <h3>Resumen de compras</h3>
+                    <button>Vaciar Carrito</button>
                 </div>
-            </div>
-            <div class="col totales">
-                <div>
-                    <h5>6750</h5>
-                    <h5>0</h5>
-                    <h5 id="total">6750</h5>
+                <section class="row">
+                    <div class="col">
+                        <h5>Subtotal</h5>
+                        <h5>Desuento</h5>
+                        <h5>Total</h5>
+                    </div>
+                    <div class="col">
+                        <h5>$0</h5>
+                        <h5>$0</h5>
+                        <h5>$0</h5>
+                    </div>
+                    <div class="col-12">
+                        <button>Proceder al pago</button>
+                    </div>
+                </section>
+            </article>
+        </section>
+        <section class="row"> <!--Seccion de conversion-->
+            <article class="col">
+                <h3>Conversor de monedas</h3>
+                <h6>Ahora puedes realizar conversiones para pagar con tipos de monedas que esten disponibles en nuestro
+                    mercado</h6>
+                <div class="row">
+                    <div class="col-6">
+                        <h5>0</h5>
+                        <h5>CLP</h5>
+                    </div>
+                    <fieldset class="col-6">
+                        <label for="opciones">Selecciona la moneda para realizar la conversion</label>
+                        <select id="opciones">
+                            <option value="dolar">Dolar Estadounidense</option>
+                            <option value="euro">Euro</option>
+                            <option value="clp">CLP (Pesos Chilenos)</option>
+                        </select>
+                    </fieldset>
+                    <div class="col-12">
+                        <button>Realizar Conversion</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col pago">
-                <button id="procesar-pago">Procesar Pago</button>
-            </div>
-        </main>
-        <main class="row conversor">
-            <h5>Ahora puedes realizar pagos con monedas disponibles en nuestro mercado!</h5>
-            <div class="col-6">
-                <h5>De: CLP</h5>
-            </div>
-            <div class="col-6">
-                <label for="destino">
-                    <h5>A:</h5>
-                </label>
-                <select id="destino">
-                    <option value="clp">CLP</option>
-                    <option value="dolar">Dolar Norteamericano</option>
-                    <option value="euro">Euro</option>
-                </select>
-            </div>
-
-            <div class="col-12">
-                <h5 id="convertido">Total a pagar: 6750 CLP</h5>
-            </div>
-
-            <div class="col-12">
-                <button id="conversion">Realizar conversion</button>
-            </div>
-        </main>
-    </section>
+            </article>
+        </section>
+    </main>
 
     <footer class="container-fluid">
         <div class="col">
@@ -161,6 +164,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="./js/carrito.js"></script>
+    <script src="./js/productos.js"></script>
 </body>
 
 </html>

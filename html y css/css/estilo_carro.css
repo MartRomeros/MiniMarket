@@ -1,173 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-h1,
-p,
-h5,
-button,
-input,
-label {
-    font-family: "Poppins", sans-serif;
-    color: black;
-    text-decoration: none !important;
+section,main,article > section{
+    padding: 2vh;
 }
-
-header {
-    box-shadow: rgb(121, 119, 119) 0px 11px 6px -10px;
-}
-
-.nav-link,
-.dropdown-menu {
+article{
     border-radius: 2vh;
-    color: black !important;
-    font-family: "Poppins", sans-serif !important;
-
-}
-
-.nav-link:hover {
-    background-color: black;
-    color: white !important;
-}
-
-nav {
-    padding: 2vh !important;
-}
-
-section {
+    border: 1px lightgray solid;
     padding: 2vh;
 }
 
-main {
-    padding: 2vh;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card {
-    border-radius: 2vh;
-    box-shadow: rgb(29, 29, 29) 10px 11px 6px -6px;
-    margin-top: 4vh;
-}
-
-.card>img {
-    width: 20vh;
-    height: 20vh;
-}
-
-.card>div>div {
-    padding: 1vh;
+article > div{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.card>div>div>* {
+button,select{
+    border:  1px lightgray solid;
+    border-radius: 2vh;
+    padding: 1vh;
+}
+
+article > section > div{
+    padding: 2vh;
+}
+
+.col-6{
+    padding: 2vh;
+}
+
+article > div > div{
     display: flex;
     gap: 2vh;
-
 }
 
-.card>div>div>div>button {
-    border: none;
-    border-radius: 1vh;
-    height: 5vh;
-    width: 5vh;
 
-}
-
-.card>div>div>div>button:hover {
-    background-color: black;
-    color: white;
-
-}
-
-.resumen-compras,
-.conversor {
-    padding: 2vh;
-    margin-top: 10vh;
-    border-radius: 2vh;
-    box-shadow: black 0px 2px 6px 1px;
-}
-
-.resumen-compras>div {
-    padding: 2vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.resumen-compras>div>button {
-    padding: 1vh;
-    border: none;
-    border-radius: 2vh;
-}
-
-.resumen-compras>div>button:hover,
-.col-12>button:hover {
-    color: white;
-    background-color: black;
-}
-
-.col-6 {
-    display: flex;
-    padding: 2vh;
-}
-
-.col-6>select {
-    border-radius: 2vh;
-    padding: 0.5vh;
-}
-
-.col-12 {
-    padding: 2vh;
-    display: flex;
-}
-
-.col-12>input {
-    width: 55vh;
-    border: none;
-    border: rgb(179, 177, 177) 1px solid;
-    border-radius: 2vh;
-    padding: 1vh;
-    text-align: center;
-}
-
-.col-12>button {
-    border: none;
-    border: rgb(179, 177, 177) 1px solid;
-    border-radius: 2vh;
-    padding: 0.5vh;
-    width: 72vh;
-
-}
-
-footer {
-    padding: 2vh;
-    background: black;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer>div {
-    padding: 2vh;
-    display: flex;
-    flex-direction: column;
-}
-
-footer>div>a,
-footer>div>h3 {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-footer>div:first-child {
-    border-right: white 2px solid;
-}
-
-footer>div:last-child {
-    border-left: white 2px solid;
-}
-
-footer>div>a:hover {
-    text-decoration: underline white;
-}

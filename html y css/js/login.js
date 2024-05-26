@@ -44,5 +44,19 @@ document.querySelector("#registro").addEventListener("submit",(evento)=>{
 });
 
 
+addEventListener("load",()=>{
+    fetch('https://randomuser.me/api/').then(function(response){
+        return response.json();
+    }).then(function(valor){
+        let iniciales = valor.results[0].name.title;
+        let nombre = valor.results[0].name.first;
+        let apellido = valor.results[0].name.last;
+        document.querySelector("#profile").src = valor.results[0].picture.thumbnail;
+        document.querySelector("#nombre-user").innerText = iniciales + " " + nombre + " " + apellido;
+    });
+
+});
+
+
 
 

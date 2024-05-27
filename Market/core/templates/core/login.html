@@ -1,0 +1,81 @@
+{% extends 'core/header_footer.html' %}
+{% load static %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'CSS/estilo_login.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="container-fluid">
+    <section class="row">
+        <form action="./index.html" class="col" id="login">
+            <h2><i class="bi bi-door-open-fill"></i>Inicio de sesión</h2>
+            <h6>Ingresa tus datos para ingresar</h6>
+            <div class="row">
+                <fieldset class="col-12">
+                    <label for="log-correo">Correo electronico</label>
+                    <input type="email" placeholder="Ingresa tu correo electronico" id="log-correo" class="campo-log">
+                </fieldset>
+                <fieldset class="col-12">
+                    <label for="log-pass">Contraseña</label>
+                    <input type="password" placeholder="Ingresa tu contraseña" id="log-pass" class="campo-log">
+                </fieldset>
+                <fieldset class="col-12">
+                    <a href="">¿Olvidaste tu contraseña?</a>
+                    <p id="error-log"></p>
+                </fieldset>
+                <fieldset class="col-12">
+                    <button>Ingresar</button>
+                </fieldset>
+            </div>
+        </form>
+        <form action="./index.html" class="col" id="registro">
+            <h2><i class="bi bi-person-plus-fill"></i>Registrarme</h2>
+            <h6>Completa este formulario para registrarte</h6>
+            <div class="row">
+                <fieldset class="col-12">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" class="campo">
+                </fieldset>
+                <fieldset class="col-12s">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" placeholder="Ingresa tu apellido" id="apellido" class="campo">
+                </fieldset>
+                <fieldset class="col-12">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" placeholder="Ingresa tu correo electronico" id="correo" class="campo">
+                </fieldset>
+                <fieldset class="col-12">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" placeholder="Ingresa tu contraseña" id="pass" class="campo">
+                </fieldset>
+                <fieldset class="col-12">
+                    <label for="confirm-pass">Confirmar tu contraseña</label>
+                    <input type="password" placeholder="Confirma tu contraseña" id="confirm-pass" class="campo">
+                    <p id="iguales"></p>
+                </fieldset>
+                <fieldset class="col-12">
+                    <p id="error"></p>
+                </fieldset>
+                <fieldset class="col-12">
+                    <button>Registrarme</button>
+                </fieldset>
+            </div>
+        </form>
+    </section>
+    <!--Seccion de comentarios-->
+    <section class="row">
+        <h3>Seccion de comentarios</h3>
+        <article class="col">
+            <img src="" class="img-thumbnail" alt="..." id="profile">
+            <h4 id="nombre-user">Nombre de usuario</h4>
+            <p>¡Me encanta este minimarket! Siempre encuentro todo lo que necesito y a precios muy competitivos. La
+                calidad de los productos es excelente y la atención del personal es inmejorable.</p>
+        </article>
+    </section>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'JS/login.js' %}" ></script>
+{% endblock %}

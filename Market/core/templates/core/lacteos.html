@@ -1,0 +1,75 @@
+{% extends 'core/header_footer.html' %}
+{% load static %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'CSS/estilo-productos.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/304194-280-280.webp' %}" alt="leche-semi">
+            <p>Cuisine & Co Leche Semidescremada 1 L</p>
+            <h5>$1.049</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/304187-280-280.webp' %}" alt="leche-entera">
+            <p>Cuisine & Co Leche Entera 1 L</p>
+            <h5>$1.049</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/343058-280-280.webp' %}" alt="mantequilla">
+            <p>Soprole Mantequilla con Sal 250 g</p>
+            <h5>$2.349</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/162662-280-280.jpeg' %}" alt="pack-yogurt">
+            <p>Colun Pack 12 un. Yoghurt batido 125 g</p>
+            <h5>$3.449</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/188446-280-280.webp' %}" alt="yogurt-proteina">
+            <p>Soprole Yoghurt Proteína Frutilla 155 g</p>
+            <h5>$645</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/335967-280-280.webp' %}" alt="leche-nido">
+            <p>Nido Leche en Polvo Nido Entera 1.35 kg</p>
+            <h5>$14.490</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/174993-280-280.webp' %}" alt="bebida-lactea">
+            <p>Chamyto Bebida Láctea Chamyto Frutilla Multipack 12x80ml</p>
+            <h5>$4.759</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/156867-280-280.jpeg' %}" alt="yogurt-bolsa">
+            <p>Colun Yoghurt batido vainilla <br> 1 kg</p>
+            <h5>$1.879</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Lacteos/289622-280-280.webp' %}" alt="">
+            <p>Soprole Pack 6 un. Probiótico UNO Multifruta 80 ml</p>
+            <h5>$1.759</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'JS/productos.js' %}"></script>
+{% endblock %}

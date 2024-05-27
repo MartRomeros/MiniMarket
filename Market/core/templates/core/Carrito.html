@@ -1,0 +1,66 @@
+{% extends 'core/header_footer.html' %}
+{% load static %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'CSS/estilo_carro.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="container-fluid">
+    <h2>Aun no has agregado nada al carrito!</h2>
+    <section class="row" id="productos">
+
+    </section>
+    <section class="row"> <!--Seccion de totales-->
+        <article class="col">
+            <div class="col">
+                <h3>Resumen de compras</h3>
+                <button>Vaciar Carrito</button>
+            </div>
+            <section class="row">
+                <div class="col">
+                    <h5>Subtotal</h5>
+                    <h5>Desuento</h5>
+                    <h5>Total</h5>
+                </div>
+                <div class="col">
+                    <h5>$0</h5>
+                    <h5>$0</h5>
+                    <h5>$0</h5>
+                </div>
+                <div class="col-12">
+                    <button>Proceder al pago</button>
+                </div>
+            </section>
+        </article>
+    </section>
+    <section class="row"> <!--Seccion de conversion-->
+        <article class="col">
+            <h3>Conversor de monedas</h3>
+            <h6>Ahora puedes realizar conversiones para pagar con tipos de monedas que esten disponibles en nuestro
+                mercado</h6>
+            <div class="row">
+                <div class="col-6">
+                    <h5>0</h5>
+                    <h5>CLP</h5>
+                </div>
+                <fieldset class="col-6">
+                    <label for="opciones">Selecciona la moneda para realizar la conversion</label>
+                    <select id="opciones">
+                        <option value="dolar">Dolar Estadounidense</option>
+                        <option value="euro">Euro</option>
+                        <option value="clp">CLP (Pesos Chilenos)</option>
+                    </select>
+                </fieldset>
+                <div class="col-12">
+                    <button>Realizar Conversion</button>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'JS/carrito.js' %}"></script>
+{% endblock %}

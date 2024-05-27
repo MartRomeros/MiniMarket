@@ -1,0 +1,75 @@
+{% extends 'core/header_footer.html' %}
+{% load static %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'CSS/estilo-productos.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Pan/1.webp' %}" alt="">
+            <p>500 g ($2.190 x kg) <br> Panadería Propia Marraquetas kg</p>
+            <h5>$1.095</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Pan/2.webp' %}" alt="">
+            <p>500 g ($2.950 x kg) <br> Panadería Propia Pan Rústico kg</p>
+            <h5>$1.475</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Pan/3.webp' %}" alt="">
+            <p>500 g ($2.890 x kg) <br> Panadería Propia Pan Hot Dog kg</p>
+            <h5>$1.445</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Pan/4.webp' %}" alt="">
+            <p>1 kg ($2.089 x kg) <br> Panadería Propia Hallullas kg</p>
+            <h5>$2.089</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Pan/5.webp' %}" alt="">
+            <p>Cuisine & Co Torta Panqueque Naranja 15 Porciones</p>
+            <h5>$2.589</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Pan/6.jpeg' %}" alt="">
+            <p>1 un ($4.414 x kg) <br> Fuchs Pan de molde light multigrano 650 g</p>
+            <h5>$15.990</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Pan/7.webp' %}" alt="">
+            <p>1 un ($7.114 x kg) <br> Pancho Villa Tortillas XL 8 un. 350 g</p>
+            <h5>$2.869</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Pan/8.webp' %}" alt="">
+            <p>Cuisine & Co Torta Tres Leches <br> 15 Porciones</p>
+            <h5>$11.990</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Pan/9.jpeg' %}" alt="">
+            <p>1 un ($4.713 x kg) <br> Fuchs Pan de molde calabaza nuez 630 g</p>
+            <h5>$2.969</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'JS/productos.js' %}"></script>
+{% endblock %}

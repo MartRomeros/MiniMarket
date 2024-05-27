@@ -1,0 +1,75 @@
+{% extends 'core/header_footer.html' %}
+{% load static %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'CSS/estilo-productos.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/263.webp' %}" alt="Aceite-trufa">
+            <p>Aceite de Oliva Trufado Italiano <br> 100ml</p>
+            <h5>$5.990</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/Aceitunas.webp' %}" alt="Aceituna-negra-deshuesada ">
+            <p>Aceituna Premium Negra Azapa Deshuesada 1 Kilo</p>
+            <h5>$3.990s</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/263 (1).webp' %}" alt="Aceite-vegetal">
+            <p>Aceite Vegetal <br> 900ml.</p>
+            <h5>$1.990</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/263 (2).webp' %}" alt="Aceitunas-premiun">
+            <p>Aceituna Premium Negra Azapa Laminada <br> 1 Kilo</p>
+            <h5>$3.990</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/263 (3).webp' %}" alt="aceite-sesamo">
+            <p>Aceite de Sesamo <br> 250ml.</p>
+            <h5>$3.490</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/263 (4).webp' %}" alt="Aji-crema">
+            <p>Ají Crema <br> 1Kg.</p>
+            <h5>$1.990</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/263 (5).webp' %}" alt="Aji-no-moto-1KG">
+            <p>Ají No Moto <br> 1Kg</p>
+            <h5>$7.990</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/263 (6).webp' %}" alt="pasta-aji">
+            <p>Pasta de Ají Panca <br> 205grs.</p>
+            <h5>$3.490</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+        <div class="col">
+            <img src="{% static 'imgs/Despensa/263 (7).webp' %}" alt="aluminio">
+            <p>Rollo Aluminio Foil <br> 30cm X 7.5m</p>
+            <h5>$1.490</h5>
+            <button class="agregar">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'JS/productos.js' %}"></script>
+{% endblock %}

@@ -8,6 +8,7 @@ class Producto(models.Model):
     precio = models.IntegerField()
     oferta = models.BooleanField()
     image = models.CharField(max_length=2555)
+    categoria = models.CharField(max_length=255)
 
     
     

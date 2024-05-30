@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import *
 
 # Create your views here.
 def home(request):
@@ -26,7 +27,7 @@ def info_legal(request):
     return render(request,"core/info-legal.html")
 
 def lacteos(request):
-    return render(request,"core/lacteos.html")
+    return render(request,"core/lacteos.html",{'Lacteos':lacteos})
 
 def limpieza(request):
     return render(request,"core/Limpieza.html")

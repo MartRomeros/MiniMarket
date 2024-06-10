@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+Registro
+{% endblock %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'css/registro.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<main class="container-fluid">
+    <section class="row">
+        <form method="post" class="col-lg-6">
+            {% csrf_token %}
+            <h1>Crear Una Cuenta</h1>
+            <h6>Completa los campos para crear una cuenta nueva</h6>
+            {{form}}
+            <div>
+                <h6>Ya tienes una cuenta?</h6>
+                <h6 id="login"><a href="{% url 'login' %}">Acceder</a></h6>
+            </div>
+            <button type="submit">Registrarme</button>
+        </form>
+    </section>
+</main>
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
+

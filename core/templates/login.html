@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+login
+{% endblock %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{%block contenido%}
+<main class="container-fluid">
+    <section class="row">
+        <form method="post" class="col-lg-5">
+            <h1>Iniciar Sesión</h1>
+            <h6>Ingresa tus credenciales para acceder</h6>
+            {% csrf_token %}
+            {{form}}
+            <div>
+                <h6>No tienes una cuenta?</h6>
+                <h6 id= "registro"><a href="{% url 'registro' %}">Registrarme</a></h6>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+    </section>
+</main>
+{%endblock%}

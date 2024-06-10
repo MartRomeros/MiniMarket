@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+li,a,h6,#cerrar{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+li:hover,
+a:hover,
+#cerrar:hover{
+    text-decoration: underline white 2px;
+}
+
+footer, nav{
+    background-color: #2B3035;
+    padding: 2vh;
+}
+
+#cerrar{
+    margin-top: 1vh;
+    background-color: #2B3035;
+    border: none;
+}
+
+

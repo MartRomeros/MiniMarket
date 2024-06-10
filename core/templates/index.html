@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+Index
+{% endblock %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock estilos %}
+
+{% block contenido %}
+<main class="container-fluid">
+
+    <section class="row">
+        <article class="col-lg">
+            <h1>Bienvenido a Mi Market <i class="bi bi-shop-window"></i></h1>
+            <h6>Somos un minimarket familiar con más de 20 años de experiencia, ofreciendo productos de calidad a
+                precios accesibles.</h6>
+        </article>
+        <div class="col-lg">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'imgs/carrusel/pan.png' %}" class="img-fluid" alt="..." width="300">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'imgs/carrusel/cervezas_artesanales.png' %}" class="img-fluid" alt="..."
+                            width="300">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'imgs/carrusel/promos_imperdibles.png' %}" class="img-fluid" alt="..."
+                            width="300">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <article class="col">
+            <h1>Más de 20 años de experiencia</h1>
+            <h6>Nuestro minimarket familiar se ha mantenido en el negocio por más de dos décadas, ofreciendo productos
+                de calidad a precios accesibles. Nos enorgullece ser parte de la comunidad y brindar un servicio
+                excepcional a nuestros clientes.</h6>
+        </article>
+    </section>
+
+    <section class="row">
+        <article class="col">
+            <h1>Visítanos hoy</h1>
+            <h6>Estamos ubicados en el centro de la ciudad, con horarios de atención de lunes a sábado.</h6>
+        </article>
+    </section>
+
+</main>
+{% endblock %}

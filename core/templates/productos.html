@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+Productos
+{% endblock titulo %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'css/productos.css' %}">
+{% endblock estilos %}
+
+{% block contenido %}
+<main class="container-fluid">
+    <header>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#todos-tab-pane" type="button"
+                    role="tab" aria-controls="todos-tab-pane" aria-selected="true">Todos</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#carniceria-tab-pane" type="button"
+                    role="tab" aria-controls="carniceria-tab-pane" aria-selected="false">Carniceria</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cerveza-tab-pane" type="button"
+                    role="tab" aria-controls="cerveza-tab-pane" aria-selected="false">Cervezas</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#despensa-tab-pane" type="button"
+                    role="tab" aria-controls="despensa-tab-pane" aria-selected="false">Despensa</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#lacteo-tab-pane" type="button"
+                    role="tab" aria-controls="lacteo-tab-pane" aria-selected="false">Lacteos</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#limpieza-tab-pane" type="button"
+                    role="tab" aria-controls="limpieza-tab-pane" aria-selected="false">Limpieza</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#pet-tab-pane" type="button"
+                    role="tab" aria-controls="pet-tab-pane" aria-selected="false">Mascotas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pan-tab-pane" type="button"
+                    role="tab" aria-controls="pan-tab-pane" aria-selected="false">Pan</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="todos-tab-pane" role="tabpanel" aria-labelledby="todos-tab"
+                tabindex="0">
+                <!--Copia este de aqui-->
+                <section class="row">
+                    {% for producto in productos %}
+                    <div class="col-md-3">
+                        <img src="{{producto.imagen}}" class="img-fluid" alt="productos">
+                        <h6>{{producto.detalle}}</h6>
+                        <div class="valor-stock">
+                            <h6>${{producto.precio}}</h6>
+                            <h6>{{producto.stock}} Unidades</h6>
+                        </div>
+                        <button type="button" data-bs-target="" data-bs-toggle="">Agregar al carrito</button>
+                    </div>
+                    {% endfor %}
+                </section>
+                <!--hasta aqui-->
+            </div>
+
+            <div class="tab-pane fade" id="carniceria-tab-pane" role="tabpanel" aria-labelledby="carniceria-tab"
+                tabindex="0">
+                Carniceria
+            </div>
+
+            <div class="tab-pane fade" id="cerveza-tab-pane" role="tabpanel" aria-labelledby="cerveza-tab" tabindex="0">
+                Cerveza
+            </div>
+
+            <div class="tab-pane fade" id="despensa-tab-pane" role="tabpanel" aria-labelledby="despensa-tab" tabindex="0">
+                Despensa
+            </div>
+
+            <div class="tab-pane fade" id="lacteo-tab-pane" role="tabpanel" aria-labelledby="lacteo-tab" tabindex="0">
+                Lacteos
+            </div>
+
+            <div class="tab-pane fade" id="limpieza-tab-pane" role="tabpanel" aria-labelledby="limpieza-tab" tabindex="0">
+                Limpieza
+            </div>
+
+            <div class="tab-pane fade" id="pet-tab-pane" role="tabpanel" aria-labelledby="pet-tab" tabindex="0">
+                Mascotas
+            </div>
+
+            <div class="tab-pane fade" id="pan-tab-pane" role="tabpanel" aria-labelledby="pan-tab" tabindex="0">
+                Pan
+            </div>
+
+        </div>
+    </header>
+</main>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Mi Market dice:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          No puedes agregar Productos al carrito si no iniciaste sesión
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock contenido %}
+
+{% block scripts %}
+<script src="{% static 'js/productos.js ' %}"></script>
+{% endblock%}

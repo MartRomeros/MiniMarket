@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.views import logout_then_login
 from .forms import *
+from .models import *
 
 # Create your views here.
 def home(request):
@@ -20,3 +21,9 @@ def registro(request):
         form = Registro()
         
     return render(request,'registro.html',{"form":form})
+
+def productos(request):
+    productos = Producto.objects.all()
+    categorias = Categoria.objects.all()
+    
+    return render(request,'productos.html',{"productos":productos,"categoria":categorias})

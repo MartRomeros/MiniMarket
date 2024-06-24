@@ -14,5 +14,6 @@ urlpatterns = [
     path('borrar_item/<codigo>',borrar_item,name='borrar_item'),
     path('añadir_item/<codigo>',anadir_item,name='añadir_item'),
     path('limpiar',limpiar,name='limpiar'),
+    path('comprar',comprar,name='comprar'),
 ]
 

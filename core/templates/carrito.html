@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+Carrito
+{% endblock %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'css/carrito.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<main class="container-fluid">
+
+  <h1>Carrito de compras</h1>
+  <section class="row" id="productos">
+
+    {% for item in carrito %}
+    <div class="col-6">
+      <img src="{{item.2}}" alt="" width="100">
+      <div class="info-producto">
+        <h5>{{item.1}}</h5>
+        <h5>${{item.3}}</h5>
+      </div>
+    </div>
+
+    <div class="col-6 info-cantidad">
+      <div class="cantidad">
+        <h5><a href="{% url 'añadir_item' item.0 %}" class="aumento">+</a></h5>
+        <h5>{{item.4}}</h5>
+        <h5><a href="{% url 'drop_item' item.0 %}" class="decremento">-</a></h5>
+        <h5><a href="{% url 'borrar_item' item.0 %}"><i class="bi bi-trash3-fill"></i></a></h5>
+      </div>
+    </div>
+
+    {% endfor %}
+
+    {% if not carrito %}
+    <h1>Carrito de compras vacio!</h1>
+    <h2>Puedes agregar productos desde nuestro catalogo</h2>
+    <h2>Si se trata de un problema comunicarse con atencion al cliente</h2>
+    {% endif %}
+
+  </section>
+
+  <!--Pasarela de pago-->
+  <section class="row">
+    <article class="col">
+      <div class="row">
+        <div class="col-6">
+          <h6>Subtotal</h6>
+        </div>
+        <div class="col-6">
+          <h6>{{total}}</h6>
+        </div>
+        <div class="col-6">
+          <h6>Descuento</h6>
+        </div>
+        <div class="col-6">
+          <h6>Descuento</h6>
+        </div>
+        <div class="col-6">
+          <h6>Total</h6>
+        </div>
+        <div class="col-6">
+          <h6>Total</h6>
+        </div>
+        <div class="col-12">
+          <button>Proceder al pago</button>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+{% endblock %}

@@ -34,8 +34,8 @@ Productos
             </li>
 
             <li class="nav-item" role="presentation">
-                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#lacteo-tab-pane" type="button"
-                    role="tab" aria-controls="lacteo-tab-pane" aria-selected="false">Lacteos</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#lacteo-tab-pane" type="button" role="tab"
+                    aria-controls="lacteo-tab-pane" aria-selected="false">Lacteos</button>
             </li>
 
             <li class="nav-item" role="presentation">
@@ -43,12 +43,12 @@ Productos
                     role="tab" aria-controls="limpieza-tab-pane" aria-selected="false">Limpieza</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#pet-tab-pane" type="button"
-                    role="tab" aria-controls="pet-tab-pane" aria-selected="false">Mascotas</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pet-tab-pane" type="button" role="tab"
+                    aria-controls="pet-tab-pane" aria-selected="false">Mascotas</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pan-tab-pane" type="button"
-                    role="tab" aria-controls="pan-tab-pane" aria-selected="false">Pan</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pan-tab-pane" type="button" role="tab"
+                    aria-controls="pan-tab-pane" aria-selected="false">Pan</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -63,9 +63,9 @@ Productos
                         <h6>{{producto.detalle}}</h6>
                         <div class="valor-stock">
                             <h6>${{producto.precio}}</h6>
-                            <h6>{{producto.stock}} Unidades</h6>
+                            <h6>{{producto.stock}} Unidades disponibles</h6>
                         </div>
-                        <button type="button" data-bs-target="" data-bs-toggle="">Agregar al carrito</button>
+                        <a data-bs-target="" data-bs-toggle="" class="btn-primary" href="{% url 'addtocar' producto.codigo %}">Agregar al carrito</a>
                     </div>
                     {% endfor %}
                 </section>
@@ -74,56 +74,156 @@ Productos
 
             <div class="tab-pane fade" id="carniceria-tab-pane" role="tabpanel" aria-labelledby="carniceria-tab"
                 tabindex="0">
-                Carniceria
+                <section class="row">
+                    {% for producto in productos %}
+                    {% if producto.id_categoria == categorias.0 %}
+                    <div class="col-md-3">
+                        <img src="{{producto.imagen}}" class="img-fluid" alt="productos">
+                        <h6>{{producto.detalle}}</h6>
+                        <div class="valor-stock">
+                            <h6>${{producto.precio}}</h6>
+                            <h6>{{producto.stock}} Unidades</h6>
+                        </div>
+                        <a type="button" data-bs-target="" data-bs-toggle="" class="btn-primary">Agregar al carrito</a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </section>
             </div>
 
             <div class="tab-pane fade" id="cerveza-tab-pane" role="tabpanel" aria-labelledby="cerveza-tab" tabindex="0">
-                Cerveza
+                <section class="row">
+                    {% for producto in productos %}
+                    {% if producto.id_categoria == categorias.1 %}
+                    <div class="col-md-3">
+                        <img src="{{producto.imagen}}" class="img-fluid" alt="productos">
+                        <h6>{{producto.detalle}}</h6>
+                        <div class="valor-stock">
+                            <h6>${{producto.precio}}</h6>
+                            <h6>{{producto.stock}} Unidades</h6>
+                        </div>
+                        <a type="button" data-bs-target="" data-bs-toggle="" class="btn-primary">Agregar al carrito</a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </section>
             </div>
 
-            <div class="tab-pane fade" id="despensa-tab-pane" role="tabpanel" aria-labelledby="despensa-tab" tabindex="0">
-                Despensa
+            <div class="tab-pane fade" id="despensa-tab-pane" role="tabpanel" aria-labelledby="despensa-tab"
+                tabindex="0">
+                <section class="row">
+                    {% for producto in productos %}
+                    {% if producto.id_categoria == categorias.2 %}
+                    <div class="col-md-3">
+                        <img src="{{producto.imagen}}" class="img-fluid" alt="productos">
+                        <h6>{{producto.detalle}}</h6>
+                        <div class="valor-stock">
+                            <h6>${{producto.precio}}</h6>
+                            <h6>{{producto.stock}} Unidades</h6>
+                        </div>
+                        <a type="button" data-bs-target="" data-bs-toggle="" class="btn-primary">Agregar al carrito</a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </section>
             </div>
 
             <div class="tab-pane fade" id="lacteo-tab-pane" role="tabpanel" aria-labelledby="lacteo-tab" tabindex="0">
-                Lacteos
+                <section class="row">
+                    {% for producto in productos %}
+                    {% if producto.id_categoria == categorias.3 %}
+                    <div class="col-md-3">
+                        <img src="{{producto.imagen}}" class="img-fluid" alt="productos">
+                        <h6>{{producto.detalle}}</h6>
+                        <div class="valor-stock">
+                            <h6>${{producto.precio}}</h6>
+                            <h6>{{producto.stock}} Unidades</h6>
+                        </div>
+                        <a type="button" data-bs-target="" data-bs-toggle="" class="btn-primary">Agregar al carrito</a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </section>
             </div>
 
-            <div class="tab-pane fade" id="limpieza-tab-pane" role="tabpanel" aria-labelledby="limpieza-tab" tabindex="0">
-                Limpieza
+            <div class="tab-pane fade" id="limpieza-tab-pane" role="tabpanel" aria-labelledby="limpieza-tab"
+                tabindex="0">
+                <section class="row">
+                    {% for producto in productos %}
+                    {% if producto.id_categoria == categorias.4 %}
+                    <div class="col-md-3">
+                        <img src="{{producto.imagen}}" class="img-fluid" alt="productos">
+                        <h6>{{producto.detalle}}</h6>
+                        <div class="valor-stock">
+                            <h6>${{producto.precio}}</h6>
+                            <h6>{{producto.stock}} Unidades</h6>
+                        </div>
+                        <a type="button" data-bs-target="" data-bs-toggle="" class="btn-primary">Agregar al carrito</a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </section>
             </div>
 
             <div class="tab-pane fade" id="pet-tab-pane" role="tabpanel" aria-labelledby="pet-tab" tabindex="0">
-                Mascotas
+                <section class="row">
+                    {% for producto in productos %}
+                    {% if producto.id_categoria == categorias.5 %}
+                    <div class="col-md-3">
+                        <img src="{{producto.imagen}}" class="img-fluid" alt="productos">
+                        <h6>{{producto.detalle}}</h6>
+                        <div class="valor-stock">
+                            <h6>${{producto.precio}}</h6>
+                            <h6>{{producto.stock}} Unidades</h6>
+                        </div>
+                        <a type="button" data-bs-target="" data-bs-toggle="" class="btn-primary">Agregar al carrito</a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </section>
             </div>
 
             <div class="tab-pane fade" id="pan-tab-pane" role="tabpanel" aria-labelledby="pan-tab" tabindex="0">
-                Pan
+                <section class="row">
+                    {% for producto in productos %}
+                    {% if producto.id_categoria == categorias.6 %}
+                    <div class="col-md-3">
+                        <img src="{{producto.imagen}}" class="img-fluid" alt="productos">
+                        <h6>{{producto.detalle}}</h6>
+                        <div class="valor-stock">
+                            <h6>${{producto.precio}}</h6>
+                            <h6>{{producto.stock}} Unidades</h6>
+                        </div>
+                        <a type="button" data-bs-target="" data-bs-toggle="" class="btn-primary">Agregar al carrito</a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </section>
             </div>
 
         </div>
     </header>
 </main>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Mi Market dice:</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          No puedes agregar Productos al carrito si no iniciaste sesión
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Mi Market dice:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                No puedes agregar Productos al carrito si no iniciaste sesión
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock contenido %}
 

@@ -55,3 +55,14 @@ div > button:hover{
     background-color: #2B3035;
     color: white;
 }
+
+.col-md-3 > a{
+    background-color: #2B3035;
+    padding: 1vh;
+    border-radius: 2vh;
+
+}
+
+.col-md-3 > a:hover{
+    text-decoration: none;
+}

@@ -115,7 +115,11 @@ def comprar(request):
     
     return redirect(to='home')
 
-
+def privacidad(request):
+     return render(request,'privacidad.html')
+ 
+def terminos(request):
+    return render(request, 'terminos.html')
 
 
 

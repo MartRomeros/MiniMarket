@@ -7,11 +7,13 @@ import numpy as np
 
 # Create your views here.
 def home(request):
-    return render(request,'index.html')
+    return render(request,'index.html',{"carrito":request.session.get("carrito",[])})
 
 def addtocar(request,codigo):
+    
     producto = Producto.objects.get( codigo = codigo )
     carrito = request.session.get("carrito",[])
+    
     for item in carrito:
         if item[0] == codigo:
             item[4] = item[4]+1
@@ -20,11 +22,12 @@ def addtocar(request,codigo):
     else:
         carrito.append([codigo,producto.detalle,producto.imagen,producto.precio,1])
     
+    
     request.session["carrito"] = carrito
     return redirect(to='productos')
 
 def drop_item(request,codigo):
-    carrito = request.session.get("carrito",[])   
+    carrito = request.session.get("carrito",[])
     for item in carrito:
         if item[0] == codigo:
             if item[4] >= 1:
@@ -90,17 +93,38 @@ def productos(request):
     return render(request,'productos.html',{"productos":productos,"categorias":categorias,"carrito":request.session.get("carrito",[])})
 
 def carrito(request):
-    return render(request,'carrito.html',{"carrito":request.session.get("carrito",[])})
+    carrito = request.session.get("carrito",[])
+    subtotal = 0
+    descuento = 0
+    total = 0
+    for item in carrito:
+        subtotal += item[3]
+        if subtotal > 10000:
+            descuento = round(subtotal - subtotal * (75/100))
+        total = subtotal - descuento
+        
+        
+        
+    return render(request,'carrito.html',{"carrito":request.session.get("carrito",[]),
+                                          "subtotal":subtotal,
+                                          "descuento":descuento,
+                                          "total":total,
+                                          "cantidad_productos":request.session.get("cantidad_productos",[ ])})
 
 
 def comprar(request):
     
     carro = request.session.get("carrito",[])
     total = 0
+    subtotal = 0
+    descuento = 0
     for item in carro:
-        total += item[3]
         venta = Venta()
         venta.cliente = request.user
+        subtotal += item[3]
+        if subtotal > 10000:
+            descuento = round(subtotal - subtotal * (75/100))
+        total = subtotal - descuento
         venta.total = total
     venta.save()
     
@@ -116,10 +140,10 @@ def comprar(request):
     return redirect(to='home')
 
 def privacidad(request):
-     return render(request,'privacidad.html')
+     return render(request,'privacidad.html',{"carrito":request.session.get("carrito",[])})
  
 def terminos(request):
-    return render(request, 'terminos.html')
+    return render(request, 'terminos.html',{"carrito":request.session.get("carrito",[])})
 
 
 

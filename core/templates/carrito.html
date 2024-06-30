@@ -51,19 +51,19 @@ Carrito
           <h6>Subtotal</h6>
         </div>
         <div class="col-6">
-          <h6></h6>
+          <h6>${{subtotal}}</h6>
         </div>
         <div class="col-6">
           <h6>Descuento</h6>
         </div>
         <div class="col-6">
-          <h6>Descuento</h6>
+          <h6>${{descuento}}</h6>
         </div>
         <div class="col-6">
           <h6>Total</h6>
         </div>
         <div class="col-6">
-          <h6>Total</h6>
+          <h6 id="total">${{total}}</h6>
         </div>
         <div class="col-12">
           <a href="{% url 'comprar' %}" id="btn-comprar">Comprar</a>
@@ -72,4 +72,8 @@ Carrito
     </article>
   </section>
 </main>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/carrito.js' %}" ></script>
 {% endblock %}
